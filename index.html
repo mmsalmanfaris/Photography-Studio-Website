@@ -37,18 +37,280 @@
               <a class="nav-link text-danger me-5" href="">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger me-5" href="">Packages</a>
+              <a class="nav-link text-white me-5" href="">Packages</a>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn btn-danger">
-                <a class="nav-link" href="Contact.html"> <i class="bi bi-whatsapp pe-2"></i> Contact Us</a>
-              </button>
+                <a class="nav-link text-white" href="Contact.html">Contact Us</a>
             </li>
+
+            <!--Dark Mode-->
+            <li>
+              <div class="form-switch ms-4 ">
+                <input
+                  class="form-check-input px-4 py-3"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                  onclick="myFunction()"
+                />
+              </div>
+            </li>
+            <script>
+              function myFunction() {
+              var element = document.body;
+              element.dataset.bsTheme =
+              element.dataset.bsTheme == "light" ? "dark" : "light"
+              }
+            </script>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
+  <!--Hero Section-->
+  <div class="wrapper">
+    <div class="slider">
+      <input type="radio" name="slide" id="c1" checked />
+      <label for="c1" class="card">
+        <div class="row">
+          <div class="icon">1</div>
+          <div class="title">
+            <h4>Wedding Shoot</h4>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c2" checked />
+      <label for="c2" class="card">
+        <div class="row">
+          <div class="icon">2</div>
+          <div class="title">
+            <h4>Bridal Shoot</h4>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c3" checked />
+      <label for="c3" class="card">
+        <div class="row">
+          <div class="icon">3</div>
+          <div class="title">
+            <h4>Birth Day Shoot</h4>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c4" checked />
+      <label for="c4" class="card">
+        <div class="row">
+          <div class="icon">4</div>
+          <div class="title">
+            <h4>Model Shoot</h4>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c5" checked />
+      <label for="c5" class="card">
+        <div class="row">
+          <div class="icon">5</div>
+          <div class="title">
+            <h4>Outdoor Shoot</h4>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c6" checked />
+      <label for="c6" class="card">
+        <div class="row">
+          <div class="icon">6</div>
+          <div class="title">
+            <h4>Dubai</h4>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c7" checked />
+      <label for="c7" class="card">
+        <div class="row">
+          <div class="icon">7</div>
+          <div class="title">
+            <h4>New York</h4>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+
+
+  <!--Book your shooting-->
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="img/LandingPage/booking1.jpg" class="rounded-4" width="250" alt="">
+        <img src="img/LandingPage/booking2.jpg" class="mt-5 rounded-4" width="250" alt="">
+      </div>
+      <div class="col-md-7">
+        <h1>Book Your Shooting</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis minus, ipsum, harum magnam, atque doloribus saepe ab adipisci officia nihil praesentium nostrum? Tempora, accusantium ullam deserunt reprehenderit officia rem officiis.</p>
+        <button class="bg-primary p-2 px-4 rounded-2"><a href="/src/packages.html">Book Now</a></button>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Progress Bar-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container-fluid p-2 align-items-center">
+          <div class="d-flex justify-content-around">
+            <button
+              class="btn bg-primary text-white btn-sm rounded-pill"
+              style="width: 50px; height: 50px"
+              data-bs-toggle="collapse"
+              data-bs-target="#discuss"
+              aria-expanded="true"
+              aria-controls="company1"
+              onclick="stepFunction(event)"
+            >
+              1
+            </button>
+            <span
+              class="bg-success w-25 rounded mt-auto mb-auto me-1 ms-1"
+              style="height: 0.2rem"
+            >
+            </span>
+            <button
+              class="btn bg-primary text-white btn-sm rounded-pill"
+              style="width: 50px; height: 50px"
+              data-bs-toggle="collapse"
+              data-bs-target="#booking"
+              aria-expanded="false"
+              aria-controls="company3"
+              onclick="stepFunction(event)"
+            >
+              2
+            </button>
+            <span
+              class="bg-success w-25 rounded mt-auto mb-auto me-1 ms-1"
+              style="height: 0.2rem"
+            >
+            </span>
+            <button
+              class="btn bg-primary text-white btn-sm rounded-pill"
+              style="width: 50px; height: 50px"
+              data-bs-toggle="collapse"
+              data-bs-target="#shoot"
+              aria-expanded="false"
+              aria-controls="company3"
+              onclick="stepFunction(event)"
+            >
+              3
+            </button>
+            <span
+              class="bg-success w-25 rounded mt-auto mb-auto me-1 ms-1"
+              style="height: 0.2rem"
+            >
+            </span>
+            <button
+              class="btn bg-primary text-white btn-sm rounded-pill"
+              style="width: 50px; height: 50px"
+              data-bs-toggle="collapse"
+              data-bs-target="#results"
+              aria-expanded="false"
+              aria-controls="company4"
+              onclick="stepFunction(event)"
+            >
+              4
+            </button>
+          </div>
+        </div>
+
+        <div class="collapse show" id="discuss">
+          <div class="display-4">Discuss</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="collapse" id="booking">
+          <div class="display-4">Booking</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="collapse" id="shoot">
+          <div class="display-4">Shooting & Editng</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="collapse" id="results">
+          <div class="display-4">Final Results</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    function stepFunction(event) {
+      debugger;
+      var element = document.getElementsByClassName("collapse");
+      for (var i = 0; i < element.length; i++) {
+        if (element[i] !== event.target.ariaControls) {
+          element[i].classList.remove("show");
+        }
+      }
+    }
+  </script>
+
 
   <!--Gallery-->
   <section class="container py-5">
@@ -64,22 +326,22 @@
     <div class="row p-0 m-0">
 
       <div class="col-md-4">
-        <img src="/img/1.jpg" class="w-100 h-100 rounded-4" alt="">
+        <img src="/img/LandingPage/gallery1.jpg" class="w-100 h-100 rounded-4" alt="">
       </div>
 
       <div class="col-md-8 ">
         <div class="row mb-4">
           <div class="col-md-6">
-            <img src="/img/2.jpg" class="rounded-4 h-100 w-100" alt="">
+            <img src="/img/LandingPage/gallery2.jpg" class="rounded-4 h-100 w-100" alt="">
           </div>
           <div class="col-md-6">
-            <img src="/img/3.jpg" class="rounded-4 h-100 w-100" alt="">
+            <img src="/img/LandingPage/gallery3.jpg" class="rounded-4 h-100 w-100" alt="">
           </div>
         </div>
 
-        <div class="row">
+        <div class="row"> 
           <div class="col-md-12">
-            <img src="/img/4.jpg" class="rounded-4 h-100 w-100" alt="">
+            <img src="/img/LandingPage/gallery4.jpg" class="rounded-4 h-100 w-100" alt="">
           </div>
         </div>
       </div>
