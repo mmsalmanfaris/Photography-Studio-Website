@@ -137,9 +137,9 @@
         </div>
   
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-start ps-5">
-          <h1>Book Your Shooting</h1>
-          <p class="text-align:">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis minus, ipsum, harum magnam, atque doloribus saepe ab adipisci officia nihil praesentium nostrum? Tempora, accusantium ullam deserunt reprehenderit officia rem officiis.</p>
-          <button class="bg-primary p-2 px-4 rounded-2"><a href="./src/packages.html">Book Now</a></button>
+          <h1 class="fw-bold">Book Your Shooting</h1>
+          <p class=" mb-4 mt-2 fs-5">To transform your moments into cherished memories, simply choose your desired package and confirm your booking by making an initial payment. Capture the magic today!</p>
+          <button class="bg-primary p-2 pt-3 px-4 rounded-2 border-0"> <h5><a href="">Book Now</a></h5></button>
         </div>
       </div>
     </div>
@@ -269,7 +269,7 @@
         </div> 
       </div>
       <div class="bg-secondary text-center">
-        <p class="py-2 mb-0">© 2024 Developed by <a href="http://cense7.com"><i><b>Cense7 Consultancy</b></i></a>.</p>
+        <p class="py-2 mb-0">© 2024 Developed with ❤️ by <a href="http://cense7.com">mmsalmanfaris</a>.</p>
       </div>
     </footer>
   
