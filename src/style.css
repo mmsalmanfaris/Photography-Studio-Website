@@ -34,3 +34,11 @@ a{
   height: 200px;
   object-fit: cover;
 }
+
+.color{
+  height: 1000px;
+  width: 1000px;
+  /* background-color: aqua; */
+  background-image: radial-gradient(closet-side, rgba(249, 0, 0, 0.779), #ffffff);
+  position: absolute;
+}

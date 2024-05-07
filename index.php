@@ -5,8 +5,11 @@
   <head>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./src/main.css">
+
     <!-- Bootstrap ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   
     <link rel="stylesheet" href="./src/style.css">
   
@@ -14,60 +17,11 @@
   </head>
         
   <body>
-    <header>
       <!-- Navigation Bar -->
-      <nav class="navbar bg-primary p-2">
-        <div class="container">
-          <!-- Logo -->
-          <div>
-            <a class="navbar-brand" href="">
-              <img src="./img/Logo-White.png"  alt="Esai Logo" height="45">
-            </a>
-          </div>
-          <!-- Nav Tabs -->
-          <div class="mt-2">
-            <ul class="nav justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link text-danger me-5" href="">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-danger me-5" href="">Sevices</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-danger me-5" href="">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white me-5" href="">Packages</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="Contact.html">Contact Us</a>
-              </li>
-  
-              <!--Dark Mode-->
-              <li>
-                <div class="form-switch ms-4 ">
-                  <input
-                    class="form-check-input px-4 py-3"
-                    type="checkbox"
-                    role="switch"
-                    id="flexSwitchCheckChecked"
-                    checked
-                    onclick="myFunction()"
-                  />
-                </div>
-              </li>
-              <script>
-                function myFunction() {
-                var element = document.body;
-                element.dataset.bsTheme =
-                element.dataset.bsTheme == "light" ? "dark" : "light"
-                }
-              </script>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <?php
+        include './src/header.php';
+      ?>
+      
   
     <!--Hero Section-->
     <div id="hero-carousel" class="carousel slide">
@@ -144,95 +98,146 @@
       </div>
     </div>
   
-  
-    <!--Progress Bar-->
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="container-fluid p-2 align-items-center">
-            <div class="d-flex justify-content-around">
-             <div>
-              <button
-              class="btn bg-primary text-white btn-sm rounded-pill "
-              style="width: 50px; height: 50px">
-              1
-              </button>
-              <p>Booking</p>
-             </div>
-              <span
-                class="bg-success w-25 rounded mt-4 me-1 ms-1"
-                style="height: 0.2rem">
-              </span>
-              <div>
-                <button
-                class="btn bg-primary text-white btn-sm rounded-pill"
-                style="width: 50px; height: 50px">
-                2
-                </button>
-                <P>Discuss</P>
-              </div>
-              <span
-                class="bg-success w-25 rounded mt-4 me-1 ms-1"
-                style="height: 0.2rem">
-              </span>
-              <div>
-                <button
-                class="btn bg-primary text-white btn-sm rounded-pill"
-                style="width: 50px; height: 50px">
-                3
-                </button>
-                <p>Shooting </p>
-              </div>
-              <span
-                class="bg-success w-25 rounded mt-4 me-1 ms-1"
-                style="height: 0.2rem">
-              </span>
-              <div>
-                <button
-                class="btn bg-primary text-white btn-sm rounded-pill"
-                style="width: 50px; height: 50px">
-                4
-                </button>
-                <p class="">Handover</p>
+    <div class="color z-3"></div>
+
+    <!--Latest Photoshoots-->
+
+    <section>        
+      <div class="container">
+        <div class="my-md-5">
+          <h1 class=" display-1 fw-bold text-center">Latest Photo Shoots</h1>
+        </div>
+
+        <div class="d-flex justify-content-around">
+          <div class="card-group container mb-5">
+            <div class="card">
+              <img src="./img/LandingPage/booking4.jpg" class="h-75 object-fit-cover card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Wedding Photoshoot</h3>
+                <p class="card-text">
+                <span class="material-symbols-outlined danger"> Distance </span>
+                Lee Marideian Hall, kalmunai. </p>
+                <p class="card-text"> <span class="material-symbols-outlined danger"> calendar_month </span> 
+                <small class="text-body-secondary">10th May 2024</small></p>
+                <button type="button" class="btn btn-primary">View More Images</button>
               </div>
             </div>
+            <div class="card">
+              <img src="./img/LandingPage/booking2.jpg" class="h-75 object-fit-cover card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Wedding Photoshoot</h3>
+                <p class="card-text">
+                <span class="material-symbols-outlined danger"> Distance </span>
+                Lee Marideian Hall, kalmunai. </p>
+                <p class="card-text"> <span class="material-symbols-outlined danger"> calendar_month </span> 
+                <small class="text-body-secondary">10th May 2024</small></p>
+                <button type="button" class="btn btn-primary">View More Images</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/LandingPage/booking1.jpg" class="h-75 object-fit-cover card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Wedding Photoshoot</h3>
+                <p class="card-text">
+                <span class="material-symbols-outlined danger"> Distance </span>
+                Lee Marideian Hall, kalmunai. </p>
+                <p class="card-text"> <span class="material-symbols-outlined danger"> calendar_month </span> 
+                <small class="text-body-secondary">10th May 2024</small></p>
+                <button type="button" class="btn btn-primary">View More Images</button>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
-    </div>
+    </section> 
   
   
     <!--Gallery-->
-    <section class="container py-5">
-      <divc class="row">
-        <div class="col-md-6">
-          <h1>Photo Gallery</h1>
+    <section>
+      <div class="container my-5">
+
+        <div class="my-md-5">
+          <h1 class=" display-1 fw-bold text-center">Photo Gallery</h1>
         </div>
-        <div class="col-md-6 d-flex justify-content-end">
-          <a class="text-primary " href="">View Gallery <i class="bi bi-arrow-right"></i></a> 
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="./img/slide/slide1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+
+            <img
+              src="./img/LandingPage/booking1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Wintry Mountain Landscape"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="./img/LandingPage/booking1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Mountains in the Clouds"
+            />
+
+            <img
+              src="./img/slide/slide1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="./img/slide/slide1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Waves at Sea"
+            />
+
+            <img
+              src="./img/LandingPage/booking1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Yosemite National Park"
+            />
+          </div>
         </div>
       </div>
-  
-      <div class="row p-0 m-0">
-  
-        <div class="col-md-4">
-          <img src="./img/LandingPage/gallery1.jpg" class="w-100 h-100 rounded-4" alt="">
-        </div>
-  
-        <div class="col-md-8 ">
-          <div class="row mb-4">
-            <div class="col-md-6">
-              <img src="./img/LandingPage/gallery2.jpg" class="rounded-4 h-100 w-100" alt="">
+    </section>
+    
+
+    <section>
+      <div aria-live="polite" aria-atomic="true" class="position-relative">
+        <!-- Position it: -->
+        <!-- - `.toast-container` for spacing between toasts -->
+        <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
+        <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+        <div class="toast-container top-0 end-0 p-3">
+
+          <!-- Then put toasts within -->
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small class="text-body-secondary">just now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-            <div class="col-md-6">
-              <img src="./img/LandingPage/gallery3.jpg" class="rounded-4 h-100 w-100" alt="">
+            <div class="toast-body">
+              See? Just like this.
             </div>
           </div>
-  
-          <div class="row"> 
-            <div class="col-md-12">
-              <img src="./img/LandingPage/gallery4.jpg" class="rounded-4 h-100 w-100" alt="">
+
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small class="text-body-secondary">2 seconds ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Heads up, toasts will stack automatically
             </div>
           </div>
         </div>
@@ -241,38 +246,9 @@
   
   
     <!--Footer-->
-    <footer class="bg-primary text-danger my-5 mb-0">
-      <div class="container pt-5 pb-4">
-        <div class="row">
-          <div class="col-md-5">
-            <img src="./img/Logo-White.png" class="mb-4" height="50px" alt="">
-            <h5>Esai Studio</h5>
-            <p>
-              Esai Studio is a professional photography Studio that specializes in wedding photography, portrait photography, and event photography. We are based in Batticaloa, Sri Lanka.
-            </p>
-          </div> 
-          <div class="col-md-3 ms-5 ps-5">
-            <h5>Quick Links</h5>
-            <li class="mb-2"><a href="">Home</a></li>
-            <li class="mb-2"><a href="">Services</a></li>
-            <li class="mb-2"><a href="">Gallery</a></li>
-            <li class="mb-2"><a href="">Packages</a></li>
-            <li><a href="">Contact Us</a></li>
-          </div>
-          <div class="col-md-3 ms-5 ps-5">
-            <h5>Contact Us</h5>
-            <p><a href=""><i class="bi bi-whatsapp pe-2"></i>076xxxxx</a></p>
-            <p><a href=""><i class="bi bi-facebook pe-2"></i></i>Esai Studio</a></p>
-            <p><a href=""><i class="bi bi-instagram pe-2"></i></i>Esai Studio</a></p>
-            <p><a href=""><i class="bi bi-geo-alt pe-2"></i></i>Kalladi, Batiicaloa</a></p>
-          </div>
-        </div> 
-      </div>
-      <div class="bg-secondary text-center">
-        <p class="py-2 mb-0">© 2024 Developed with ❤️ by <a href="http://cense7.com">mmsalmanfaris</a>.</p>
-      </div>
-    </footer>
-  
+    <?php
+      include './src/footer.php';
+    ?>
   
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
