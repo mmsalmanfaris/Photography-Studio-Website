@@ -24,7 +24,7 @@
       
   
     <!--Hero Section-->
-    <div id="hero-carousel" class="carousel slide">
+    <div id="hero-carousel" class="carousel slide mt-5">
   
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -92,7 +92,7 @@
   
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-start ps-5">
           <h1 class="fw-bold">Book Your Shooting</h1>
-          <p class=" mb-4 mt-2 fs-5">To transform your moments into cherished memories, simply choose your desired package and confirm your booking by making an initial payment. Capture the magic today!</p>
+          <p class="mb-4 mt-2 fs-5">To transform your moments into cherished memories, simply choose your desired package and confirm your booking by making an initial payment. Capture the magic today!</p>
           <button class="bg-primary p-2 pt-3 px-4 rounded-2 border-0"> <h5><a href="">Book Now</a></h5></button>
         </div>
       </div>
@@ -100,59 +100,6 @@
   
     <div class="color z-3"></div>
 
-    <!--Latest Photoshoots-->
-
-    <section>        
-      <div class="container">
-        <div class="my-md-5">
-          <h1 class=" display-1 fw-bold text-center">Latest Photo Shoots</h1>
-        </div>
-
-        <div class="d-flex justify-content-around">
-          <div class="card-group container mb-5">
-            <div class="card">
-              <img src="./img/LandingPage/booking4.jpg" class="h-75 object-fit-cover card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Wedding Photoshoot</h3>
-                <p class="card-text">
-                <span class="material-symbols-outlined danger"> Distance </span>
-                Lee Marideian Hall, kalmunai. </p>
-                <p class="card-text"> <span class="material-symbols-outlined danger"> calendar_month </span> 
-                <small class="text-body-secondary">10th May 2024</small></p>
-                <button type="button" class="btn btn-primary">View More Images</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./img/LandingPage/booking2.jpg" class="h-75 object-fit-cover card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Wedding Photoshoot</h3>
-                <p class="card-text">
-                <span class="material-symbols-outlined danger"> Distance </span>
-                Lee Marideian Hall, kalmunai. </p>
-                <p class="card-text"> <span class="material-symbols-outlined danger"> calendar_month </span> 
-                <small class="text-body-secondary">10th May 2024</small></p>
-                <button type="button" class="btn btn-primary">View More Images</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./img/LandingPage/booking1.jpg" class="h-75 object-fit-cover card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Wedding Photoshoot</h3>
-                <p class="card-text">
-                <span class="material-symbols-outlined danger"> Distance </span>
-                Lee Marideian Hall, kalmunai. </p>
-                <p class="card-text"> <span class="material-symbols-outlined danger"> calendar_month </span> 
-                <small class="text-body-secondary">10th May 2024</small></p>
-                <button type="button" class="btn btn-primary">View More Images</button>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section> 
-  
-  
     <!--Gallery-->
     <section>
       <div class="container my-5">
@@ -170,7 +117,7 @@
             />
 
             <img
-              src="./img/LandingPage/booking1.jpg"
+              src="./img/LandingPage/booking2.jpg"
               class="w-100 shadow-1-strong rounded mb-4"
               alt="Wintry Mountain Landscape"
             />
@@ -207,6 +154,85 @@
       </div>
     </section>
     
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-2 mb-lg-4">
+        <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+          <span class="text-muted">Pricing Table</span>
+          <h2 class="display-5 fw-bold">Our Pricing</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem veniam eveniet aperiam suscipit.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="card text-center border-0 mb-3 mb-md-0">
+            <img class="card-img-top" src="./img/slide/slide1.jpg">
+            <div class="card-body bg-light py-5">
+              <h5 class="fw-bold">Basic</h5>
+              <div>
+                For Freelancers
+              </div>
+              <div class="display-3 fw-bold mt-4 text-primary">
+                $19
+              </div>
+              <div class="fw-bold">
+                Monthly
+              </div>
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">1 Domain</li>
+                <li class="mb-3">1,000 Visitors</li>
+                <li class="mb-3">24/7 Support</li>
+              </ul><a class="btn btn-primary btn-lg mt-4" href="">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card text-center border-0 mb-3 mb-md-0">
+            <img class="card-img-top" src="./img/slide/slide2.jpg">
+            <div class="card-body bg-light py-5">
+              <h5 class="fw-bold">Standard</h5>
+              <div>
+                For Teams
+              </div>
+              <div class="display-3 fw-bold mt-4 text-primary">
+                $26
+              </div>
+              <div class="fw-bold">
+                Monthly
+              </div>
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">10 Domains</li>
+                <li class="mb-3">10,000 Visitors</li>
+                <li class="mb-3">24/7 Support</li>
+              </ul><a class="btn btn-primary btn-lg mt-4" href="">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card text-center border-0 mb-3 mb-md-0">
+            <img class="card-img-top" src="./img/slide/slide3.jpg">
+            <div class="card-body bg-light py-5">
+              <h5 class="fw-bold">Pro</h5>
+              <div>
+                For Companies
+              </div>
+              <div class="display-3 fw-bold mt-4 text-primary">
+                $34
+              </div>
+              <div class="fw-bold">
+                Monthly
+              </div>
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">Unlimited Domains</li>
+                <li class="mb-3">Unlimited Visitors</li>
+                <li class="mb-3">24/7 Support</li>
+              </ul><a class="btn btn-primary btn-lg mt-4" href="">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <section>
       <div aria-live="polite" aria-atomic="true" class="position-relative">

@@ -12,6 +12,7 @@ a{
   padding: 0;
 }
 
+
 .slide-img{
   height: 640px;
   object-fit: cover;
@@ -42,3 +43,4 @@ a{
   background-image: radial-gradient(closet-side, rgba(249, 0, 0, 0.779), #ffffff);
   position: absolute;
 }
+
