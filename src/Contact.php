@@ -1,119 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-    <link rel="stylesheet" href="/src/main.css">
-  <!-- Bootstrap ICON -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <link rel="stylesheet" href="/src/style.css">
-</head>
-<body>
-    <header>
-        <!-- Navigation Bar -->
-        <nav class="navbar bg-primary p-2">
-          <div class="container">
-            <!-- Logo -->
-            <div>
-              <a class="navbar-brand" href="">
-                <img src="/img/Logo-White.png"  alt="Esai Logo" height="45">
-              </a>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <br> <br> <br> 
-      <!--Contact us -->
-      <div class="container1">
-        <span class="big-circle"></span>
-        <img src="img/shape.png" class="square" alt="" />
-        <div class="form">
-          <div class="contact-info">
-            <h3 class="title">Let's get in touch</h3>
-            <p class="text">
-                Esai Studio - இசை
-                Event Photography: Weddings, New Born Shoots, Birthdays
-            </p>
-  
-            <div class="info">
-              <div class="information">
-                <img src="img/location.png" class="icon" alt="" />
-                <p>Batticaloa, Sri Lanka</p>
-              </div>
-              <div class="information">
-                <img src="img/email.png" class="icon" alt="" />
-                <p>esaistudio6@gmail.com</p>
-              </div>
-              <div class="information">
-                <img src="img/phone.png" class="icon" alt="" />
-                <p>075 511 5475</p>
+<?php
+  include_once './header.php';
+?>
+
+
+  <main>
+    <div class="container py-5 my-5">
+      <div class="row g-5">
+        <!-- Contact Information Block -->
+        <div class="col-xl-6">
+          <div class="row row-cols-md-2 g-4">
+            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="aos-item__inner">
+                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                  <div class="d-flex justify-content-start">
+                    <i class="bi bi-messenger"></i>
+                    <span class="h5">Email</span>
+                  </div>
+                  <span>order@malcolm.com</span>
+                </div>
               </div>
             </div>
-  
-            <div class="social-media">
-              <p>Connect with us :</p>
-              <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100070496885311">
-                  <i class="fab fa-facebook-f">
-                    <img src="img/Fblogo.ico" alt="Fblogo" width="30" height="40">
-                  </i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-twitter">
-                    <img src="img/xlogo.ico" alt="xlogo" width="35" height="40">
-                  </i>
-                </a>
-                <a href="https://www.instagram.com/esai_studio/?hl=en&fbclid=IwAR1FRY9HIpKW2fnQNNvt2db0Vvge5zNM4pMxCrrEkTIQDl8P6Ira35IEnJw">
-                  <i class="fab fa-instagram">
-                    <img src="img/Instagramlogo.ico" alt="Instagramlogo" width="30" height="40">
-                  </i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin-in">
-                    <img src="img/linkedinlogo.ico" alt="Fblogo" width="30" height="40">
-                  </i>
-                </a>
+            <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="aos-item__inner">
+                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                  <div class="d-flex justify-content-start">
+                    <i class="bi bi-call h3 pe-2"></i>
+                    <span class="h5">Phone</span>
+                  </div>
+                  <span>+0123456789, +9876543210</span>
+                </div>
               </div>
             </div>
           </div>
-  
-          <div class="contact-form">
-            <span class="circle one"></span>
-            <span class="circle two"></span>
-  
-            <form action="index.html" autocomplete="off">
-              <h3 class="title">Contact us</h3>
-              <div class="input-container">
-                <input type="text" name="name" class="input" />
-                <label for="">Username</label>
-                <span>Username</span>
+          <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="aos-item__inner">
+              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                <div class="d-flex justify-content-start">
+                  <i class="fa-solid fa-location-pin h3 pe-2"></i>
+                  <span class="h5">Office location</span>
+                </div>
+                <span>#007, Street name, Bigtown BG23 4YZ, England</span>
               </div>
-              <div class="input-container">
-                <input type="email" name="email" class="input" />
-                <label for="">Email</label>
-                <span>Email</span>
-              </div>
-              <div class="input-container">
-                <input type="tel" name="phone" class="input" />
-                <label for="">Phone</label>
-                <span>Phone</span>
-              </div>
-              <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
-                <label for="">Message</label>
-                <span>Message</span>
-              </div>
-              <input type="submit" value="Send" class="btn" />
-            </form>
+            </div>
+          </div>
+          <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+            <div class="mt-4 w-100 aos-item__inner">
+              <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+            </div>
           </div>
         </div>
+
+        <!-- Contact Form Block -->
+        <div class="col-xl-6">
+          <h2 class="pb-4">Leave a message</h2>
+          <div class="row g-4">
+            <div class="col-6 mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Fname</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
+            </div>
+            <div class="col-6 mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Lname</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+1234567890">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Country</label>
+            <select class="form-select" aria-label="Default select example">
+              <option value="1">USA</option>
+              <option value="2">Non USA</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-dark">Send Message</button>
+        </div>
       </div>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-   
-    
-</body>
-</html>
+    </div>
+  </main>
+
+
+<?php
+    include './footer.php';
+?>

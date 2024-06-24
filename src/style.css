@@ -44,3 +44,12 @@ a{
   position: absolute;
 }
 
+
+.pricing-card{
+  background-color: aquamarine;
+}
+
+/**/
+.form-check-inline{
+  display: inline-block;
+}

@@ -4,7 +4,7 @@
 
 <head>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="../main.css">
 
   <!-- Bootstrap ICON -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <title>Esai Photography</title>
 </head>
