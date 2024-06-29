@@ -14,7 +14,7 @@
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./home.php" aria-expanded="false">
+              <a class="sidebar-link" href="./dashboard.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard selected"></i>
                 </span>
@@ -72,7 +72,7 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./register.php" aria-expanded="false">
                 <span>
-                  <i class="ti ti-user-check"></i>
+                  <i class="ti ti-user-plus"></i>
                 </span>
                 <span class="hide-menu">Add User</span>
               </a>
@@ -80,7 +80,7 @@
             <li class="sidebar-item">
               <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-user-plus"></i>
+                  <i class="ti ti-user-check"></i>
                 </span>
                 <span class="hide-menu">User Details</span>
               </a>
