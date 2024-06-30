@@ -1,31 +1,31 @@
 <?php
 $fnctn_msg = "";
 
-$con = new mysqli('Localhost', 'root', '', 'malcolmlismore_db');
-
-if ($con->connect_error) {
-    die("Connection Failed");
-}
+require_once 'DBcon.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST["name"];
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $birthday = $_POST["birthday"];
     $gender = "";
 
     if ($_POST["gender"] == 'male') {
         $gender = "Male";
-    } else {
+    } elseif($_POST["gender"] == 'female') {
         $gender = "Female";
     }
+    else{
+        $gender = "Other";
+    }
+
+    $email = $_POST["email"];
+    $pnumber = $_POST["pnumber"];
 
     $username = $_POST["username"];
     $password = $_POST["password"];
 
 
-    if (!$password == $_POST["confirm_password"]) {
-        $fnctn_msg = "success";
-    }
-
-    $qry = "INSERT INTO tbl_admin(name, gender, username, password) VALUES('$name', '$gender', '$username', '$password')";
+    $qry = "INSERT INTO tbl_admin(fname, lname, birthday, gender, email, pnumber, username, password) VALUES('$fname', '$lname', '$birthday', '$gender', '$email', '$pnumber', '$username', '$password')";
 
     $result = $con->query($qry);
 
@@ -49,52 +49,46 @@ require_once 'headerDB.php';
             <div class="card card-registration">
                 <div class="card-body p-4 p-md-5">
                     <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
-                    <form>
-
+                    <form action="" method="post">
                         <div class="row">
                             <div class="col-md-6 mb-4">
-
                                 <div class="form-outline">
                                     <label class="form-label" for="firstName">First Name</label>
-                                    <input type="text" id="firstName" class="form-control form-control-lg" />
+                                    <input type="text" name="fname" class="form-control form-control-lg" required />
                                 </div>
-
                             </div>
                             <div class="col-md-6 mb-4">
-
                                 <div class="form-outline">
                                     <label class="form-label" for="lastName">Last Name</label>
-                                    <input type="text" id="lastName" class="form-control form-control-lg" />
+                                    <input type="text" name="lname" class="form-control form-control-lg" required/>
                                 </div>
-
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-md-6 mb-4 d-flex align-items-center">
 
                                 <div class="form-outline datepicker w-100">
                                     <label for="birthdayDate" class="form-label">Birthday</label>
-                                    <input type="date" class="form-control form-control-lg" id="birthdayDate" />
+                                    <input type="date" name="birthday" class="form-control form-control-lg" required />
                                 </div>
 
                             </div>
                             <div class="col-md-6 mb-4">
 
-                                <h6 class="mb-2 pb-1">Gender: </h6>
+                                <h6 class="mb-3 mt-2">Gender: </h6>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="option1" checked />
-                                    <label class="form-check-label" for="femaleGender">Female</label>
+                                    <input class="form-check-input" type="radio" name="gender"  value="male" checked required/>
+                                    <label class="form-check-label" for="femaleGender">Male</label>
                                 </div>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="option2" />
-                                    <label class="form-check-label" for="maleGender">Male</label>
+                                    <input class="form-check-input" type="radio" name="gender"  value="female"/>
+                                    <label class="form-check-label" for="maleGender">Female</label>
                                 </div>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender" value="option3" />
+                                    <input class="form-check-input" type="radio" name="gender"  value="other"/>
                                     <label class="form-check-label" for="otherGender">Other</label>
                                 </div>
 
@@ -106,52 +100,50 @@ require_once 'headerDB.php';
 
                                 <div class="form-outline">
                                     <label class="form-label" for="emailAddress">Email</label>
-                                    <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                                    <input type="email" name="email" class="form-control form-control-lg" required/>
                                 </div>
-
                             </div>
                             <div class="col-md-6 mb-4 pb-2">
-
                                 <div class="form-outline">
                                     <label class="form-label" for="phoneNumber">Phone Number</label>
-                                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                    <input type="tel" name="pnumber" class="form-control form-control-lg" required/>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6 mb-4 pb-2">
-
                                 <div class="form-outline">
-                                    <label class="form-label" for="phoneNumber">Password</label>
-                                    <input type="password" id="phoneNumber" class="form-control form-control-lg" />
+                                    <label class="form-label" for="phoneNumber">Username</label>
+                                    <input type="text" name="username" class="form-control form-control-lg" required/>
                                 </div>
                             </div>
 
                             <div class="col-md-6 mb-4 pb-2">
-
                                 <div class="form-outline">
-                                    <label class="form-label" for="phoneNumber">Confirm Password</label>
-                                    <input type="password" id="phoneNumber" class="form-control form-control-lg" />
+                                    <label class="form-label" for="phoneNumber">Password</label>
+                                    <input type="password" name="password" class="form-control form-control-lg" required/>
                                 </div>
                             </div>
                         </div>
 
-
-                        <div class="mt-2">
-                            <input  class="btn btn-primary btn-lg btn-block" type="submit" value="Register" />
+                        <div class="container"> 
+                             <div class="row"> 
+                                <div class="col-md-12">  </div> 
+                                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Register" />
+                                </div>
+                            </div>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
 <?php
 include './footerDB.php';
 ?>
+</div>
+</div>
 </div>
 </body>
 

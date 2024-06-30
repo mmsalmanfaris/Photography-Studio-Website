@@ -74,15 +74,15 @@
                 <span>
                   <i class="ti ti-user-plus"></i>
                 </span>
-                <span class="hide-menu">Add User</span>
+                <span class="hide-menu">Add Admin</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+              <a class="sidebar-link" href="./admindetailsDB.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-check"></i>
                 </span>
-                <span class="hide-menu">User Details</span>
+                <span class="hide-menu">Admin Details</span>
               </a>
             </li>
             <li class="sidebar-item">
