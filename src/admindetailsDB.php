@@ -42,7 +42,7 @@
                                 <td><?php echo $row['password'] ?></td>;
                                 <td>
                                     <a href="" class="btn btn-primary me-2"><i class="ti ti-edit"></i></a>
-                                    <a href="" class="btn btn-danger"><i class="ti ti-trash"></i></a>
+                                    <a href="deleteFun.php?id=<?php echo $row['admin_id']?>" class="btn btn-danger"><i class="ti ti-trash"></i></a>
                                 </td>
                             </tr>
                             <?php
