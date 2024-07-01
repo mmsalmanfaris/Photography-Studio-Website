@@ -9,44 +9,9 @@
       <div class="row g-5">
         <!-- Contact Information Block -->
         <div class="col-xl-6">
-          <div class="row row-cols-md-2 g-4">
-            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="aos-item__inner">
-                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
-                  <div class="d-flex justify-content-start">
-                    <i class="bi bi-messenger"></i>
-                    <span class="h5">Email</span>
-                  </div>
-                  <span>order@malcolm.com</span>
-                </div>
-              </div>
-            </div>
-            <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
-              <div class="aos-item__inner">
-                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
-                  <div class="d-flex justify-content-start">
-                    <i class="bi bi-call h3 pe-2"></i>
-                    <span class="h5">Phone</span>
-                  </div>
-                  <span>+0123456789, +9876543210</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="aos-item__inner">
-              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
-                <div class="d-flex justify-content-start">
-                  <i class="fa-solid fa-location-pin h3 pe-2"></i>
-                  <span class="h5">Office location</span>
-                </div>
-                <span>#007, Street name, Bigtown BG23 4YZ, England</span>
-              </div>
-            </div>
-          </div>
-          <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
-            <div class="mt-4 w-100 aos-item__inner">
-              <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+          <div class=" mt-2 aos-item" data-aos="fade-up" data-aos-delay="800">
+            <div class="w-100 h-100 aos-item__inner">
+              <iframe class="hvr-shadow" width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
             </div>
           </div>
         </div>
@@ -66,24 +31,32 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Phone</label>
-            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+1234567890">
+            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="94 76 175 4242">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Country</label>
+            <label for="exampleFormControlInput1" class="form-label">Province</label>
             <select class="form-select" aria-label="Default select example">
-              <option value="1">USA</option>
-              <option value="2">Non USA</option>
+              <option value="1">Central</option>
+              <option value="2">Eastern</option>
+              <option value="3">North Central</option>
+              <option value="4">Souther USA</option>
+              <option value="5">Nothern</option>
+              <option value="6">North Western</option>
+              <option value="7">Sabragamuwa</option>
+              <option value="8">Southern</option>
+              <option value="9">Uva</option>
+              <option value="10">Wester</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <button type="button" class="btn btn-dark">Send Message</button>
+          <button type="button" class="btn btn-primary">Send Message</button>
         </div>
       </div>
     </div>

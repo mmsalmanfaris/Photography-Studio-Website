@@ -42,41 +42,43 @@
     </body>
 </html>
 
-<?php
-    if($fnctn_msg == "success"){
-        echo"
-            <script>
-                const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.onmouseenter = Swal.stopTimer;
-                    toast.onmouseleave = Swal.resumeTimer;
-                }
-                });
-                Toast.fire({
-                icon: 'success',
-                title: 'Registered successfully'
-                });
-             </script>";
-    };
-?> 
-
     <?php
-        if(($code = $_GET['msg']) == null){
-            die;
+
+        if(isset($_GET['msg'])){
+            $msg = $_GET['msg'];
+            if( $msg == 123){
+                echo"
+                <script>
+                Swal.fire({
+                title: 'Good job!',
+                text: 'You clicked the button!',
+                icon: 'success'
+                });
+                </script>";
+            }
+
+            if($msg == "success"){
+                echo"
+                    <script>
+                        const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.onmouseenter = Swal.stopTimer;
+                            toast.onmouseleave = Swal.resumeTimer;
+                        }
+                        });
+                        Toast.fire({
+                        icon: 'success',
+                        title: 'Registered successfully'
+                        });
+                     </script>";
+            }
         }
-        elseif(($code = $_GET['msg']) == 123){
-            echo"
-            <script>
-            Swal.fire({
-            title: 'Good job!',
-            text: 'You clicked the button!',
-            icon: 'success'
-            });
-            </script>";
-        }
+
+       
+        
     ?>

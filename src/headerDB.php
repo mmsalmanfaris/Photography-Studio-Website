@@ -19,5 +19,5 @@
         <!-- Sidebar Start -->
         <?php
         require_once'DBcon.php';
-        require_once 'menuDB.php';
+        require_once'menuDB.php';
         ?>

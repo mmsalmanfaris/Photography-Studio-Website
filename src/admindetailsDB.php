@@ -1,6 +1,10 @@
 <?php 
+    //Header
     require_once'headerDB.php';
+    require_once'menuDB.php';
 ?>
+
+<!--Admin Details Section - table-->
 
 <div class="container">
     <div class="row py-5">
@@ -41,7 +45,7 @@
                                 <td><?php echo $row['username']?></td>;
                                 <td><?php echo $row['password'] ?></td>;
                                 <td>
-                                    <a href="" class="btn btn-primary me-2"><i class="ti ti-edit"></i></a>
+                                    <a href="editFun.php?id=<?php echo $row['admin_id']?>" class="btn btn-primary me-2"><i class="ti ti-edit"></i></a>
                                     <a href="deleteFun.php?id=<?php echo $row['admin_id']?>" class="btn btn-danger"><i class="ti ti-trash"></i></a>
                                 </td>
                             </tr>
@@ -54,6 +58,8 @@
         </div>
     </div>
 </div>
+
+
 
 <?php 
     require_once'footerDB.php';
