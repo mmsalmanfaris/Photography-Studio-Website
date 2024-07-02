@@ -21,64 +21,61 @@
         <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
 
         <script>
-        $(document).ready(function() {
-            let table = new DataTable('#myTable', {
-                layout: {
-                    topStart: {
-                        buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+            $(document).ready(function() {
+                let table = new DataTable('#myTable', {
+                    layout: {
+                        topStart: {
+                            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+                        }
                     }
-                }
+                });
             });
-        });
         </script>
 
 
-    <!--Data table Export Buttons-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/v/bs5/jszip-3.10.1/b-3.0.2/b-html5-3.0.2/b-print-3.0.2/datatables.min.js"></script>
+        <!--Data table Export Buttons-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/v/bs5/jszip-3.10.1/b-3.0.2/b-html5-3.0.2/b-print-3.0.2/datatables.min.js"></script>
 
 
-    </body>
-</html>
-
-    <?php
-
-        if(isset($_GET['msg'])){
-            $msg = $_GET['msg'];
-            if( $msg == 123){
-                echo"
-                <script>
-                Swal.fire({
-                title: 'Good job!',
-                text: 'You clicked the button!',
-                icon: 'success'
-                });
-                </script>";
-            }
-
-            if($msg == "success"){
-                echo"
+        </body>
+        <?php
+            // if (isset(msg == "success")) {
+            //     $msg = $_GET['msg'];
+                if ($msg == 123) {
+                    echo "
                     <script>
-                        const Toast = Swal.mixin({
-                        toast: true,
-                        position: 'top-end',
-                        showConfirmButton: false,
-                        timer: 3000,
-                        timerProgressBar: true,
-                        didOpen: (toast) => {
-                            toast.onmouseenter = Swal.stopTimer;
-                            toast.onmouseleave = Swal.resumeTimer;
-                        }
-                        });
-                        Toast.fire({
-                        icon: 'success',
-                        title: 'Registered successfully'
-                        });
-                     </script>";
-            }
-        }
+                    Swal.fire({
+                    title: 'Good job!',
+                    text: 'You clicked the button!',
+                    icon: 'success'
+                    });
+                    </script>";
+                }
 
-       
+                if ($msg == "success") {
+                    echo "
+                        <script>
+                            const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.onmouseenter = Swal.stopTimer;
+                                toast.onmouseleave = Swal.resumeTimer;
+                            }
+                            });
+                            Toast.fire({
+                            icon: 'success',
+                            title: 'Registered successfully'
+                            });
+                        </script>";
+                }
+            // }
+        ?>
+        </html>
+
         
-    ?>

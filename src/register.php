@@ -1,7 +1,8 @@
 <?php
-$fnctn_msg = "";
 
-require_once 'DBcon.php';
+require_once 'headerDB.php';
+
+$fmsg = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $fname = $_POST["fname"];
@@ -33,14 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         die("Result Error");
     }
 
-    $fnctn_msg = "success";
+    $msg = "success";
 }
 ?>
 
-
-<?php
-require_once 'headerDB.php';
-?>
 
 <!-- <div class="row"> -->
 <div class="container py-5 h-100">
@@ -145,6 +142,3 @@ include './footerDB.php';
 </div>
 </div>
 </div>
-</body>
-
-</html>

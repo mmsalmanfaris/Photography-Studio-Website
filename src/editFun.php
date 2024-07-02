@@ -1,6 +1,8 @@
 <?php 
     require_once'headerDB.php';
+?>
 
+<?php
     //Update Function
     if($_SERVER['REQUEST_METHOD'] == "POST"){
 
@@ -22,8 +24,8 @@
             die("Admin Details Update Failed");
         }
     
-            $msg = "success";
-            header("Location: admindetailsDB.php");
+        $msg = "success";
+        header("Location: admindetailsDB.php");
             
     }
     else{
@@ -36,8 +38,8 @@
             $row = $res -> fetch_assoc();
         }
     }
-    
-?>  
+?>
+ 
     <div class="container py-5 h-100">
         <div class="row justify-content-center align-items-center h-100">
             <div class="col-12 col-lg-9 col-xl-7">
