@@ -151,25 +151,24 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md">
+      <div class="row mb-5">
+      <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top rounded-top" src="../img/slide/slide1.jpg">
+            <img class="card-img-top rounded-top" src="./assets/img/Package/preweddingshoot.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
-              <h5 class="fw-bold">Basic</h5>
-              <div>
-                For Wedding Shoot
-              </div>
-              <div class="display-3 fw-bold mt-4 text-primary">
-                $50
-              </div>
-              <div class="fw-bold">
-                01 Hour
+              <h5 class="fw-bold">Pre Wedding Shoot</h5>
+              <div class="d-flex justify-content-center">
+                <div class="display-3 fw-bold text-primary mt-2">
+                    $60
+                </div>
+                <div class=" mt-5">
+                    / 01 Hour
+                </div>
               </div>
               <ul class="list-unstyled mt-4">
-                <li class="mb-3">up to 40 photos</li>
-                <li class="mb-3">no retouched photos</li>
-                <li class="mb-3">no stylist assistance</li>
+                <li class="mb-3">Up to 40 photos</li>
+                <li class="mb-3">Editing & Color Grading</li>
+                <li class="mb-3">Stylist Assistance</li>
               </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
             </div>
           </div>
@@ -177,45 +176,43 @@
         
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="../img/slide/slide3.jpg">
+            <img class="card-img-top" src="./assets/img/Package/sports.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
-              <h5 class="fw-bold">Basic</h5>
-              <div>
-                For Bridal Shoot
-              </div>
-              <div class="display-3 fw-bold mt-4 text-primary">
-                $40
-              </div>
-              <div class="fw-bold">
-                01 Hour
+              <h5 class="fw-bold">Sports Photo Shoot</h5>
+              <div class="d-flex justify-content-center">
+                <div class="display-3 fw-bold text-primary mt-2">
+                    $100
+                </div>
+                <div class=" mt-5">
+                    / Full Time
+                </div>
               </div>
               <ul class="list-unstyled mt-4">
-                <li class="mb-3">up to 30 photos</li>
-                <li class="mb-3">no retouched photos</li>
-                <li class="mb-3">no stylist assistance</li>
-              </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="packages.php">Book Appointment</a>
+                <li class="mb-3">Up to 150 photos</li>
+                <li class="mb-3">Editing & Color Grading</li>
+                <li class="mb-3">Stylist Assistance</li>
+              </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
             </div>
           </div>
         </div>
 
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="../img/slide/slide2.jpg">
+            <img class="card-img-top" src="./assets/img/Package/meeting.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
-              <h5 class="fw-bold">Basic</h5>
-              <div>
-                For Birthday Shoot
-              </div>
-              <div class="display-3 fw-bold mt-4 text-primary">
-                $30
-              </div>
-              <div class="fw-bold">
-                01 Hour
+              <h5 class="fw-bold">Industrial Photo Shoot</h5>
+              <div class="d-flex justify-content-center">
+                <div class="display-3 fw-bold text-primary mt-2">
+                    $40
+                </div>
+                <div class=" mt-5">
+                    / 01 Hour
+                </div>
               </div>
               <ul class="list-unstyled mt-4">
-                <li class="mb-3">up to 20 photos</li>
-                <li class="mb-3">no retouched photos</li>
-                <li class="mb-3">no stylist assistance</li>
+                <li class="mb-3">Up to 30 photos</li>
+                <li class="mb-3">Editing & Color Grading</li>
+                <li class="mb-3">Stylist Assistance</li>
               </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
             </div>
           </div>
