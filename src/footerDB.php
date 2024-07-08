@@ -43,18 +43,43 @@
         <?php
             // if (isset(msg == "success")) {
             //     $msg = $_GET['msg'];
-                if ($msg == 123) {
+                if ($msg == "adminUpdated") {
                     echo "
                     <script>
                     Swal.fire({
-                    title: 'Good job!',
-                    text: 'You clicked the button!',
+                    title: 'Update Successfull!',
+                    text: 'Data Updated to Database!',
                     icon: 'success'
                     });
                     </script>";
-                }
 
-                if ($msg == "success") {
+                    header("refresh: 2; url=admindetailsDB.php");
+                }
+                elseif($msg == "inquiryUpdated") {
+                    echo "
+                    <script>
+                    Swal.fire({
+                    title: 'Update Successfull!',
+                    text: 'Data Updated to Database!',
+                    icon: 'success'
+                    });
+                    </script>";
+
+                    header("refresh: 2; url=inquiryDB.php");
+                }
+                elseif($msg == "Deleted") {
+                    echo "
+                    <script>
+                    Swal.fire({
+                    title: 'Delete Successfull!',
+                    text: 'Data Deleted from Database!',
+                    icon: 'warning'
+                    });
+                    </script>";
+
+                    header("refresh: 1; url=admindetailsDB.php");
+                }
+                if ($msg == "Succsss") {
                     echo "
                         <script>
                             const Toast = Swal.mixin({
@@ -70,7 +95,7 @@
                             });
                             Toast.fire({
                             icon: 'success',
-                            title: 'Registered successfully'
+                            title: 'Updated successfully'
                             });
                         </script>";
                 }

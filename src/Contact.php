@@ -17,16 +17,48 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   if (!$res) {
     die("Inquiry Submission Unsuccessfull");
-  }
-  else{
+  } else {
     $fnctn_msg = "success";
   }
 }
 
 ?>
 
+<section>
+  <div class="container">
+    <div style="height: 100px;"> </div>
+    <div class="row justify-content-around">
+      <div class="card text-white text-center bg-primary me-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <img class="mt-2" src="./assets/icon/phonecall.png" alt="">
+          <h5 class="card-title mt-4">+94 76 175 4242</h5>
+        </div>
+      </div>
+      <div class="card text-white text-center bg-primary mx-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <img class="mt-2" src="./assets/icon/email.png" alt="">
+          <h5 class="card-title mt-4">info@malcom.com</h5>
+        </div>
+      </div>
+      <div class="card text-white text-center bg-primary mx-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <img class="mt-2" src="./assets/icon/location.png" alt="">
+          <h5 class="card-title mt-4">Northwest Scotland</h5>
+        </div>
+      </div>
+      <div class="card text-white text-center bg-primary ms-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <img class="mt-2" src="./assets/icon/facebook.png" alt="">
+          <h5 class="card-title mt-4">Facebook Page</h5>
+        </div>
+      </div>
+    </div>
 
-<main>
+  </div>
+</section>
+
+
+<section>
   <div class="container py-5 my-5">
     <div class="row g-5">
       <!-- Contact Information Block -->
@@ -63,16 +95,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Province</label>
             <select class="form-select" aria-label="Default select example" name="province" value="province">
-              <option value="1">Central</option>
-              <option value="2">Eastern</option>
-              <option value="3">North Central</option>
-              <option value="4">Souther USA</option>
-              <option value="5">Nothern</option>
-              <option value="6">North Western</option>
-              <option value="7">Sabragamuwa</option>
-              <option value="8">Southern</option>
-              <option value="9">Uva</option>
-              <option value="10">Wester</option>
+              <option value="Central">Central</option>
+              <option value="Eastern">Eastern</option>
+              <option value="North Central">North Central</option>
+              <option value="Souther USA">Souther USA</option>
+              <option value="Nothern">Nothern</option>
+              <option value="North Western">North Western</option>
+              <option value="Sabragamuwa">Sabragamuwa</option>
+              <option value="Southern">Southern</option>
+              <option value="Uva">Uva</option>
+              <option value="Wester">Wester</option>
             </select>
           </div>
           <div class="mb-3">
@@ -84,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </div>
   </div>
-</main>
+</section>
 
 
 <?php

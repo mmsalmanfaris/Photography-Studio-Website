@@ -11,6 +11,8 @@ require_once'DBcon.php';
         die("Not Deleted");
     }
     else{
-        header("Location: admindetailsDB.php?msg==123");
+        $msg = "Deleted";
     }
+
+    require_once'footerDB.php';
 ?>

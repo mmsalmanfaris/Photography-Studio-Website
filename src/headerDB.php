@@ -20,4 +20,6 @@
         <?php
             require_once'DBcon.php';
             require_once'menuDB.php';
+            
+            $msg = "";
         ?>

@@ -141,11 +141,14 @@
     
   <section class="py-5">
     <div class="container">
-      <div class="row justify-content-center text-center mb-2 mb-lg-4">
-        <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+      <div class="row justify-content  mb-2 mb-lg-4">
+        <div class="col-12 col-lg-8 col-xxl-7">
           <span class="text-muted">Pricing Table</span>
           <h2 class="display-5 fw-bold">Our Pricing</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem veniam eveniet aperiam suscipit.</p>
+          <div class="d-flex justify-content-between align-items-center"> 
+                  <p class="lead">Discover our updated pakage list for your event.</p>
+                  <a href="packages.php" class="btn btn-primary btn-lg">View Packages</a>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -155,63 +158,65 @@
             <div class="card-body bg-danger rounded-bottom py-5">
               <h5 class="fw-bold">Basic</h5>
               <div>
-                For Freelancers
+                For Wedding Shoot
               </div>
               <div class="display-3 fw-bold mt-4 text-primary">
-                $19
+                $50
               </div>
               <div class="fw-bold">
-                Monthly
+                01 Hour
               </div>
               <ul class="list-unstyled mt-4">
-                <li class="mb-3">1 Domain</li>
-                <li class="mb-3">1,000 Visitors</li>
-                <li class="mb-3">24/7 Support</li>
-              </ul><a class="btn btn-primary btn-lg mt-4" href="">Learn more</a>
+                <li class="mb-3">up to 40 photos</li>
+                <li class="mb-3">no retouched photos</li>
+                <li class="mb-3">no stylist assistance</li>
+              </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
             </div>
           </div>
         </div>
-        <div class="col-md">
-          <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="../img/slide/slide2.jpg">
-            <div class="card-body bg-danger rounded-bottom py-5">
-              <h5 class="fw-bold">Standard</h5>
-              <div>
-                For Teams
-              </div>
-              <div class="display-3 fw-bold mt-4 text-primary">
-                $26
-              </div>
-              <div class="fw-bold">
-                Monthly
-              </div>
-              <ul class="list-unstyled mt-4">
-                <li class="mb-3">10 Domains</li>
-                <li class="mb-3">10,000 Visitors</li>
-                <li class="mb-3">24/7 Support</li>
-              </ul><a class="btn btn-primary btn-lg mt-4" href="">Learn more</a>
-            </div>
-          </div>
-        </div>
+        
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
             <img class="card-img-top" src="../img/slide/slide3.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
-              <h5 class="fw-bold">Pro</h5>
+              <h5 class="fw-bold">Basic</h5>
               <div>
-                For Companies
+                For Bridal Shoot
               </div>
               <div class="display-3 fw-bold mt-4 text-primary">
-                $34
+                $40
               </div>
               <div class="fw-bold">
-                Monthly
+                01 Hour
               </div>
               <ul class="list-unstyled mt-4">
-                <li class="mb-3">Unlimited Domains</li>
-                <li class="mb-3">Unlimited Visitors</li>
-                <li class="mb-3">24/7 Support</li>
-              </ul><a class="btn btn-primary btn-lg mt-4" href="">Learn more</a>
+                <li class="mb-3">up to 30 photos</li>
+                <li class="mb-3">no retouched photos</li>
+                <li class="mb-3">no stylist assistance</li>
+              </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="packages.php">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card text-center border-0 mb-3 mb-md-0">
+            <img class="card-img-top" src="../img/slide/slide2.jpg">
+            <div class="card-body bg-danger rounded-bottom py-5">
+              <h5 class="fw-bold">Basic</h5>
+              <div>
+                For Birthday Shoot
+              </div>
+              <div class="display-3 fw-bold mt-4 text-primary">
+                $30
+              </div>
+              <div class="fw-bold">
+                01 Hour
+              </div>
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">up to 20 photos</li>
+                <li class="mb-3">no retouched photos</li>
+                <li class="mb-3">no stylist assistance</li>
+              </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
             </div>
           </div>
         </div>

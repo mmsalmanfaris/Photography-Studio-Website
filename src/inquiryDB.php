@@ -51,14 +51,14 @@
                                                 echo 'bg-secondary';
                                                 break;
                                             default:
-                                                echo 'bg-danger'; // For unknown statuses
+                                                echo 'bg-danger';
                                         }
                                     ?>">
                                         <?php echo $row['status'] ?>
                                     </span>
                                 </td>
                                 <td>
-                                    <a href="" class="btn btn-primary me-2"><i class="ti ti-edit"></i></a>
+                                    <a href="editInquiry.php?id=<?php echo $row['inquiry_id'] ?>" class="btn btn-primary me-2"><i class="ti ti-edit"></i></a>
                                 </td>
                             </tr>
                             <?php
