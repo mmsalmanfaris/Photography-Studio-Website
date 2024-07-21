@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top rounded-top" src="./assets/img/Package/preweddingshoot.jpg">
+            <img class="card-img-top rounded-top" src="./assets/img/PackagePage/preweddingshoot.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
               <h5 class="fw-bold">Pre Wedding Shoot</h5>
               <div class="d-flex justify-content-center">
@@ -36,7 +36,7 @@
         
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="../img/slide/slide3.jpg">
+            <img class="card-img-top" src="./assets/img/slide/slide3.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
               <h5 class="fw-bold">Bridal Photo Shoot</h5>
               <div class="d-flex justify-content-center">
@@ -58,7 +58,7 @@
 
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="./assets/img/Package/weddingday.jpg">
+            <img class="card-img-top" src="./assets/img/PackagePage/weddingday.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
               <h5 class="fw-bold">Engagement Photo Shoot</h5>
               <div class="d-flex justify-content-center">
@@ -93,7 +93,7 @@
       <div class="row mb-5">
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top rounded-top" src="./assets/img/Package/djparty.jpg">
+            <img class="card-img-top rounded-top" src="./assets/img/PackagePage/djparty.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
               <h5 class="fw-bold">DJ Party Photo Shoot </h5>
               <div class="d-flex justify-content-center">
@@ -115,7 +115,7 @@
         
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="./assets/img/Package/sports.jpg">
+            <img class="card-img-top" src="./assets/img/PackagePage/sports.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
               <h5 class="fw-bold">Sports Photo Shoot</h5>
               <div class="d-flex justify-content-center">
@@ -137,7 +137,7 @@
 
         <div class="col-md">
           <div class="card text-center border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="./assets/img/Package/meeting.jpg">
+            <img class="card-img-top" src="./assets/img/PackagePage/meeting.jpg">
             <div class="card-body bg-danger rounded-bottom py-5">
               <h5 class="fw-bold">Industrial Photo Shoot</h5>
               <div class="d-flex justify-content-center">

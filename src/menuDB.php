@@ -42,13 +42,22 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+              <a class="sidebar-link" href="./addpackageDB.php" aria-expanded="false">
+                <span>
+                  <i class="ti ti-new-section"></i>
+                </span>
+                <span class="hide-menu">Add Package</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./packageDB.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-dollar"></i>
                 </span>
-                <span class="hide-menu">Pricing</span>
+                <span class="hide-menu">Package Details</span>
               </a>
             </li>
+            <hr>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./inquiryDB.php" aria-expanded="false">
                 <span>

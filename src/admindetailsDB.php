@@ -1,14 +1,13 @@
 <?php 
     //Header
     require_once'headerDB.php';
-    require_once'menuDB.php';
 ?>
 
 <!--Admin Details Section - table-->
 
 <div class="container">
     <div class="row py-5">
-        <div class="col-lg-12 h-100 justify-content-center align-items-center py-5">
+        <div class="col-12 py-5">
             <table class="table" id="myTable">
                 <thead>
                     <tr>

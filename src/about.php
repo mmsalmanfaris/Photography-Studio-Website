@@ -13,7 +13,7 @@ require_once 'header.php';
                 <div class="row justify-content-xl-center">
                     <div class="col-12 col-xl-11">
                         <h2 class="mb-3">Who Are We?</h2>
-                        <p class="lead fs-4 text-secondary mb-3">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
+                        <p class="lead fs-4 text-secondary mb-3 t">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
                         <p class="mb-5">We are a fast-growing company, but we have never lost sight of our core values. We believe in collaboration, innovation, and customer satisfaction. We are always looking for new ways to improve our products and services.</p>
                         <div class="row gy-4 gy-md-0 gx-xxl-5X">
                             <div class="col-12 col-md-8 text-white bg-primary rounded-3 py-4 px-4  mb-4">
