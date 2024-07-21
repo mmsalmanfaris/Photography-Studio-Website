@@ -40,10 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 <!-- <div class="row"> -->
-<div class="container py-5 h-100">
-    <div class="row justify-content-center align-items-center h-100">
+<div class="container py-5">
+    <div class="row justify-content-center pt-5">
         <div class="col-12 col-lg-9 col-xl-7">
-            <div class="card card-registration">
+            <div class="card">
                 <div class="card-body p-4 p-md-5">
                     <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
                     <form action="" method="post">
@@ -140,5 +140,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 include './footerDB.php';
 ?>
 </div>
-</div>
-</div>
+

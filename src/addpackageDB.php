@@ -1,10 +1,80 @@
 <?php
     require_once 'headerDB.php';
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $packageName = $_POST["packageName"];
+        $price = $_POST["price"];
+        $shootDuration = $_POST["shootDuration"];
+        $count = $_POST["count"];
+        $editing = $_POST["editing"];
+        $assistant = $_POST["assistant"];
+        $image = $_FILES["image"]["name"];
+        $tmp_name = $_FILES["image"]["tmp_name"];
+        $path = "assets/img/PackagePage/".$image;
+        move_uploaded_file($tmp_name, $path);
+
+        $qry = "INSERT INTO tbl_package(name, price, duration, photo_count, editing, assistant, image) VALUES('$packageName', '$price', '$shootDuration', '$count', '$editing', '$assistant', '$path')";
+
+        $result = $con -> query($qry);
+
+        if(!$result){
+            die("Query Error!");
+        }
+        else{
+            $msg = "success";
+        }
+    }
 ?>
 
 
-
-
+<div class="container py-5">
+    <div class="row justify-content-center pt-5">
+        <div class="col-12 col-lg-9 col-xl-7">
+            <div class="card">
+                <div class="card-body p-4 p-md-5">
+                    <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Add Package</h3>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="packageName" class="form-label">Package Name</label>
+                            <input type="text" name="packageName" class="form-control form-control-lg" id="packageName" required>
+                        </div>
+                        <div class="row">
+                        <div class=" col-6 mb-3">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="text" name="price" class="form-control form-control-lg" id="price" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="shootDuration" class="form-label">Shoot Duration</label>
+                            <input type="text" name="shootDuration" class="form-control form-control-lg" id="shootDuration" required>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="details" class="form-label">Photo Count</label>
+                            <input type="number"   name="details" class="form-control form-control-lg" id="details" required></input>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="details" class="form-label">Editing</label>
+                            <input type="number"   name="details" class="form-control form-control-lg" id="details" required></input>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="image" class="form-label">Assistant</label>
+                            <input type="text" name="image" class="form-control form-control-lg" id="image" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="image" class="form-label">Image</label>
+                            <input type="file" name="image" class="form-control form-control-lg" id="image" required>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary w-100 my-2 mt-4">Add Package</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?php
     require_once 'footerDB.php';
 ?>

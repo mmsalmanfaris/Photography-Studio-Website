@@ -41,6 +41,7 @@
                 <span class="hide-menu">Gallery</span>
               </a>
             </li>
+            <hr>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./addpackageDB.php" aria-expanded="false">
                 <span>
@@ -104,7 +105,7 @@
       <!-- End Sidebar scroll-->
     </aside>
 
-    <div class="body-wrapper">
+    <div class="body-wrapper ">
       <!--  Header Start -->
       <header class="app-header">
         <nav class="navbar navbar-expand-lg navbar-light">
