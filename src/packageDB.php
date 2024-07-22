@@ -16,7 +16,9 @@ require_once 'headerDB.php';
                         <th>Package Name</th>
                         <th>Price</th>
                         <th>Shoot Duration</th>
-                        <th>Details</th>
+                        <th>Photo Count</th>
+                        <th>Editing</th>
+                        <th>Assistant</th>
                         <th>Image</th>
                         <th>Modification</th>
                     </tr>
@@ -31,11 +33,13 @@ require_once 'headerDB.php';
                         while ($row = $res->fetch_assoc()) {
                             ?>
                             <tr>
-                                <td><?php echo $row['package_name'] ?></td>;
+                                <td><?php echo $row['name'] ?></td>;
                                 <td><?php echo $row['price'] ?></td>;
-                                <td><?php echo $row['shoot_duration'] ?></td>;
-                                <td><?php echo $row['details'] ?></td>;
-                                <td><img src="<?php echo $row['image'] ?>"width="100" height="100"></td>;
+                                <td><?php echo $row['duration'] ?></td>;
+                                <td><?php echo $row['photo_count'] ?></td>;
+                                <td><?php echo $row['editing'] ?></td>;
+                                <td><?php echo $row['assistant'] ?></td>;
+                                <td><img src="./assets/img/PackagePage/<?php echo $row['image'] ?>"width="100" height="100"></td>;
                                 <td>
                                     <a href="editPackage.php?id=<?php echo $row['package_id'] ?>" class="btn btn-primary me-2"><i
                                             class="ti ti-edit"></i></a>

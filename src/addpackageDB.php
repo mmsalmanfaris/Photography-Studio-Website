@@ -13,7 +13,7 @@
         $path = "assets/img/PackagePage/".$image;
         move_uploaded_file($tmp_name, $path);
 
-        $qry = "INSERT INTO tbl_package(name, price, duration, photo_count, editing, assistant, image) VALUES('$packageName', '$price', '$shootDuration', '$count', '$editing', '$assistant', '$path')";
+        $qry = "INSERT INTO tbl_package(name, price, duration, photo_count, editing, assistant, image) VALUES('$packageName', '$price', '$shootDuration', '$count', '$editing', '$assistant', '$image')";
 
         $result = $con -> query($qry);
 
@@ -51,17 +51,17 @@
                         <div class="row">
                         <div class="col-6 mb-3">
                             <label for="details" class="form-label">Photo Count</label>
-                            <input type="number"   name="details" class="form-control form-control-lg" id="details" required></input>
+                            <input type="number"   name="count" class="form-control form-control-lg" id="details" required></input>
                         </div>
                         <div class="col-6 mb-3">
                             <label for="details" class="form-label">Editing</label>
-                            <input type="number"   name="details" class="form-control form-control-lg" id="details" required></input>
+                            <input type="text"   name="editing" class="form-control form-control-lg" id="details" required></input>
                         </div>
                         </div>
                         <div class="row">
                         <div class="col-6 mb-3">
                             <label for="image" class="form-label">Assistant</label>
-                            <input type="text" name="image" class="form-control form-control-lg" id="image" required>
+                            <input type="text" name="assistant" class="form-control form-control-lg" id="image" required>
                         </div>
                         <div class="col-6 mb-3">
                             <label for="image" class="form-label">Image</label>
