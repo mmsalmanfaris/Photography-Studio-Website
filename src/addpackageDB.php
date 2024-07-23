@@ -15,6 +15,7 @@
 
         $qry = "INSERT INTO tbl_package(name, price, duration, photo_count, editing, assistant, image) VALUES('$packageName', '$price', '$shootDuration', '$count', '$editing', '$assistant', '$image')";
 
+
         $result = $con -> query($qry);
 
         if(!$result){
