@@ -8,12 +8,13 @@
         $count = $_POST["count"];
         $editing = $_POST["editing"];
         $assistant = $_POST["assistant"];
+        $category = $_POST["category"];
         $image = $_FILES["image"]["name"];
         $tmp_name = $_FILES["image"]["tmp_name"];
         $path = "assets/img/PackagePage/".$image;
         move_uploaded_file($tmp_name, $path);
 
-        $qry = "INSERT INTO tbl_package(name, price, duration, photo_count, editing, assistant, image) VALUES('$packageName', '$price', '$shootDuration', '$count', '$editing', '$assistant', '$image')";
+        $qry = "INSERT INTO tbl_package(name, price, duration, photo_count, editing, assistant, category, image) VALUES('$packageName', '$price', '$shootDuration', '$count', '$editing', '$assistant', '$category', '$image')";
 
 
         $result = $con -> query($qry);
@@ -65,9 +66,17 @@
                             <input type="text" name="assistant" class="form-control form-control-lg" id="image" required>
                         </div>
                         <div class="col-6 mb-3">
+                                <label for="" class="form-label">Select Category</label>
+                                <select class="form-select" aria-label="Default select example" name="category">
+                                        <option value="wedding">Wedding</option>
+                                        <option value="Event">Event</option>
+                                        <!-- <option value="Unread">Unread</option> -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
                             <label for="image" class="form-label">Image</label>
                             <input type="file" name="image" class="form-control form-control-lg" id="image" required>
-                        </div>
                         </div>
                         <button type="submit" class="btn btn-lg btn-primary w-100 my-2 mt-4">Add Package</button>
                     </form>

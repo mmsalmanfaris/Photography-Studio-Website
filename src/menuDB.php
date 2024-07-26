@@ -26,7 +26,7 @@
               <span class="hide-menu">Main COMPONENTS</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+              <a class="sidebar-link" href="./bookingDB.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-camera"></i>
                 </span>
@@ -34,11 +34,11 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+              <a class="sidebar-link" href="./inquiryDB.php" aria-expanded="false">
                 <span>
-                  <i class="ti ti-photo-plus"></i>
+                  <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Gallery</span>
+                <span class="hide-menu">Inquiry</span>
               </a>
             </li>
             <hr>
@@ -60,21 +60,22 @@
             </li>
             <hr>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./inquiryDB.php" aria-expanded="false">
+              <a class="sidebar-link" href="./.php" aria-expanded="false">
                 <span>
-                  <i class="ti ti-file-description"></i>
+                  <i class="ti ti-photo-plus"></i>
                 </span>
-                <span class="hide-menu">Inquiry</span>
+                <span class="hide-menu">Add Gallery</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
+              <a class="sidebar-link" href="./.php" aria-expanded="false">
                 <span>
-                  <i class="ti ti-typography"></i>
+                  <i class="ti ti-photo"></i>
                 </span>
-                <span class="hide-menu">Typography</span>
+                <span class="hide-menu">Gallery Details</span>
               </a>
             </li>
+            <hr>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">AUTH</span>

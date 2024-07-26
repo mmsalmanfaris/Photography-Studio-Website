@@ -24,7 +24,7 @@ require_once 'header.php';
                                         </svg>
                                     </div>
                                     <div>
-                                        <h2 class="h4 mb-3">Versatile Brand</h2>
+                                        <h2 class="h4 mb-3">10+ years Experience</h2>
                                         <p class="text-white mb-0">We are crafting a digital method that subsists life across all mediums.</p>
                                     </div>
                                 </div>
@@ -37,7 +37,7 @@ require_once 'header.php';
                                         </svg>
                                     </div>
                                     <div>
-                                        <h2 class="h4 mb-3">Versatile Brand</h2>
+                                        <h2 class="h4 mb-3">Best photographer</h2>
                                         <p class="text-white mb-0">We are crafting a digital method that subsists life across all mediums.</p>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@ require_once 'header.php';
                                         </svg>
                                     </div>
                                     <div>
-                                        <h2 class="h4 mb-3">Digital Agency</h2>
+                                        <h2 class="h4 mb-3">Wild life photographer</h2>
                                         <p class="text-white mb-0">We believe in innovation by merging primary with elaborate ideas.</p>
                                     </div>
                                 </div>

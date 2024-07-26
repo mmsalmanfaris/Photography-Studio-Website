@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <img src="./assets/img/slide/slide2.jpg" class="slide-img d-block w-100" alt="...">
       <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
         <p class="mt-5 fs-3 text-uppercase text-center">Enjoy Their Growth</p>
-        <h1 class="display-1 fw-bolder text-capitalize">Birth Day Photoshoot</h1>
+        <h1 class="display-1 fw-bolder text-capitalize">Portraits Photoshoot</h1>
         <button class=" btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
       </div>
     </div>
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <img src="./assets/img/slide/slide3.jpg" class="slide-img d-block w-100" alt="...">
       <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
         <p class="fs-3 text-uppercase">Collect Memories.</p>
-        <h1 class="display-1 fw-bolder">Bridal Photoshoot</h1>
+        <h1 class="display-1 fw-bolder">Special Event Photoshoot</h1>
         <button class="btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
       </div>
     </div>
@@ -79,14 +79,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div class="container my-5">
   <div class="row area-booking">
     <div class="col-md-2">
-      <img src="./assets/img//LandingPage/booking1.jpg" class="mt-4 rounded-4 img-booking" alt="">
+      <img src="./assets/img//LandingPage/1.jpg" class="mt-4 rounded-4 img-booking" alt="">
     </div>
     <div class=" col-md-2">
       <div>
-        <img src="./assets/img//LandingPage/booking2.jpg" class=" mb-2 rounded-4 img-booking1" alt="">
+        <img src="./assets/img//LandingPage/3.jpg" class=" mb-2 rounded-4 img-booking1" alt="">
       </div>
       <div>
-        <img src="./assets/img//LandingPage/booking3.jpg" class="mt-2 rounded-4 img-booking1" alt="">
+        <img src="./assets/img//LandingPage/4.jpg" class="mt-2 rounded-4 img-booking1" alt="">
       </div>
     </div>
     <div class="col-md-2">
@@ -103,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <div class="col-6 mb-3">
               <label for="" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" placeholder="" name="pnumber" required>
+              <input type="text" class="form-control" placeholder="" name="pnumber" required>
             </div>
           </div>
           <div class="row">
@@ -151,29 +151,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
       <span class="text-muted">From Gallery</span>
       <h2 class="display-5 fw-bold text-primary">Leatest Photos</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta harum ipsum venenatis metus sem
-        veniam eveniet aperiam suscipit.</p>
+      <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse natural wildlife, and captivating coastal birds.</p>
     </div>
 
     <div class="row">
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <img src="./assets/img//slide/slide1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+        <img src="./assets/img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-        <img src="./assets/img//LandingPage/booking2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+        <img src="./assets/img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
           alt="Wintry Mountain Landscape" />
       </div>
 
       <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="./assets/img/LandingPage/booking1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+        <img src="./assets/img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded mb-4"
           alt="Mountains in the Clouds" />
 
-        <img src="./assets/img/slide/slide1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+        <img src="./assets/img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
       </div>
 
       <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="./assets/img/slide/slide1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+        <img src="./assets/img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-        <img src="./assets/img/LandingPage/booking1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+        <img src="./assets/img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded mb-4"
           alt="Yosemite National Park" />
       </div>
     </div>

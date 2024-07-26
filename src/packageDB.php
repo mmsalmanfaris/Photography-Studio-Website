@@ -19,6 +19,7 @@ require_once 'headerDB.php';
                         <th>Photo Count</th>
                         <th>Editing</th>
                         <th>Assistant</th>
+                        <th>Category</th>
                         <th>Image</th>
                         <th>Modification</th>
                     </tr>
@@ -39,6 +40,7 @@ require_once 'headerDB.php';
                                 <td><?php echo $row['photo_count'] ?></td>;
                                 <td><?php echo $row['editing'] ?></td>;
                                 <td><?php echo $row['assistant'] ?></td>;
+                                <td><?php echo $row['category']?></td>
                                 <td><img src="./assets/img/PackagePage/<?php echo $row['image'] ?>"width="100" height="100"></td>;
                                 <td>
                                     <a href="editPackage.php?id=<?php echo $row['package_id'] ?>" class="btn btn-primary me-2"><i
@@ -51,7 +53,6 @@ require_once 'headerDB.php';
                         }
                     }
                     ?>
-
                 </tbody>
             </table>
         </div>
