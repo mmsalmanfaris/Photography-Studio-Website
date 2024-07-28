@@ -26,7 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     $msg = "adminUpdated";
-    header("Location: admindetailsDB.php");
+
+    
+    // header("Location: admindetailsDB.php");
 
 } else {
     //Get admin detail from database

@@ -51,9 +51,10 @@
                     text: 'Data Updated to Database!',
                     icon: 'success'
                     });
+
+                    window.location.href = 'admindetailsDB.php';
                     </script>";
 
-                    header("refresh: 2; url=admindetailsDB.php");
                 }
                 elseif($msg == "inquiryUpdated") {
                     echo "
@@ -63,9 +64,10 @@
                     text: 'Data Updated to Database!',
                     icon: 'success'
                     });
+
+                    window.location.href = 'inquiryDB.php';
                     </script>";
 
-                    header("refresh: 2; url=inquiryDB.php");
                 }
                 elseif($msg == "Deleted") {
                     echo "
@@ -75,9 +77,23 @@
                     text: 'Data Deleted from Database!',
                     icon: 'warning'
                     });
-                    </script>";
 
-                    header("refresh: 1; url=admindetailsDB.php");
+                    window.location.href = 'admindetailsDB.php';
+                    
+                    </script>";
+                }
+                elseif($msg == "packagedeleted") {
+                    echo "
+                    <script>
+                    Swal.fire({
+                    title: 'Delete Successfull!',
+                    text: 'Package Deleted from Database!',
+                    icon: 'warning'
+                    });
+
+                    window.location.href = 'packageDB.php';
+
+                    </script>";
                 }
                 if ($msg == "Succsss") {
                     echo "

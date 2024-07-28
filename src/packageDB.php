@@ -43,18 +43,37 @@ require_once 'headerDB.php';
                                 <td><?php echo $row['category']?></td>
                                 <td><img src="./assets/img/PackagePage/<?php echo $row['image'] ?>"width="100" height="100"></td>;
                                 <td>
-                                    <a href="editPackage.php?id=<?php echo $row['package_id'] ?>" class="btn btn-primary me-2"><i
+                                    <a href="ackage.php?id=<?php echo $row['package_id'] ?>" class="btn btn-primary me-2"><i
                                             class="ti ti-edit"></i></a>
-                                    <a href="deletePackage.php?id=<?php echo $row['package_id'] ?>" class="btn btn-danger"><i
-                                            class="ti ti-trash"></i></a>
+                                    <a href="packageDB.php?id=<?php echo $row['package_id'] ?>" class="btn btn-danger"><i class="ti ti-trash"></i>
+
+                                    </a>
                                 </td>
                             </tr>
                             <?php
-                        }
+                        }                        
                     }
                     ?>
                 </tbody>
             </table>
+            <?php 
+                if(isset($_GET['id'])){
+                    $id = $_GET['id'];
+
+                    $qry = "DELETE FROM tbl_package WHERE package_id =".$id;
+
+                    $res = $con -> query($qry);
+
+                    if (!$res){
+                        die("Not Deleted");
+                    }
+                    else{
+                        $msg = "packagedeleted";
+                    }
+
+                    require_once'footerDB.php';
+                }
+            ?>
         </div>
     </div>
 </div>

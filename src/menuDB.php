@@ -60,7 +60,7 @@
             </li>
             <hr>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./.php" aria-expanded="false">
+              <a class="sidebar-link" href="./addgallery.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-photo-plus"></i>
                 </span>
@@ -68,7 +68,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./.php" aria-expanded="false">
+              <a class="sidebar-link" href="./gallerydetails.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-photo"></i>
                 </span>

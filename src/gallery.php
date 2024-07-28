@@ -1,12 +1,126 @@
-
-    <?php
-        include_once './header.php';
-    ?>
-
-
-    
+<?php
+require_once 'header.php';
+?>
 
 
-    <?php
-      include './footer.php';
-    ?>
+<section>
+    <div class="container">
+        <div class="mt-5">
+            <div class="py-5"></div>
+            <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+                <span class="text-muted">From Gallery</span>
+                <h2 class="display-5 fw-bold text-primary">Wedding Photoshoot</h2>
+                <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse natural
+                    wildlife, and captivating coastal birds.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+
+                    <img src="./assets/img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds" />
+
+                    <img src="./assets/img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea" />
+
+                    <img src="./assets/img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="mt-5">
+            <div class="py-5"></div>
+            <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+                <span class="text-muted">From Gallery</span>
+                <h2 class="display-5 fw-bold text-primary">Wedding Photoshoot</h2>
+                <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse natural
+                    wildlife, and captivating coastal birds.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+
+                    <img src="./assets/img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds" />
+
+                    <img src="./assets/img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea" />
+
+                    <img src="./assets/img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
+                </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="mt-5">
+            <div class="py-5"></div>
+            <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+                <span class="text-muted">From Gallery</span>
+                <h2 class="display-5 fw-bold text-primary">Wedding Photoshoot</h2>
+                <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse natural
+                    wildlife, and captivating coastal birds.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+
+                    <img src="./assets/img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds" />
+
+                    <img src="./assets/img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Waves at Sea" />
+
+                    <img src="./assets/img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
+                </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<?php
+require_once 'footer.php';
+?>

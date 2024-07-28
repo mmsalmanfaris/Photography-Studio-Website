@@ -1,19 +1,18 @@
-<!-- Navigation Bar -->
+<!-- Booking code -->
 <?php
 include './header.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $fname = $_POST["fname"];
-  $pnumber = $_POST['$pnumber'];
-  $category = $_POST['$category'];
-  $package = $_POST['$package'];
+  $pnumber = $_POST['pnumber'];
+  $category = $_POST['category'];
+  $package = $_POST['package'];
   $date = $_POST['date'];
   $time = $_POST['time'];
   $status = "Unread";
 
   $qry = "INSERT INTO tbl_booking(fname, pnumber, category, package, date, time, status) VALUES('$fname', '$pnumber', '$category', '$package', '$date', '$time', '$status')";
 
-  echo $qry;
 
   $res = $con->query($qry);
 
@@ -23,8 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $fnctn_msg = "success";
 }
 ?>
-
-
 
 <!--Hero Section-->
 <div id="hero-carousel" class="carousel slide mt-5">
@@ -95,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center ps-5 ">
       <div class="p-5 rounded-4 w-100 shadow-sm border">
-        <form action="" method="POST">
+        <form action="index.php" method="POST">
           <div class="row">
             <div class="col-6 mb-3">
               <label for="" class="form-label">Full Name</label>
@@ -110,17 +107,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class=" col-6 mb-3">
               <label for="" class="form-label">Category</label>
               <select class="form-select" aria-label="Default select example" name="category">
-                <option value="wedding">Wedding</option>
-                <option value="event">Event</option>
-                <option value="other">Other</option>
+                <option value="wedding" name="wedding">Wedding</option>
+                <option value="event" name="event">Event</option>
+                <option value="other" name="other">Other</option>
               </select>
             </div>
             <div class="col-6 mb-3">
               <label for="" class="form-label">Package</label>
               <select class="form-select" aria-label="Default select example" name="package" value="package">
-                <option value="pre">Pre Wedding Shoot</option>
-                <option value="bridal">Bridal Photoshoot</option>
-                <option value="engagement">Engagment Photoshoot</option>
+                <option value="pre" name="pre">Pre Wedding Shoot</option>
+                <option value="bridal" name="bridal">Bridal Photoshoot</option>
+                <option value="engagement" name="engagement">Engagment Photoshoot</option>
               </select>
             </div>
           </div>
@@ -176,7 +173,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           alt="Yosemite National Park" />
       </div>
     </div>
-  </div>
+    <div class="d-flex justify-content-end">
+    <a href="packages.php" class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3">View Gallery</a>
+    </div>
+    </div>
   </div>
 </section>
 
@@ -185,9 +185,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="row mb-2 mb-lg-4">
       <div class="col-12 col-lg-8 col-xxl-7 w-100">
         <h2 class="display-5 fw-bold">Our Pricing</h2>
-        <div class="d-flex justify-content-between">
-          <p class="lead">Discover our updated pakage list for your event.</p>
-          <a href="packages.php" class="btn btn-outline-primary pt-2 rounded-pill">View Packages</a>
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="lead pb-0">Discover our updated pakage list for your event.</p>
+          <a href="packages.php" class="btn btn-outline-primary rounded-pill py-3 px-5 mt-0">View Packages</a>
         </div>
       </div>
     </div>
@@ -209,7 +209,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <li class="mb-3">Up to 40 photos</li>
               <li class="mb-3">Editing & Color Grading</li>
               <li class="mb-3">Stylist Assistance</li>
-            </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
+            </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
           </div>
         </div>
       </div>
@@ -231,7 +231,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <li class="mb-3">Up to 150 photos</li>
               <li class="mb-3">Editing & Color Grading</li>
               <li class="mb-3">Stylist Assistance</li>
-            </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
+            </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
           </div>
         </div>
       </div>
@@ -253,7 +253,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <li class="mb-3">Up to 30 photos</li>
               <li class="mb-3">Editing & Color Grading</li>
               <li class="mb-3">Stylist Assistance</li>
-            </ul><a class="btn btn-outline-primary btn-lg mt-4 px-4" href="">Book Appointment</a>
+            </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
           </div>
         </div>
       </div>
