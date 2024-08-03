@@ -1,7 +1,8 @@
 <?php
+// header section of the contact page
 include_once './header.php';
 
-
+// Inquiry form and contact information section of the contact page
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $fname = $_POST["fname"];
   $lname = $_POST['lname'];

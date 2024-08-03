@@ -50,6 +50,12 @@ require_once 'headerDB.php';
     </div>
 </div>
 
+<!-- Footer section -->
 <?php
 require_once 'footerDB.php';
 ?>
+
+
+
+
+

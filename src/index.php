@@ -141,7 +141,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <div class="color z-3"></div>
 
-<!--Gallery-->
+<!--Gallery Section---->
 <section>
   <div class="container my-5">
 

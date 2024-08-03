@@ -1,7 +1,7 @@
-<?php 
-    //Header
-    require_once'headerDB.php';
-    require_once'menuDB.php';
+<?php
+//Header
+require_once 'headerDB.php';
+require_once 'menuDB.php';
 ?>
 
 <!--Admin Details Section - table-->
@@ -23,42 +23,41 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php 
+                    <?php
                     $qry = "SELECT * FROM tbl_inquiry";
-                    $res = $con -> query($qry);
+                    $res = $con->query($qry);
 
-                    if(!$res){
+                    if (!$res) {
                         die("Data not Found!");
-                    }
-                    else{
-                        while($row = $res -> fetch_assoc())
-                        {
+                    } else {
+                        while ($row = $res->fetch_assoc()) {
                             ?>
                             <tr>
-                                <td><?php echo $row['fname']?></td>;
+                                <td><?php echo $row['fname'] ?></td>;
                                 <td><?php echo $row['lname'] ?></td>;
-                                <td><?php echo $row['email']?></td>;
+                                <td><?php echo $row['email'] ?></td>;
                                 <td><?php echo $row['pnumber'] ?></td>;
-                                <td><?php echo $row['province']?></td>;
+                                <td><?php echo $row['province'] ?></td>;
                                 <td><?php echo $row['message'] ?></td>;
                                 <td>
-                                    <span class="badge <?php 
-                                        switch($row['status']) {
-                                            case 'Completed':
-                                                echo 'bg-success'; 
-                                                break;
-                                            case 'Processing': 
-                                                echo 'bg-secondary';
-                                                break;
-                                            default:
-                                                echo 'bg-danger';
-                                        }
+                                    <span class="badge <?php
+                                    switch ($row['status']) {
+                                        case 'Completed':
+                                            echo 'bg-success';
+                                            break;
+                                        case 'Processing':
+                                            echo 'bg-secondary';
+                                            break;
+                                        default:
+                                            echo 'bg-danger';
+                                    }
                                     ?>">
                                         <?php echo $row['status'] ?>
                                     </span>
                                 </td>
                                 <td>
-                                    <a href="editInquiry.php?id=<?php echo $row['inquiry_id'] ?>" class="btn btn-primary me-2"><i class="ti ti-edit"></i></a>
+                                    <a href="editInquiry.php?id=<?php echo $row['inquiry_id'] ?>"
+                                        class="btn btn-primary me-2"><i class="ti ti-edit"></i></a>
                                 </td>
                             </tr>
                             <?php
@@ -73,6 +72,6 @@
 
 
 
-<?php 
-    require_once'footerDB.php';
+<?php
+require_once 'footerDB.php';
 ?>

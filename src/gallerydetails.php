@@ -1,7 +1,6 @@
-<?php 
-    require_once 'headerDB.php';
+<?php
+require_once 'headerDB.php';
 ?>
-
 
 <div class="container">
     <div class="row p-5">
@@ -14,7 +13,6 @@
                         <th>Modification</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <?php
                     $qry = "SELECT * FROM tbl_gallery";
@@ -41,9 +39,6 @@
     </div>
 </div>
 
-
-
-
-<?php 
-    require_once 'footerDB.php';
+<?php
+require_once 'footerDB.php';
 ?>

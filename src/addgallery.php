@@ -12,12 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   $qry = "INSERT INTO tbl_gallery(category, image) VALUES('$category', '$image')";
 
   print_r($image);
-  $result = $con -> query($qry);
+  $result = $con->query($qry);
 
-  if(!$result){
+  if (!$result) {
     die("Query Error!");
-  }
-  else{
+  } else {
     $msg = "success";
   }
 }

@@ -1,8 +1,9 @@
+<!-- Header section -->
 <?php
 require_once 'header.php';
 ?>
 
-<!-- About 1 - Bootstrap Brain Component -->
+<!-- About-->
 <section class="py-3 py-md-5 my-5">
     <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
