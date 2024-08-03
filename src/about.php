@@ -8,16 +8,16 @@ require_once 'header.php';
     <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
             <div class="col-12 col-lg-6 col-xl-5">
-                <img class="img-fluid rounded" loading="lazy" src="./assets/img/about/photographer.jpg" alt="About 1">
+                <img class="img-fluid rounded-4" loading="lazy" src="./assets/img/About/photographer.jpg" alt="About 1">
             </div>
-            <div class="col-12 col-lg-6 col-xl-7">
+            <div class="col-12 col-lg-6 col-xl-7 p-3">
                 <div class="row justify-content-xl-center">
                     <div class="col-12 col-xl-11">
                         <h2 class="mb-3">Who Are We?</h2>
                         <p class="lead fs-4 text-secondary mb-3 t">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
-                        <p class="mb-5">We are a fast-growing company, but we have never lost sight of our core values. We believe in collaboration, innovation, and customer satisfaction. We are always looking for new ways to improve our products and services.</p>
-                        <div class="row gy-4 gy-md-0 gx-xxl-5X">
-                            <div class="col-12 col-md-8 text-white bg-primary rounded-3 py-4 px-4  mb-4">
+                        <p class="mb-5" style="text-align: justify;">We are a fast-growing company, but we have never lost sight of our core values. We believe in collaboration, innovation, and customer satisfaction. We are always looking for new ways to improve our products and services.</p>
+                        <div class="row mx-1">
+                            <div class="col-12 col-md-8 text-white bg-primary rounded-3 py-4 px-4  mb-3 mb-md-4">
                                 <div class="d-flex">
                                     <div class="me-4 text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
@@ -30,7 +30,7 @@ require_once 'header.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-8 text-white bg-primary rounded-3 py-4 px-4 mb-4">
+                            <div class="col-12 col-md-8 text-white bg-primary rounded-3 py-4 px-4 mb-3 mb-md-4">
                                 <div class="d-flex">
                                     <div class="me-4 text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">

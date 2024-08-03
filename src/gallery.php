@@ -17,26 +17,26 @@ require_once 'header.php';
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="./assets/img/gallery/wedding/4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./assets/img/gallery/wedding/4.jpg" class="figure-img img-fluid rounded"
                         alt="Boat on Calm Water" />
 
-                    <img src="./assets/img/gallery/wedding/1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./assets/img/gallery/wedding/1.jpg" class="figure-img img-fluid rounded"
                         alt="Wintry Mountain Landscape" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="./assets/img/gallery/wedding/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./assets/img/gallery/wedding/2.jpg" class="wfigure-img img-fluid rounded"
                         alt="Mountains in the Clouds" />
 
-                    <img src="./assets/img/gallery/wedding/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./assets/img/gallery/wedding/5.jpg" class="figure-img img-fluid rounded"
                         alt="Boat on Calm Water" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="./assets/img/gallery/wedding/6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./assets/img/gallery/wedding/6.jpg" class="figure-img img-fluid rounded"
                         alt="Waves at Sea" />
 
-                    <img src="./assets/img/gallery/wedding/3.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./assets/img/gallery/wedding/3.jpg" class="figure-img img-fluid rounded"
                         alt="Yosemite National Park" />
                 </div>
             </div>

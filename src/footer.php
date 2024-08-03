@@ -109,15 +109,18 @@
                     </div>
                 </div>
             </section>
+
+            
         </div>
-
-
-        <!-- Copyright -->
-        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
-            © Copyright <?php echo date('Y'); ?>
-            <a class="text-reset fw-bold" href="https://www.linkedin.com/in/mmsalmanfaris/">mmsalmanfaris.com</a>
-        </div>
-
+        
+    </div>
+    
+    <!-- Copyright -->
+   <div class="container">
+   <div class=" text-center px-4 py-2 bg-white text-primary fw-light" style="background-color: rgba(0, 0, 0, 0.05);">
+        © Copyright <?php echo date('Y'); ?>
+        <a class="text-reset fw-normal" href="https://www.linkedin.com/in/mmsalmanfaris/">Cense7 Business Partner</a>
+    </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

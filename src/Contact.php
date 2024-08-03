@@ -29,28 +29,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <div class="container">
     <div style="height: 100px;"> </div>
     <div class="row justify-content-around">
-      <div class="card text-white text-center bg-primary me-3" style="max-width: 18rem;">
+      <div class="card text-white text-center bg-primary me-md-3 mb-3 " style="max-width: 18rem;">
         <div class="card-body">
           <img class="mt-2" src="./assets/icon/phonecall.png" alt="">
           <h5 class="card-title mt-4">+94 76 175 4242</h5>
         </div>
       </div>
-      <div class="card text-white text-center bg-primary mx-3" style="max-width: 18rem;">
+      <div class="card text-white text-center bg-primary mx-md-3 mb-3" style="max-width: 18rem;">
         <div class="card-body">
           <img class="mt-2" src="./assets/icon/email.png" alt="">
-          <h5 class="card-title mt-4">info@malcom.com</h5>
+          <h5 class="card-title mt-4"> <a href="mainto:info@esaistudio.com">info@esaistudio.com</a></h5>
         </div>
       </div>
-      <div class="card text-white text-center bg-primary mx-3" style="max-width: 18rem;">
+      <div class="card text-white text-center bg-primary mx-md-3 mb-3" style="max-width: 18rem;">
         <div class="card-body">
           <img class="mt-2" src="./assets/icon/location.png" alt="">
-          <h5 class="card-title mt-4">Northwest Scotland</h5>
+          <h5 class="card-title mt-4">Batticaloa, Sri Lanka</h5>
         </div>
       </div>
-      <div class="card text-white text-center bg-primary ms-3" style="max-width: 18rem;">
+      <div class="card text-white text-center bg-primary ms-md-3 mb-3" style="max-width: 18rem;">
         <div class="card-body">
           <img class="mt-2" src="./assets/icon/facebook.png" alt="">
-          <h5 class="card-title mt-4">Facebook Page</h5>
+          <h5 class="card-title mt-4"><a href="www.facebook.com/****">Facebook Page</a></h5>
         </div>
       </div>
     </div>
@@ -58,40 +58,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </div>
 </section>
 
+<div class="container">
+  <div class="figure my-5 py-5 d-none d-sm-block ">
+    <img src="./assets/img/Gallery/wedding/1.jpg" alt="" class="figure-img img-fluid rounded-5"
+      style="height: 400px; width: 1500px; object-fit:cover;">
+  </div>
+</div>
 
 <section>
-  <div class="container py-5 my-5">
-    <div class="row g-5">
-      <!-- Contact Information Block -->
-      <div class="col-xl-6">
-        <div class=" mt-2 aos-item" data-aos="fade-up" data-aos-delay="800">
-          <div class="w-100 h-100 aos-item__inner">
-            <iframe class="hvr-shadow" width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
-          </div>
-        </div>
-      </div>
-
+  <div class="container py-3  mb-5">
+    <div class="row">
       <!-- Contact Form Block -->
-      <div class="col-xl-6">
-        <h2 class="pb-4">Leave a message</h2>
+      <h2 class="pb-4 text-center text-md-start mt-5">Leave a message</h2>
+      <div class="col-md-6 col-11 p-xl-5 m-md-0 m-3 p-4 rounded-4 shadow-sm border">
         <form action="" method="POST">
           <div class="row g-4">
-            <div class="col-6 mb-3">
+            <div class="col-md-6 col-12 mb-md-3">
               <label for="exampleFormControlInput1" class="form-label">First Name</label>
               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John" name="fname">
             </div>
-            <div class="col-6 mb-3">
+            <div class="col-md-6 col-12 mb-3">
               <label for="exampleFormControlInput1" class="form-label">Last Name</label>
               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Doe" name="lname">
             </div>
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com" name="email">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com"
+              name="email">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Phone</label>
-            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="94 76 175 4242" name="pnumber">
+            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="94 76 175 4242"
+              name="pnumber">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Province</label>
@@ -112,11 +111,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
           </div>
-          <input type="submit" value="Submit" class="btn btn-primary">
+          <input type="submit" value="Submit" class="btn btn-primary w-100">
         </form>
+      </div>
+
+      <div class="container col-md-6 col-12">
+        <div class=" mt-2">
+          <div class="container col-12">
+            <div class=" mt-2 aos-item" data-aos="fade-up" data-aos-delay="800">
+              <div class="w-100 h-100 aos-item__inner">
+                <iframe class="hvr-shadow" width="100%" height="600px" frameborder="0" scrolling="no" marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+
 </section>
 
 

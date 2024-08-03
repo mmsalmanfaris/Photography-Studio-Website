@@ -27,8 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div id="hero-carousel" class="carousel slide mt-5">
 
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
-      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
@@ -71,79 +70,43 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </button>
 </div>
 
-<!--Book your shooting-->
+<!-- add Some Imformation Here -->
 
-<div class="container my-5">
-  <div class="row area-booking">
-    <div class="col-md-2">
-      <img src="./assets/img//LandingPage/1.jpg" class="mt-4 rounded-4 img-booking" alt="">
-    </div>
-    <div class=" col-md-2">
-      <div>
-        <img src="./assets/img//LandingPage/3.jpg" class=" mb-2 rounded-4 img-booking1" alt="">
+<div class="container my-md-5 py-md-5">
+  <div class="row py-5">
+    <div class="d-flex">
+    <div class="figure d-flex">
+      <div class=" col-12 col-xl-4 align-self-center">
+        <img src="./assets/img//LandingPage/1.jpg" class="figure-img img-fluid rounded img-booking" alt="">
       </div>
-      <div>
-        <img src="./assets/img//LandingPage/4.jpg" class="mt-2 rounded-4 img-booking1" alt="">
+      <div class="col-md-2 col-xl-4 ">
+        <div>
+          <img src="./assets/img//LandingPage/3.jpg" class="mb-3 ms-3 figure-img img-fluid rounded img-booking1" alt="">
+        </div>
+        <div>
+          <img src="./assets/img//LandingPage/booking4.jpg" class=" ms-3 figure-img img-fluid rounded img-booking1" alt="">
+        </div>
       </div>
-    </div>
-    <div class="col-md-2">
-      <img src="./assets/img//LandingPage/booking4.jpg" class="mt-4 rounded-4 img-booking" alt="">
+      <div class="col-md-2 col-xl-4 align-self-center">
+        <img src="./assets/img//LandingPage/4.jpg" class="ms-4 figure-img img-fluid rounded img-booking" alt="">
+      </div>
     </div>
 
-    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center ps-5 ">
-      <div class="p-5 rounded-4 w-100 shadow-sm border">
-        <form action="index.php" method="POST">
-          <div class="row">
-            <div class="col-6 mb-3">
-              <label for="" class="form-label">Full Name</label>
-              <input type="text" class="form-control" placeholder="" name="fname" required>
-            </div>
-            <div class="col-6 mb-3">
-              <label for="" class="form-label">Phone Number</label>
-              <input type="text" class="form-control" placeholder="" name="pnumber" required>
-            </div>
-          </div>
-          <div class="row">
-            <div class=" col-6 mb-3">
-              <label for="" class="form-label">Category</label>
-              <select class="form-select" aria-label="Default select example" name="category">
-                <option value="wedding" name="wedding">Wedding</option>
-                <option value="event" name="event">Event</option>
-                <option value="other" name="other">Other</option>
-              </select>
-            </div>
-            <div class="col-6 mb-3">
-              <label for="" class="form-label">Package</label>
-              <select class="form-select" aria-label="Default select example" name="package" value="package">
-                <option value="pre" name="pre">Pre Wedding Shoot</option>
-                <option value="bridal" name="bridal">Bridal Photoshoot</option>
-                <option value="engagement" name="engagement">Engagment Photoshoot</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class=" col-6 mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Select Date</label>
-              <input type="date" class="form-control" name="date">
-            </div>
-            <div class=" col-6 mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Starting Time</label>
-              <input type="time" class="form-control" name="time">
-            </div>
-          </div>
-          <input type="submit" value="Book Now!" class="btn btn-primary btn-lg w-100 mt-4">
-        </form>
+    <div class="col-md-6 ps-5  align-self-center">
+      <div class="p-4 w-100">
+        <div class="fs-1 fw-semibold">Welcome to Esai Studio</div>
+        <hr>
+        <div class="fs-5 lh-base mt-4 fw-light" style="text-align: justify;"> Esai Studio, founded by Vasi, is a professional wedding photography studio based in Batticaloa, Sri Lanka. With over 5 years of experience in wedding photography, event photography and Portraits, Vasi has perfected the art of capturing your most cherished moments.</div>
+        <div class="btn btn-primary rounded-pill py-3 px-4 mt-4 me-3"> Gallery</div>
+        <div class="btn btn-outline-primary rounded-pill py-3 px-4 mt-4"> Book Now! <i class="bi bi-arrow-right-circle ms-2"></i></div>
       </div>
+    </div>
     </div>
   </div>
 </div>
-
-<div class="color z-3"></div>
-
 <!--Gallery Section---->
 <section>
-  <div class="container my-5">
+  <div class="container-fluid my-5">
 
     <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
       <span class="text-muted">From Gallery</span>
@@ -155,13 +118,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <img src="./assets/img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-        <img src="./assets/img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
-          alt="Wintry Mountain Landscape" />
+        <img src="./assets/img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
       </div>
 
       <div class="col-lg-4 mb-4 mb-lg-0">
-        <img src="./assets/img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded mb-4"
-          alt="Mountains in the Clouds" />
+        <img src="./assets/img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
 
         <img src="./assets/img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
       </div>
@@ -169,14 +130,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <div class="col-lg-4 mb-4 mb-lg-0">
         <img src="./assets/img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
 
-        <img src="./assets/img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded mb-4"
-          alt="Yosemite National Park" />
+        <img src="./assets/img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
       </div>
     </div>
     <div class="d-flex justify-content-end">
-    <a href="packages.php" class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3">View Gallery</a>
+      <a href="packages.php" class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3">View Gallery</a>
     </div>
-    </div>
+  </div>
   </div>
 </section>
 
