@@ -97,8 +97,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="fs-1 fw-semibold">Welcome to Esai Studio</div>
         <hr>
         <div class="fs-5 lh-base mt-4 fw-light" style="text-align: justify;"> Esai Studio, founded by Vasi, is a professional wedding photography studio based in Batticaloa, Sri Lanka. With over 5 years of experience in wedding photography, event photography and Portraits, Vasi has perfected the art of capturing your most cherished moments.</div>
+        <div class="d-flex">
         <div class="btn btn-primary rounded-pill py-3 px-4 mt-4 me-3"> Gallery</div>
-        <div class="btn btn-outline-primary rounded-pill py-3 px-4 mt-4"> Book Now! <i class="bi bi-arrow-right-circle ms-2"></i></div>
+        <div class="">
+          <a href="booking.php" class="btn btn-outline-primary  rounded-pill py-3 px-4 mt-4">Book Now!<i class="bi bi-arrow-right-circle ms-2"></i></a>
+        </div>
+        </div>
       </div>
     </div>
     </div>

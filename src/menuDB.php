@@ -59,20 +59,13 @@
               </a>
             </li>
             <hr>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./addgallery.php" aria-expanded="false">
-                <span>
-                  <i class="ti ti-photo-plus"></i>
-                </span>
-                <span class="hide-menu">Add Gallery</span>
-              </a>
-            </li>
+           
             <li class="sidebar-item">
               <a class="sidebar-link" href="./gallerydetails.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-photo"></i>
                 </span>
-                <span class="hide-menu">Gallery Details</span>
+                <span class="hide-menu">Gallery Management</span>
               </a>
             </li>
             <hr>

@@ -7,6 +7,7 @@
     <title>Dashboard| Admin Details</title>
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
 
+
     <!--Datatable-->
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css"/>
     <link href="https://cdn.datatables.net/v/bs5/jszip-3.10.1/b-3.0.2/b-html5-3.0.2/b-print-3.0.2/datatables.min.css" rel="stylesheet">
