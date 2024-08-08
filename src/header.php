@@ -78,6 +78,6 @@
   </header>
 
   <?php
-  require_once 'DBcon.php';
+    include_once './includes/dbh.inc.php';
   ?>
   <!-- Navbar -->

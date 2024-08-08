@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $qry = "UPDATE tbl_inquiry SET fname ='" . $fname . "', lname = '" . $lname . "', email = '" . $email . "', pnumber = '" . $pnumber . "', province = '" . $province . "', message = '" . $message . "', status = '" . $status . "' WHERE inquiry_id =" . $inquiryid;
 
-    $res = $con->query($qry);
+    $res = $conn->query($qry);
 
     if (!$res) {
         die("Inquiry Details Update Failed");
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $id = $_GET['id'];
 
         $qry = "SELECT * FROM tbl_inquiry WHERE inquiry_id =" . $id;
-        $res = $con->query($qry);
+        $res = $conn->query($qry);
         $row = $res->fetch_assoc();
     }
     ?>

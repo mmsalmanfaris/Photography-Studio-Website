@@ -25,7 +25,7 @@ require_once 'menuDB.php';
                 <tbody>
                     <?php
                     $qry = "SELECT * FROM tbl_inquiry";
-                    $res = $con->query($qry);
+                    $res = $conn->query($qry);
 
                     if (!$res) {
                         die("Data not Found!");

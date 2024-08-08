@@ -17,7 +17,7 @@ require_once 'header.php';
     <?php
     $qry = "SELECT * FROM tbl_package WHERE category = 'wedding'";
 
-    $res = $con->query($qry);
+    $res = $conn->query($qry);
 
     ?>
     <div class="row">
@@ -70,7 +70,7 @@ require_once 'header.php';
         <?php
         $qry = "SELECT * FROM tbl_package WHERE category = 'event'";
 
-        $res = $con->query($qry);
+        $res = $conn->query($qry);
 
         ?>
         <div class="row">

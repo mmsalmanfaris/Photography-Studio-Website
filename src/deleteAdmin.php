@@ -5,7 +5,7 @@ require_once'DBcon.php';
 
     $qry = "DELETE FROM tbl_admin WHERE admin_id =".$id;
 
-    $res = $con -> query($qry);
+    $res = $conn -> query($qry);
 
     if (!$res){
         die("Not Deleted");

@@ -27,7 +27,7 @@ require_once 'headerDB.php';
                 <tbody>
                     <?php
                     $qry = "SELECT * FROM tbl_package";
-                    $res = $con->query($qry);
+                    $res = $conn->query($qry);
                     if (!$res) {
                         die("Package Data not Found!");
                     } else {
@@ -62,7 +62,7 @@ require_once 'headerDB.php';
 
                     $qry = "DELETE FROM tbl_package WHERE package_id =".$id;
 
-                    $res = $con -> query($qry);
+                    $res = $conn -> query($qry);
 
                     if (!$res){
                         die("Not Deleted");

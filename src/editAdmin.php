@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $qry  = "UPDATE tbl_admin SET fname ='" . $fname . "', lname = '" . $lname . "', birthday = '" . $birthday . "', gender = '" . $gender . "', email = '" . $email . "', pnumber = '" . $pnumber . "', username = '" . $username . "', password = '" . $password . "' WHERE admin_id =" . $adminid;
 
-    $res = $con->query($qry);
+    $res = $conn->query($qry);
 
     if (!$res) {
         die("Admin Details Update Failed");
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $id = $_GET['id'];
 
         $qry = "SELECT * FROM tbl_admin WHERE admin_id =" . $id;
-        $res =  $con->query($qry);
+        $res =  $conn->query($qry);
         $row = $res->fetch_assoc();
     }
     ?>

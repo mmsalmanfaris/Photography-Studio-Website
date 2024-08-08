@@ -11,7 +11,7 @@ require_once 'headerDB.php';
 
           <?php
           $qry = "SELECT count(*) AS unread FROM tbl_booking WHERE status = 'Unread'";
-          $res = $con->query($qry);
+          $res = $conn->query($qry);
 
           if ($res) {
             if ($res->num_rows > 0) {
@@ -21,7 +21,7 @@ require_once 'headerDB.php';
               echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
             }
           } else {
-            echo "Query failed: " . $con->error;
+            echo "Query failed: " . $conn->error;
           }
           ?>
         </div>
@@ -31,7 +31,7 @@ require_once 'headerDB.php';
           <h4 class="badge-black align-content-center pe-4">Ongoing Shoot</h4>
           <?php
           $qry = "SELECT count(*) AS processing FROM tbl_booking WHERE status = 'Processing'";
-          $res = $con->query($qry);
+          $res = $conn->query($qry);
 
           if ($res) {
             if ($res->num_rows > 0) {
@@ -41,7 +41,7 @@ require_once 'headerDB.php';
               echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
             }
           } else {
-            echo "Query failed: " . $con->error;
+            echo "Query failed: " . $conn->error;
           }
           ?>
         </div>
@@ -51,7 +51,7 @@ require_once 'headerDB.php';
           <h4 class="badge-black align-content-center pe-4">Completed</h4>
           <?php
           $qry = "SELECT count(*) AS completed FROM tbl_booking WHERE status = 'Completed'";
-          $res = $con->query($qry);
+          $res = $conn->query($qry);
 
           if ($res) {
             if ($res->num_rows > 0) {
@@ -61,7 +61,7 @@ require_once 'headerDB.php';
               echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
             }
           } else {
-            echo "Query failed: " . $con->error;
+            echo "Query failed: " . $conn->error;
           }
           ?>
         </div>

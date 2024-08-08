@@ -1,5 +1,6 @@
 <?php
-    include'./adminHeader.php';
+    include'./header.php';
+ 
 ?>
 
 
@@ -9,16 +10,16 @@
         <hr>
         <div class="form-group py-2">
             <label for="" class="form-lable">Username</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" placeholder="Enter Username">
         </div>
         <div class="form-group py-2">
             <label for="" class="form-lable">Password</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" placeholder="Enter Password">
         </div>
         <input type="submit" value="Register" class="btn btn-primary mt-3">
     </div>
 </div>
 
 <?php
-    include'./adminFooter.php';
+    include'./footer.php';
 ?>

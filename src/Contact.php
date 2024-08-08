@@ -4,12 +4,12 @@ include_once './header.php';
 
 // Inquiry form and contact information section of the contact page
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $fname = $_POST["fname"];
-  $lname = $_POST['lname'];
-  $email = $_POST['email'];
-  $pnumber = $_POST['pnumber'];
-  $province = $_POST['province'];
-  $message = $_POST['message'];
+  $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_SPECIAL_CHARS);
+  $lname = filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_SPECIAL_CHARS);
+  $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
+  $pnumber = filter_input(INPUT_POST, 'pnumber', FILTER_SANITIZE_SPECIAL_CHARS);
+  $province = filter_input(INPUT_POST, 'province', FILTER_SANITIZE_SPECIAL_CHARS);
+  $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);
   $status = "unread";
 
   $qry = "INSERT INTO tbl_inquiry(fname, lname, email, pnumber, province, message, status) VALUES('$fname', '$lname', '$email', '$pnumber', '$province', '$message','$status')";

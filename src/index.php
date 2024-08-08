@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $qry = "INSERT INTO tbl_booking(fname, pnumber, category, package, date, time, status) VALUES('$fname', '$pnumber', '$category', '$package', '$date', '$time', '$status')";
 
 
-  $res = $con->query($qry);
+  $res = $conn->query($qry);
 
   if (!$res) {
     die("Booking Failed");

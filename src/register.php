@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $qry = "INSERT INTO tbl_admin(fname, lname, birthday, gender, email, pnumber, username, password) VALUES('$fname', '$lname', '$birthday', '$gender', '$email', '$pnumber', '$username', '$password')";
 
-    $result = $con->query($qry);
+    $result = $conn->query($qry);
 
     if (!$result) {
         die("Result Error");
