@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <div class="col-md-6 mb-4 d-flex align-items-center">
 
                                 <div class="form-outline datepicker w-100">
-                                    <label for="birthdayDate" class="form-label">Birthday</label>
+                                    <label for="birthdayDate" class="form-label">Birthda</label>
                                     <input type="date" name="birthday" class="form-control form-control-lg" required />
                                 </div>
 
