@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'advanced_php';
+$dbname = 'malcolmlismore_db';
 $dbusername = 'root';
 $dbpassword = '';
 

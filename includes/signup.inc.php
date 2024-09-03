@@ -38,14 +38,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if ($errors) {
             $_SESSION["errors_signup"] = $errors;
+
+            $signupData = [
+                'username' => $username,
+                'email' => $email
+            ];
+            $_SESSION['signup_data'] = $signupData;
+            
             header("Location: ../src/signup.php");
-            exit();
-        } else {
-            // Perform any additional success logic if necessary
-            $_SESSION["success_signup"] = "Successfully signed up!";
-            // header("Location: ./src/signup.php");
-            exit();
-        }
+            die();
+        } 
+
+        create_user($pdo, $username, $email, $password);
+
+        header("Location: ../src/signup.php?signup=success");
+        $pdo = null;
+        $stmt = null;
+        die();
 
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());
@@ -53,6 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 } else {
     echo "Request method is not POST. Redirecting...";
-    // header("Location: ./index.php");
-    exit(); 
+    header("Location: ./index.php");
+    die();
 }
