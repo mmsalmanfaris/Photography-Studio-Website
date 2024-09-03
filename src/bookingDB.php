@@ -25,11 +25,11 @@ require_once 'headerDB.php';
                     <?php
                     $qry = "SELECT * FROM tbl_booking";
 
-                    $res = $con->query($qry);
+                    $res = $pdo->prepare($qry);
                     if (!$res) {
                         die("Booking Data not Found!");
                     } else {
-                        while ($row = $res->fetch_assoc()) {
+                        while ($row = $res->fetch(PDO::FETCH_ASSOC)) {
                             ?>
                             <tr>
                                 <td><?php echo $row['booking_id'] ?></td>

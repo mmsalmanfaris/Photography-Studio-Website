@@ -25,7 +25,7 @@ require_once 'headerDB.php';
                 <tbody>
                     <?php
                     $qry = "SELECT * FROM tbl_admin";
-                    $res = $con->query($qry);
+                    $res = $pdo->prepare($qry);
 
                     if (!$res) {
                         die("Data not Found!");

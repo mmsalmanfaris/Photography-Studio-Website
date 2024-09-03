@@ -78,6 +78,6 @@
   </header>
 
   <?php
-    include_once './includes/dbh.inc.php';
+    include_once '../includes/dbh.inc.php';
   ?>
   <!-- Navbar -->

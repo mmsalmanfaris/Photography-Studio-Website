@@ -38,32 +38,32 @@
                     <form action="" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="packageName" class="form-label">Package Name</label>
-                            <input type="text" name="packageName" class="form-control form-control-lg" id="packageName" required>
+                            <input type="text" name="packageName" class="form-control form-control-lg" id="packageName" >
                         </div>
                         <div class="row">
                         <div class=" col-6 mb-3">
                             <label for="price" class="form-label">Price</label>
-                            <input type="text" name="price" class="form-control form-control-lg" id="price" required>
+                            <input type="text" name="price" class="form-control form-control-lg" id="price" >
                         </div>
                         <div class="col-6 mb-3">
                             <label for="shootDuration" class="form-label">Shoot Duration</label>
-                            <input type="text" name="shootDuration" class="form-control form-control-lg" id="shootDuration" required>
+                            <input type="text" name="shootDuration" class="form-control form-control-lg" id="shootDuration" >
                         </div>
                         </div>
                         <div class="row">
                         <div class="col-6 mb-3">
                             <label for="details" class="form-label">Photo Count</label>
-                            <input type="number"   name="count" class="form-control form-control-lg" id="details" required></input>
+                            <input type="number"   name="count" class="form-control form-control-lg" id="details" ></input>
                         </div>
                         <div class="col-6 mb-3">
                             <label for="details" class="form-label">Editing</label>
-                            <input type="text"   name="editing" class="form-control form-control-lg" id="details" required></input>
+                            <input type="text"   name="editing" class="form-control form-control-lg" id="details" ></input>
                         </div>
                         </div>
                         <div class="row">
                         <div class="col-6 mb-3">
                             <label for="image" class="form-label">Assistant</label>
-                            <input type="text" name="assistant" class="form-control form-control-lg" id="image" required>
+                            <input type="text" name="assistant" class="form-control form-control-lg" id="image" >
                         </div>
                         <div class="col-6 mb-3">
                                 <label for="" class="form-label">Select Category</label>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="col mb-3">
                             <label for="image" class="form-label">Image</label>
-                            <input type="file" name="image" class="form-control form-control-lg" id="image" required>
+                            <input type="file" name="image" class="form-control form-control-lg" id="image">
                         </div>
                         <button type="submit" class="btn btn-lg btn-primary w-100 my-2 mt-4">Add Package</button>
                     </form>
