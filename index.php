@@ -422,8 +422,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <!-- Copyright -->
     <div class="container">
       <div class=" text-center px-4 py-2 bg-white text-primary fw-light" style="background-color: rgba(0, 0, 0, 0.05);">
-        © Copyright <?php echo date('Y'); ?>
-        <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Cense7 Business Partner</a>
+        © <?php echo date('Y'); ?> Alright Reserved Esai-Studio |  
+        <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Developed by Cense7.com</a>
       </div>
   </footer>
 
