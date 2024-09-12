@@ -8,8 +8,6 @@
                     <span>Get connected with us on social networks:</span>
                 </div>
 
-
-
                 <div>
                     <a href="" class="me-4 text-reset">
                         <i class="fab fa-facebook-f"></i>
@@ -42,13 +40,10 @@
 
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
+                            <img src="../img/Logo/Esai Studio logo White.png" alt="" style="height: 80px;">
                             <h6 class="mb-4 fs-4 fw-bold rounded-3">
-                                Malcolm Lismore
+                                
                             </h6>
-                            <p>
-                            I'm a talented freelance photographer based on the northwest coast of Scotland,
-                             is passionate about capturing the natural world's beauty
-                            </p>
                         </div>
 
 
@@ -56,7 +51,7 @@
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                Services
+                                Packages
                             </h6>
                             <p>
                                 <a href="#!" class="text-reset">Wedding shoot</a>
@@ -77,7 +72,7 @@
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
                             <h6 class="text-uppercase fw-bold mb-4">
-                                Useful links
+                                Pages
                             </h6>
                             <p>
                                 <a href="#!" class="text-reset">Pricing</a>
@@ -86,31 +81,27 @@
                                 <a href="#!" class="text-reset">Gallery</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Reviews</a>
+                                <a href="#!" class="text-reset">Booking</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Brand</a>
+                                <a href="#!" class="text-reset">Completed Projects</a>
                             </p>
                         </div>
 
-
-
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
-                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                            <p><i class="fas fa-home me-3"></i> Scotland</p>
+                            <h6 class="text-uppercase fw-bold mb-4">About</h6>
+                            <p><i class="fas fa-home me-3"></i> Kalladi, Batticaloa</p>
                             <p>
                                 <i class="fas fa-envelope me-3"></i>
-                                info@Malcolmlismore.com
+                                info@esai-studio.com
                             </p>
                             <p><i class="fas fa-phone me-3"></i> +94 76 175 4242</p>
-                            <p><i class="fas fa-phone me-3"></i>+94 76 175 4242</p>
+                            <p><i class="fas fa-phone me-3"></i> +94 76 175 4242</p>
                         </div>
                     </div>
                 </div>
             </section>
-
-            
         </div>
         
     </div>
@@ -119,7 +110,7 @@
    <div class="container">
    <div class=" text-center px-4 py-2 bg-white text-primary fw-light" style="background-color: rgba(0, 0, 0, 0.05);">
         © Copyright <?php echo date('Y'); ?>
-        <a class="text-reset fw-normal" href="https://www.linkedin.com/in/mmsalmanfaris/">Cense7 Business Partner</a>
+        <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Cense7 Business Partner</a>
     </div>
     </footer>
 
