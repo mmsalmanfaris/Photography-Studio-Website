@@ -1,7 +1,10 @@
 <?php
-require_once 'headerDB.php';
-?>
+require_once '../includes/config_session.inc.php';
 
+
+if(isset($_SESSION["user_id"])){ 
+  require_once 'headerDB.php';
+  ?>
 <div class="container">
   <div class="row">
     <div class="d-flex  mt-5 mx-4">
@@ -10,19 +13,19 @@ require_once 'headerDB.php';
           <h4 class="badge-black align-content-center pe-4">New Bookings</h4>
 
           <?php
-          $qry = "SELECT count(*) AS unread FROM tbl_booking WHERE status = 'Unread'";
-          $res = $conn->query($qry);
+          // $qry = "SELECT count(*) AS unread FROM tbl_booking WHERE status = 'Unread'";
+          // $res = $conn->query($qry);
 
-          if ($res) {
-            if ($res->num_rows > 0) {
-              $row = $res->fetch_assoc();
-              echo "<h3 class='bg-black text-white p-3 rounded-3'>". $row['unread'] . "</h3>";
-            } else {
-              echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
-            }
-          } else {
-            echo "Query failed: " . $conn->error;
-          }
+          // if ($res) {
+          //   if ($res->num_rows > 0) {
+          //     $row = $res->fetch_assoc();
+          //     echo "<h3 class='bg-black text-white p-3 rounded-3'>". $row['unread'] . "</h3>";
+          //   } else {
+          //     echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
+          //   }
+          // } else {
+          //   echo "Query failed: " . $conn->error;
+          // }
           ?>
         </div>
       </div>
@@ -30,19 +33,19 @@ require_once 'headerDB.php';
         <div class="card-body d-flex align-items-center justify-content-center">
           <h4 class="badge-black align-content-center pe-4">Ongoing Shoot</h4>
           <?php
-          $qry = "SELECT count(*) AS processing FROM tbl_booking WHERE status = 'Processing'";
-          $res = $conn->query($qry);
+          // $qry = "SELECT count(*) AS processing FROM tbl_booking WHERE status = 'Processing'";
+          // $res = $conn->query($qry);
 
-          if ($res) {
-            if ($res->num_rows > 0) {
-              $row = $res->fetch_assoc();
-              echo "<h3 class='bg-black text-white p-3 rounded-3'>". $row['processing'] . "</h3>";
-            } else {
-              echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
-            }
-          } else {
-            echo "Query failed: " . $conn->error;
-          }
+          // if ($res) {
+          //   if ($res->num_rows > 0) {
+          //     $row = $res->fetch_assoc();
+          //     echo "<h3 class='bg-black text-white p-3 rounded-3'>". $row['processing'] . "</h3>";
+          //   } else {
+          //     echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
+          //   }
+          // } else {
+          //   echo "Query failed: " . $conn->error;
+          // }
           ?>
         </div>
       </div>
@@ -50,19 +53,19 @@ require_once 'headerDB.php';
         <div class="card-body d-flex align-items-center justify-content-center">
           <h4 class="badge-black align-content-center pe-4">Completed</h4>
           <?php
-          $qry = "SELECT count(*) AS completed FROM tbl_booking WHERE status = 'Completed'";
-          $res = $conn->query($qry);
+          // $qry = "SELECT count(*) AS completed FROM tbl_booking WHERE status = 'Completed'";
+          // $res = $conn->query($qry);
 
-          if ($res) {
-            if ($res->num_rows > 0) {
-              $row = $res->fetch_assoc();
-              echo "<h3 class='bg-black text-white p-3 rounded-3'>". $row['completed'] . "</h3>";
-            } else {
-              echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
-            }
-          } else {
-            echo "Query failed: " . $conn->error;
-          }
+          // if ($res) {
+          //   if ($res->num_rows > 0) {
+          //     $row = $res->fetch_assoc();
+          //     echo "<h3 class='bg-black text-white p-3 rounded-3'>". $row['completed'] . "</h3>";
+          //   } else {
+          //     echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
+          //   }
+          // } else {
+          //   echo "Query failed: " . $conn->error;
+          // }
           ?>
         </div>
       </div>
@@ -129,6 +132,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   </div>
 </div>
 
-<?php
+<?php  }
+else {
+  header("Location: ../login.php");
+    die();
+}
+
+
+
 require_once './footerDB.php';
 ?>

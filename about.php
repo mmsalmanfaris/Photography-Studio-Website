@@ -8,13 +8,13 @@ require_once 'header.php';
     <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
             <div class="col-12 col-lg-6 col-xl-5">
-                <img class="img-fluid rounded-4" loading="lazy" src="./assets/img/About/photographer.jpg" alt="About 1">
+                <img class="img-fluid rounded-4" loading="lazy" src="./img/About/photographer.jpg" alt="About 1">
             </div>
             <div class="col-12 col-lg-6 col-xl-7 p-3">
                 <div class="row justify-content-xl-center">
                     <div class="col-12 col-xl-11">
                         <h2 class="mb-3">Who Are We?</h2>
-                        <p class="lead fs-4 text-secondary mb-3 t">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
+                        <p class="lead fs-4 text-primary mb-3 t">We help people to build incredible brands and superior products. Our perspective is to furnish outstanding captivating services.</p>
                         <p class="mb-5" style="text-align: justify;">We are a fast-growing company, but we have never lost sight of our core values. We believe in collaboration, innovation, and customer satisfaction. We are always looking for new ways to improve our products and services.</p>
                         <div class="row mx-1">
                             <div class="col-12 col-md-8 text-white bg-primary rounded-3 py-4 px-4  mb-3 mb-md-4">

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard| Admin Details</title>
-    <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <link rel="stylesheet" href="../src/assets/css/styles.min.css" />
 
 
     <!--Datatable-->

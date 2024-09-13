@@ -31,25 +31,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="row justify-content-around">
       <div class="card text-white text-center bg-primary me-md-3 mb-3 " style="max-width: 18rem;">
         <div class="card-body">
-          <img class="mt-2" src="./assets/icon/phonecall.png" alt="">
+          <img class="mt-2" src="./icon/phonecall.png" alt="">
           <h5 class="card-title mt-4">+94 76 175 4242</h5>
         </div>
       </div>
       <div class="card text-white text-center bg-primary mx-md-3 mb-3" style="max-width: 18rem;">
         <div class="card-body">
-          <img class="mt-2" src="./assets/icon/email.png" alt="">
+          <img class="mt-2" src="./icon/email.png" alt="">
           <h5 class="card-title mt-4"> <a href="mainto:info@esaistudio.com">info@esaistudio.com</a></h5>
         </div>
       </div>
       <div class="card text-white text-center bg-primary mx-md-3 mb-3" style="max-width: 18rem;">
         <div class="card-body">
-          <img class="mt-2" src="./assets/icon/location.png" alt="">
+          <img class="mt-2" src="./icon/location.png" alt="">
           <h5 class="card-title mt-4">Batticaloa, Sri Lanka</h5>
         </div>
       </div>
       <div class="card text-white text-center bg-primary ms-md-3 mb-3" style="max-width: 18rem;">
         <div class="card-body">
-          <img class="mt-2" src="./assets/icon/facebook.png" alt="">
+          <img class="mt-2" src="./icon/facebook.png" alt="">
           <h5 class="card-title mt-4"><a href="www.facebook.com/****">Facebook Page</a></h5>
         </div>
       </div>
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <div class="container">
   <div class="figure my-5 py-5 d-none d-sm-block ">
-    <img src="./assets/img/Gallery/wedding/1.jpg" alt="" class="figure-img img-fluid rounded-5"
+    <img src="./img/Gallery/wedding/1.jpg" alt="" class="figure-img img-fluid rounded-5"
       style="height: 400px; width: 1500px; object-fit:cover;">
   </div>
 </div>

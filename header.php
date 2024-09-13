@@ -13,8 +13,8 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Esai Studio</title>
 
@@ -38,7 +38,7 @@
                     <a href="booking.php" class="nav-item nav-link me-5">Booking</a>
                     <a href="Gallery.php" class="nav-item nav-link me-5">Gallery</a>
                     <a href="about.php" class="nav-item nav-link me-5">About</a>
-                    <a href="Contact.php" class="btn btn-outline-secondary px-3" >Contact</a>
+                    <a href="contact.php" class="btn btn-outline-secondary px-3" >Contact</a>
                 </div>
             </div>
         </div>

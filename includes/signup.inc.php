@@ -45,13 +45,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             ];
             $_SESSION['signup_data'] = $signupData;
             
-            header("Location: ../src/signup.php");
+            header("Location: ../dashboard/signup.php");
             die();
         } 
 
         create_user($pdo, $username, $email, $password);
 
-        header("Location: ../src/signup.php?signup=success");
+        header("Location: ../dashboard/signup.php?signup=success");
         $pdo = null;
         $stmt = null;
         die();
@@ -62,6 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 } else {
     echo "Request method is not POST. Redirecting...";
-    header("Location: ./index.php");
+    header("Location: ../index.php");
     die();
 }

@@ -71,73 +71,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
   <!--Hero Section-->
-  <div id="hero-carousel" class="carousel slide mt-5">
 
-
-
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/slide/slide1.jpg" class="slide-img d-block w-100" alt="...">
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
-          <p class="mt-5 fs-3 text-uppercase text-center">One Time in Life</p>
-          <h1 class="display-1 fw-bolder text-capitalize fc">Wedding Photoshoot</h1>
-          <button class=" btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="./img/slide/slide2.jpg" class="slide-img d-block w-100" alt="...">
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
-          <p class="mt-5 fs-3 text-uppercase text-center">Enjoy Their Growth</p>
-          <h1 class="display-1 fw-bolder text-capitalize">Portraits Photoshoot</h1>
-          <button class=" btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="./img/slide/slide3.jpg" class="slide-img d-block w-100" alt="...">
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
-          <p class="fs-3 text-uppercase">Collect Memories.</p>
-          <h1 class="display-1 fw-bolder">Special Event Photoshoot</h1>
-          <button class="btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
   <!-- add Some Imformation Here -->
 
   <div class="container my-md-5 py-md-5">
     <div class="row py-5">
-      <div class="d-flex">
+      <div class="d-md-flex">
         <div class="figure d-flex">
-          <div class=" col-12 col-xl-4 align-self-center">
-            <img src="./img//LandingPage/1.jpg" class="figure-img img-fluid rounded img-booking" alt="">
+          <div class="col-md-2 col-xl-4 align-self-center">
+            <img src="./img//LandingPage/1.jpg" class="figure-img p-2 img-fluid rounded-4 img-booking" alt="">
           </div>
           <div class="col-md-2 col-xl-4 ">
             <div>
-              <img src="./img//LandingPage/3.jpg" class="mb-3 ms-3 figure-img img-fluid rounded img-booking1" alt="">
+              <img src="./img//LandingPage/3.jpg" class="mb-3 ms-md-3 p-2 figure-img img-fluid rounded-4 img-booking1" alt="">
             </div>
             <div>
-              <img src="./img//LandingPage/booking4.jpg" class=" ms-3 figure-img img-fluid rounded img-booking1" alt="">
+              <img src="./img//LandingPage/booking4.jpg" class=" ms-md-3 p-2 figure-img img-fluid rounded-4 img-booking1" alt="">
             </div>
           </div>
           <div class="col-md-2 col-xl-4 align-self-center">
-            <img src="./img//LandingPage/4.jpg" class="ms-4 figure-img img-fluid rounded img-booking" alt="">
+            <img src="./img//LandingPage/4.jpg" class="ms-md-4 p-2 figure-img img-fluid rounded-4 img-booking" alt="">
           </div>
         </div>
 
@@ -157,53 +111,52 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </div>
   </div>
-  <!--Gallery Section---->
-  <section class="bg-primary">
-    <div class="container py-5 text-white">
 
-      <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+
+  <!--Gallery Section---->
+  <section class="bg-primary my-md-5 py-md-5">
+    <div class="container py-5 text-white">
+      
+      <div class="col-12 col-lg-8 col-xxl-7 ">
         <span class="text-white-50">From Gallery</span>
         <h2 class="display-5 fw-bold">Leatest Photos</h2>
-        <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse natural wildlife, and captivating coastal birds.</p>
+        <p class="lead mb-5">Here are my latest captured memories featuring breathtaking landscapes, diverse natural wildlife, and captivating coastal birds.</p>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img src=".//img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+          <img src="./img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water" />
 
-          <img src="./img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+          <img src="./img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Wintry Mountain Landscape" />
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="./img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+          <img src="./img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Mountains in the Clouds" />
 
-          <img src="./img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+          <img src="./img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water" />
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="./img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+          <img src="./img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Waves at Sea" />
 
-          <img src="./img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+          <img src="./img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Yosemite National Park" />
         </div>
       </div>
       <div class="d-flex justify-content-end">
-        <a href="./pages/Gallery.php" class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3">View Gallery</a>
+        <a href="./pages/Gallery.php" class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3">View Gallery</a>
       </div>
     </div>
     </div>
   </section>
 
-  <section class="py-5">
+  <section class="py-5 my5">
     <div class="container">
-      <div class="row mb-2 mb-lg-4">
-        <div class="col-12 col-lg-8 col-xxl-7 w-100">
-          <h2 class="display-5 fw-bold">Our Pricing</h2>
-          <div class="d-flex justify-content-between align-items-center">
-            <p class="lead pb-0">Discover our updated pakage list for your event.</p>
-            <a href="./pages/packages.php" class="btn btn-outline-primary rounded-pill py-3 px-5 mt-0">View Packages</a>
-          </div>
-        </div>
+    <div class="col-12 col-lg-8 col-xxl-7 ">
+        <span class="text-black-50">Affortable Price</span>
+        <h2 class="display-5 fw-bold">Basic Packages</h2>
+        <p class="lead mb-5">Here are my latest captured memories featuring breathtaking landscapes, diverse natural wildlife, and captivating coastal birds.</p>
       </div>
+
       <div class="row mb-5">
         <div class="col-md">
           <div class="card text-center text-white border-0 mb-3 mb-md-0">
@@ -212,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <h5 class="fw-bold">Pre Wedding Shoot</h5>
               <div class="d-flex justify-content-center">
                 <div class="display-3 fw-bold mt-2">
-                  $60
+                  Rs.60
                 </div>
                 <div class=" mt-5">
                   / 01 Hour
@@ -234,7 +187,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <h5 class="fw-bold">Sports Photo Shoot</h5>
               <div class="d-flex justify-content-center">
                 <div class="display-3 fw-bold mt-2">
-                  $100
+                  Rs.100
                 </div>
                 <div class=" mt-5">
                   / Full Time
@@ -256,7 +209,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <h5 class="fw-bold">Industrial Photo Shoot</h5>
               <div class="d-flex justify-content-center">
                 <div class="display-3 fw-bold mt-2">
-                  $40
+                  Rs.40
                 </div>
                 <div class=" mt-5">
                   / 01 Hour
@@ -266,13 +219,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li class="mb-3">Up to 30 photos</li>
                 <li class="mb-3">Editing & Color Grading</li>
                 <li class="mb-3">Stylist Assistance</li>
-              </ul><a class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
+              </ul>
+              <a class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <section>
     <div aria-live="polite" aria-atomic="true" class="position-relative">
@@ -311,121 +266,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
   <!--Footer-->
-  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-
-    <!-- Section: Social media -->
-    <div class="bg-primary text-white">
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container ">
-
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-
-      </section>
-
-
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-
-          <div class="row mt-3">
-
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-              <img src="./img/Logo/Esai Studio logo White.png" alt="" style="height: 80px;">
-              <h6 class="mb-4 fs-4 fw-bold rounded-3">
-
-              </h6>
-            </div>
-
-
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                Packages
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Wedding shoot</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Portraits shoot</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Event Shoot</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Album</a>
-              </p>
-            </div>
-
-
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-              <h6 class="text-uppercase fw-bold mb-4">
-                Pages
-              </h6>
-              <p>
-                <a href="#!" class="text-reset">Pricing</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Gallery</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Booking</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Completed Projects</a>
-              </p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-              <h6 class="text-uppercase fw-bold mb-4">About</h6>
-              <p><i class="fas fa-home me-3"></i> Kalladi, Batticaloa</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@esai-studio.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> +94 76 175 4242</p>
-              <p><i class="fas fa-phone me-3"></i> +94 76 175 4242</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    </div>
-
-    <!-- Copyright -->
-    <div class="container">
-      <div class=" text-center px-4 py-2 bg-white text-primary fw-light" style="background-color: rgba(0, 0, 0, 0.05);">
-        © <?php echo date('Y'); ?> Alright Reserved Esai-Studio |  
-        <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Developed by Cense7.com</a>
-      </div>
-  </footer>
+  <?php 
+    require_once'footer.php';
+  ?>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -89,9 +89,6 @@
                 <span class="hide-menu">Admin Details</span>
               </a>
             </li>
-            <li class="sidebar-item">
-              <a href="./authentication-login.html" class="btn btn-outline-primary mt-5 d-block">Logout</a>
-            </li>
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
@@ -109,18 +106,12 @@
                 <i class="ti ti-menu-2"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
-            </li>
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <li class="nav-item dropdown">
-                <a href="" target="_blank" class="btn btn-primary"> <i class="ti ti-user me-2"></i>Profile</a>
-              </li>
+              <form action="../includes/logout.inc.php" method="post">  
+                <button class="btn btn-danger">Logout</button>
+              </form>
             </ul>
           </div>
         </nav>

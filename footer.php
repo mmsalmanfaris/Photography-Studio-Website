@@ -40,10 +40,10 @@
 
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-                            <img src="../img/Logo/Esai Studio logo White.png" alt="" style="height: 80px;">
-                            <h6 class="mb-4 fs-4 fw-bold rounded-3">
-                                
-                            </h6>
+                            <img src="./img/Logo/Esai Studio logo White.png" alt="" style="height: 60px;">
+                            <p class="mt-2">
+                                We guarantee to capture your special moments exactly the way you envision. Check out our gallery section to see some of our previous work.
+                            </p>
                         </div>
 
 
@@ -103,19 +103,20 @@
                 </div>
             </section>
         </div>
-        
-    </div>
-    
-    <!-- Copyright -->
-   <div class="container">
-   <div class=" text-center px-4 py-2 bg-white text-primary fw-light" style="background-color: rgba(0, 0, 0, 0.05);">
-        © Copyright <?php echo date('Y'); ?>
-        <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Cense7 Business Partner</a>
-    </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="container">
+      <div class=" text-center px-4 py-2 bg-white text-primary fw-light">
+        © <?php echo date('Y'); ?> Alright Reserved Esai-Studio |  
+        <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Developed by Cense7.com</a>
+      </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
-</html>
+
+    </html>
