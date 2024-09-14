@@ -1,6 +1,9 @@
 <?php
-require_once 'headerDB.php';
-?>
+require_once '../includes/config_session.inc.php';
+
+if(isset($_SESSION["user_id"])){ 
+    require_once 'header.php';
+    ?>
 
 <div class="continer">
     <div class="row py-5 px-3">
@@ -51,8 +54,14 @@ require_once 'headerDB.php';
 </div>
 
 <!-- Footer section -->
-<?php
-require_once 'footerDB.php';
+<?php  
+
+require_once 'footer.php';
+}
+else {
+  header("Location: ../login.php");
+    die();
+}
 ?>
 
 

@@ -1,5 +1,5 @@
 <?php
-require_once 'headerDB.php';
+require_once 'header.php';
 //Update Function
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -105,5 +105,5 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </div>
 
 <?php }
-    require_once 'footerDB.php';
+    require_once 'footer.php';
 ?>

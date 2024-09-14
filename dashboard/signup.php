@@ -2,9 +2,10 @@
 
 require_once '../includes/config_session.inc.php';
 require_once '../includes/signup_view.inc.php';
-require_once 'headerDB.php';
 
-?>
+if(isset($_SESSION["user_id"])){ 
+    require_once 'header.php';
+    ?>
 
 
 <!-- <div class="row"> -->
@@ -35,7 +36,13 @@ require_once 'headerDB.php';
         </div>
     </div>
 </div>
-<?php
-include './footerDB.php';
+<?php 
+
+include './footer.php';
+}
+else {
+  header("Location: ../login.php");
+    die();
+}
 ?>
 </div>

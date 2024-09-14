@@ -1,6 +1,6 @@
-        <div class="text-center py-2" style="background-color: rgba(0, 0, 0, 0.03);">
-            © Copyright <?php echo date('Y'); ?>
-            <a class="text-reset fw-bold" href="https://www.linkedin.com/in/mmsalmanfaris/">mmsalmanfaris.com</a>
+        <div class="text-center py-2 mt-4" style="background-color: rgba(0, 0, 0, 0.03);">
+            © <?php echo date('Y'); ?> Alright Reserved Esai-Studio |  
+            <a class="text-reset fw-bold" href="https://www.cense7.com" target="_blank">Developed by Cense7.com</a>
         </div>
 
 

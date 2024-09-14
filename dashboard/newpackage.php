@@ -1,5 +1,9 @@
 <?php
-    require_once 'headerDB.php';
+require_once '../includes/config_session.inc.php';
+
+    if(isset($_SESSION["user_id"])){ 
+        require_once 'header.php';
+        
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $packageName = $_POST["packageName"];
@@ -85,6 +89,13 @@
         </div>
     </div>
 </div>
-<?php
-    require_once 'footerDB.php';
+
+<?php  
+require_once 'footer.php';
+
+}
+else {
+  header("Location: ../login.php");
+    die();
+}
 ?>

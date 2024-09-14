@@ -2,7 +2,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a class="fs-5 fw-bolder rounded-1" href="#">Malcolm Lismore </a>
+        <img class="mt-4 ms-4" src="../img/Logo/Esai Studio logo black.png" style="height: 60px;">
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
           </div>
@@ -14,7 +14,7 @@
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./dashboard.php" aria-expanded="false">
+              <a class="sidebar-link" href="./" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard selected"></i>
                 </span>
@@ -26,7 +26,7 @@
               <span class="hide-menu">Main COMPONENTS</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./bookingDB.php" aria-expanded="false">
+              <a class="sidebar-link" href="./booking.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-camera"></i>
                 </span>
@@ -34,7 +34,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./inquiryDB.php" aria-expanded="false">
+              <a class="sidebar-link" href="./inquiry.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
@@ -43,25 +43,25 @@
             </li>
             <hr>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./addpackageDB.php" aria-expanded="false">
+              <a class="sidebar-link" href="./newpackage.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-new-section"></i>
                 </span>
-                <span class="hide-menu">Add Package</span>
+                <span class="hide-menu">New Package</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./packageDB.php" aria-expanded="false">
+              <a class="sidebar-link" href="./package.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-dollar"></i>
                 </span>
-                <span class="hide-menu">Package Details</span>
+                <span class="hide-menu">Package Management</span>
               </a>
             </li>
             <hr>
            
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./gallerydetails.php" aria-expanded="false">
+              <a class="sidebar-link" href="./gallery.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-photo"></i>
                 </span>
@@ -78,15 +78,15 @@
                 <span>
                   <i class="ti ti-user-plus"></i>
                 </span>
-                <span class="hide-menu">Add Admin</span>
+                <span class="hide-menu">New Admin</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./admindetailsDB.php" aria-expanded="false">
+              <a class="sidebar-link" href="./admin.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-check"></i>
                 </span>
-                <span class="hide-menu">Admin Details</span>
+                <span class="hide-menu">Admin Management</span>
               </a>
             </li>
           </ul>

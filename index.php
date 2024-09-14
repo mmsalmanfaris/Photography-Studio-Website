@@ -1,82 +1,62 @@
 <!-- Booking code -->
 <?php
-// require_once './pages/header.php';
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $fname = $_POST["fname"];
-  $pnumber = $_POST['pnumber'];
-  $category = $_POST['category'];
-  $package = $_POST['package'];
-  $date = $_POST['date'];
-  $time = $_POST['time'];
-  $status = "Unread";
-
-  $qry = "INSERT INTO tbl_booking(fname, pnumber, category, package, date, time, status) VALUES('$fname', '$pnumber', '$category', '$package', '$date', '$time', '$status')";
-
-
-  $res = $conn->query($qry);
-
-  if (!$res) {
-    die("Booking Failed");
-  } else
-    $fnctn_msg = "success";
-}
+ require_once 'header.php';
 ?>
-
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="
-  ">
-  <!-- Bootstrap ICON -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/style.css">
-
-  <title>Esai Studio</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-        <a href="./index.php" class="navbar-brand">
-          <img src="./img/Logo/Esai Studio logo White.png" height="40" alt="Esai-Studio">
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarCollapse">
-          <div class="navbar-nav ms-auto">
-            <a href="index.php" class="nav-item nav-link active me-5">Home</a>
-            <a href="packages.php" class="nav-item nav-link me-5">Packages</a>
-            <a href="booking.php" class="nav-item nav-link me-5">Booking</a>
-            <a href="Gallery.php" class="nav-item nav-link me-5">Gallery</a>
-            <a href="about.php" class="nav-item nav-link me-5">About</a>
-            <a href="Contact.php" class="btn btn-outline-secondary px-3">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
 
   <!--Hero Section-->
+  <div id="hero-carousel" class="carousel slide">
 
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="./img/slide/slide1.jpg" class="slide-img d-block w-100" alt="...">
+    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
+      <p class="mt-5 fs-3 text-uppercase text-center">One Time in Life</p>
+      <h1 class="display-1 fw-bolder text-capitalize fc">Wedding Photoshoot</h1>
+      <button class=" btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <img src="./img/slide/slide2.jpg" class="slide-img d-block w-100" alt="...">
+    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
+      <p class="mt-5 fs-3 text-uppercase text-center">Enjoy Their Growth</p>
+      <h1 class="display-1 fw-bolder text-capitalize">Portraits Photoshoot</h1>
+      <button class=" btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <img src="./img/slide/slide3.jpg" class="slide-img d-block w-100" alt="...">
+    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
+      <p class="fs-3 text-uppercase">Collect Memories.</p>
+      <h1 class="display-1 fw-bolder">Special Event Photoshoot</h1>
+      <button class="btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
 
   <!-- add Some Imformation Here -->
 
   <div class="container my-md-5 py-md-5">
-    <div class="row py-5">
+    <div class="row py-5"> 
       <div class="d-md-flex">
         <div class="figure d-flex">
           <div class="col-md-2 col-xl-4 align-self-center">
@@ -116,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <!--Gallery Section---->
   <section class="bg-primary my-md-5 py-md-5">
     <div class="container py-5 text-white">
-      
+
       <div class="col-12 col-lg-8 col-xxl-7 ">
         <span class="text-white-50">From Gallery</span>
         <h2 class="display-5 fw-bold">Leatest Photos</h2>
@@ -151,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <section class="py-5 my5">
     <div class="container">
-    <div class="col-12 col-lg-8 col-xxl-7 ">
+      <div class="col-12 col-lg-8 col-xxl-7 ">
         <span class="text-black-50">Affortable Price</span>
         <h2 class="display-5 fw-bold">Basic Packages</h2>
         <p class="lead mb-5">Here are my latest captured memories featuring breathtaking landscapes, diverse natural wildlife, and captivating coastal birds.</p>
@@ -266,12 +246,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
   <!--Footer-->
-  <?php 
-    require_once'footer.php';
+  <?php
+  require_once 'footer.php';
   ?>
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

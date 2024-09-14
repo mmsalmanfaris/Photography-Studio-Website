@@ -1,6 +1,8 @@
 <?php
-//Header
-require_once 'headerDB.php';
+require_once '../includes/config_session.inc.php';
+
+if(isset($_SESSION["user_id"])){ 
+    require_once 'header.php';
 ?>
 
 <!--Admin Details Section - table-->
@@ -56,8 +58,11 @@ require_once 'headerDB.php';
     </div>
 </div>
 
-
-
-<?php
-require_once 'footerDB.php';
+<?php  
+require_once 'footer.php';
+}
+else {
+  header("Location: ../login.php");
+    die();
+}
 ?>

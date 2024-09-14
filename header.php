@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/style.css">
 
+
   <title>Esai Studio</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,9 +26,9 @@
   <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a href="../index.php" class="navbar-brand">
-                <img src="../img/Logo/Esai Studio logo White.png" height="40" alt="Esai-Studio">
-            </a>
+        <a href="./index.php" class="navbar-brand">
+          <img src="./img/Logo/Esai Studio logo White.png" height="40" alt="Esai-Studio">
+        </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>

@@ -3,7 +3,7 @@ require_once '../includes/config_session.inc.php';
 
 
 if(isset($_SESSION["user_id"])){ 
-  require_once 'headerDB.php';
+  require_once 'header.php';
   ?>
 <div class="container">
   <div class="row">
@@ -132,13 +132,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   </div>
 </div>
 
-<?php  }
+<?php
+require_once './footer.php';
+  }
 else {
   header("Location: ../login.php");
     die();
 }
 
 
-
-require_once './footerDB.php';
 ?>
