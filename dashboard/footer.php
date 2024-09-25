@@ -1,6 +1,6 @@
         <div class="text-center py-2 mt-4" style="background-color: rgba(0, 0, 0, 0.03);">
-            © <?php echo date('Y'); ?> Alright Reserved Esai-Studio |  
-            <a class="text-reset fw-bold" href="https://www.cense7.com" target="_blank">Developed by Cense7.com</a>
+            Copyright @ <?php echo date('Y'); ?> Esai Studio - All Right Reserved. Design & Development by
+            <a class="text-reset fw-bold" href="https://www.cense7.com" target="_blank">Cense7.com</a>
         </div>
 
 
@@ -41,10 +41,10 @@
 
         </body>
         <?php
-            // if (isset(msg == "success")) {
-            //     $msg = $_GET['msg'];
-                if ($msg == "adminUpdated") {
-                    echo "
+        // if (isset(msg == "success")) {
+        //     $msg = $_GET['msg'];
+        if ($msg == "adminUpdated") {
+            echo "
                     <script>
                     Swal.fire({
                     title: 'Update Successfull!',
@@ -54,10 +54,8 @@
 
                     window.location.href = 'admindetailsDB.php';
                     </script>";
-
-                }
-                elseif($msg == "inquiryUpdated") {
-                    echo "
+        } elseif ($msg == "inquiryUpdated") {
+            echo "
                     <script>
                     Swal.fire({
                     title: 'Update Successfull!',
@@ -67,10 +65,8 @@
 
                     window.location.href = 'inquiryDB.php';
                     </script>";
-
-                }
-                elseif($msg == "Deleted") {
-                    echo "
+        } elseif ($msg == "Deleted") {
+            echo "
                     <script>
                     Swal.fire({
                     title: 'Delete Successfull!',
@@ -81,9 +77,8 @@
                     window.location.href = 'admindetailsDB.php';
                     
                     </script>";
-                }
-                elseif($msg == "packagedeleted") {
-                    echo "
+        } elseif ($msg == "packagedeleted") {
+            echo "
                     <script>
                     Swal.fire({
                     title: 'Delete Successfull!',
@@ -94,9 +89,9 @@
                     window.location.href = 'packageDB.php';
 
                     </script>";
-                }
-                if ($msg == "Succsss") {
-                    echo "
+        }
+        if ($msg == "Succsss") {
+            echo "
                         <script>
                             const Toast = Swal.mixin({
                             toast: true,
@@ -114,9 +109,8 @@
                             title: 'Updated successfully'
                             });
                         </script>";
-                }
-            // }
+        }
+        // }
         ?>
-        </html>
 
-        
+        </html>

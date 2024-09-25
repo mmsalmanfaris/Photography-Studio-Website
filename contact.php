@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <div class="container">
   <div class="figure my-5 py-5 d-none d-sm-block ">
-    <img src="./img/Gallery/wedding/1.jpg" alt="" class="figure-img img-fluid rounded-5"
+    <img src="./img/contact/contact.webp" alt="" class="figure-img img-fluid rounded-5"
       style="height: 400px; width: 1500px; object-fit:cover;">
   </div>
 </div>

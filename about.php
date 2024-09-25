@@ -8,7 +8,7 @@ require_once 'header.php';
     <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
             <div class="col-12 col-lg-6 col-xl-5">
-                <img class="img-fluid rounded-4" loading="lazy" src="./img/About/photographer.jpg" alt="About 1">
+                <img class="img-fluid rounded-4" loading="lazy" src="./img/About/photographer.webp" alt="Photographer Esai Studio">
             </div>
             <div class="col-12 col-lg-6 col-xl-7 p-3">
                 <div class="row justify-content-xl-center">

@@ -17,26 +17,26 @@ require_once './header.php';
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="../img/gallery/wedding/4.jpg" class="figure-img img-fluid rounded"
+                    <img src="./img/gallery/wedding/4.webp" class="figure-img img-fluid rounded"
                         alt="Boat on Calm Water" />
 
-                    <img src="../img/gallery/wedding/1.jpg" class="figure-img img-fluid rounded"
+                    <img src="./img/gallery/wedding/1.webp" class="figure-img img-fluid rounded"
                         alt="Wintry Mountain Landscape" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../img/gallery/wedding/2.jpg" class="wfigure-img img-fluid rounded"
+                    <img src="./img/gallery/wedding/2.webp" class="figure-img img-fluid rounded"
                         alt="Mountains in the Clouds" />
 
-                    <img src="../img/gallery/wedding/5.jpg" class="figure-img img-fluid rounded"
+                    <img src="./img/gallery/wedding/5.webp" class="figure-img img-fluid rounded"
                         alt="Boat on Calm Water" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../img/gallery/wedding/6.jpg" class="figure-img img-fluid rounded"
+                    <img src="./img/gallery/wedding/6.webp" class="figure-img img-fluid rounded"
                         alt="Waves at Sea" />
 
-                    <img src="../img/gallery/wedding/3.jpg" class="figure-img img-fluid rounded"
+                    <img src="./img/gallery/wedding/3.webp" class="figure-img img-fluid rounded"
                         alt="Yosemite National Park" />
                 </div>
             </div>
@@ -56,35 +56,35 @@ require_once './header.php';
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="../img/Gallery/eventp/1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/event/1.webp" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Boat on Calm Water" />
 
-                    <img src="../img/Gallery/eventp/4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/event/4.webp" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Wintry Mountain Landscape" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../img/Gallery/eventp/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/event/5.webp" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Mountains in the Clouds" />
 
-                    <img src="../img/Gallery/eventp/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/event/2.webp" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Boat on Calm Water" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../img/Gallery/eventp/3.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/event/3.webp" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Waves at Sea" />
 
-                    <img src="../img/Gallery/eventp/6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/event/6.webp" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Yosemite National Park" />
                 </div>
+            </div>
         </div>
     </div>
-    </div>
 
 
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="mt-5">
             <div class="py-5"></div>
             <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
@@ -95,31 +95,31 @@ require_once './header.php';
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="../img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Boat on Calm Water" />
 
-                    <img src="../img/Gallery/portrait/1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/portrait/1.jpg" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Wintry Mountain Landscape" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../img/Gallery/portrait/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/portrait/2.jpg" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Mountains in the Clouds" />
 
-                    <img src="../img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Boat on Calm Water" />
                 </div>
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="../img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Waves at Sea" />
 
-                    <img src="../img/Gallery/portrait/3.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                    <img src="./img/Gallery/portrait/3.jpg" class="w-100 shadow-1-strong rounded mb-4"
                         alt="Yosemite National Park" />
                 </div>
+            </div>
         </div>
-    </div>
-    </div>
+    </div> -->
 </section>
 
 

@@ -1,6 +1,6 @@
 <!-- Booking code -->
 <?php
- require_once 'header.php';
+require_once 'header.php';
 ?>
 </head>
 
@@ -9,69 +9,69 @@
   <!--Hero Section-->
   <div id="hero-carousel" class="carousel slide">
 
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-</div>
-
-<div class="carousel-inner">
-  <div class="carousel-item active">
-    <img src="./img/slide/slide1.jpg" class="slide-img d-block w-100" alt="...">
-    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
-      <p class="mt-5 fs-3 text-uppercase text-center">One Time in Life</p>
-      <h1 class="display-1 fw-bolder text-capitalize fc">Wedding Photoshoot</h1>
-      <button class=" btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-  </div>
 
-  <div class="carousel-item">
-    <img src="./img/slide/slide2.jpg" class="slide-img d-block w-100" alt="...">
-    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
-      <p class="mt-5 fs-3 text-uppercase text-center">Enjoy Their Growth</p>
-      <h1 class="display-1 fw-bolder text-capitalize">Portraits Photoshoot</h1>
-      <button class=" btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
-    </div>
-  </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/slide/slide1.webp" class="slide-img d-block w-100" alt="...">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
+          <p class="mt-5 fs-3 text-uppercase text-center">One Time in Life</p>
+          <h1 class="display-1 fw-bolder text-capitalize fc">Wedding Photoshoot</h1>
+          <button class=" btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+        </div>
+      </div>
 
-  <div class="carousel-item">
-    <img src="./img/slide/slide3.jpg" class="slide-img d-block w-100" alt="...">
-    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
-      <p class="fs-3 text-uppercase">Collect Memories.</p>
-      <h1 class="display-1 fw-bolder">Special Event Photoshoot</h1>
-      <button class="btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+      <div class="carousel-item">
+        <img src="./img/slide/slide2.webp" class="slide-img d-block w-100" alt="...">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
+          <p class="mt-5 fs-3 text-uppercase text-center">Enjoy Their Growth</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Portraits Photoshoot</h1>
+          <button class=" btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/slide/slide3.webp" class="slide-img d-block w-100" alt="...">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center top-0">
+          <p class="fs-3 text-uppercase">Collect Memories.</p>
+          <h1 class="display-1 fw-bolder">Special Event Photoshoot</h1>
+          <button class="btn btn-danger fs-5 py-2 px-4 mt-5">Book Now</button>
+        </div>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-</div>
 
   <!-- add Some Imformation Here -->
 
   <div class="container my-md-5 py-md-5">
-    <div class="row py-5"> 
+    <div class="row py-5">
       <div class="d-md-flex">
         <div class="figure d-flex">
           <div class="col-md-2 col-xl-4 align-self-center">
-            <img src="./img//LandingPage/1.jpg" class="figure-img p-2 img-fluid rounded-4 img-booking" alt="">
+            <img src="./img/landing/1.webp" class="figure-img p-2 img-fluid rounded-4 img-booking" alt="">
           </div>
           <div class="col-md-2 col-xl-4 ">
             <div>
-              <img src="./img//LandingPage/3.jpg" class="mb-3 ms-md-3 p-2 figure-img img-fluid rounded-4 img-booking1" alt="">
+              <img src="./img/landing/3.webp" class="mb-3 ms-md-3 p-2 figure-img img-fluid rounded-4 img-booking1" alt="">
             </div>
             <div>
-              <img src="./img//LandingPage/booking4.jpg" class=" ms-md-3 p-2 figure-img img-fluid rounded-4 img-booking1" alt="">
+              <img src="./img/landing/booking3.webp" class=" ms-md-3 p-2 figure-img img-fluid rounded-4 img-booking1" alt="">
             </div>
           </div>
           <div class="col-md-2 col-xl-4 align-self-center">
-            <img src="./img//LandingPage/4.jpg" class="ms-md-4 p-2 figure-img img-fluid rounded-4 img-booking" alt="">
+            <img src="./img/landing/4.webp" class="ms-md-4 p-2 figure-img img-fluid rounded-4 img-booking" alt="">
           </div>
         </div>
 
@@ -83,7 +83,7 @@
             <div class="d-flex">
               <div class="btn btn-primary rounded-pill py-3 px-4 mt-4 me-3"> Gallery</div>
               <div class="">
-                <a href="./pages/booking.php" class="btn btn-outline-primary  rounded-pill py-3 px-4 mt-4">Book Now!<i class="bi bi-arrow-right-circle ms-2"></i></a>
+                <a href="./booking.php" class="btn btn-outline-primary  rounded-pill py-3 px-4 mt-4">Book Now!<i class="bi bi-arrow-right-circle ms-2"></i></a>
               </div>
             </div>
           </div>
@@ -105,25 +105,25 @@
 
       <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img src="./img/LandingPage/2.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water" />
+          <img src="./img/landing/2.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water" />
 
-          <img src="./img/LandingPage/5.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Wintry Mountain Landscape" />
+          <img src="./img/landing/5.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Wintry Mountain Landscape" />
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="./img/LandingPage/11.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Mountains in the Clouds" />
+          <img src="./img/landing/11.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Mountains in the Clouds" />
 
-          <img src="./img/LandingPage/9.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water" />
+          <img src="./img/landing/9.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water" />
         </div>
 
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="./img/LandingPage/8.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Waves at Sea" />
+          <img src="./img/landing/8.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Waves at Sea" />
 
-          <img src="./img/LandingPage/12.jpg" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Yosemite National Park" />
+          <img src="./img/landing/12.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Yosemite National Park" />
         </div>
       </div>
       <div class="d-flex justify-content-end">
-        <a href="./pages/Gallery.php" class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3">View Gallery</a>
+        <a href="./Gallery.php" class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3">View Gallery</a>
       </div>
     </div>
     </div>
@@ -140,7 +140,7 @@
       <div class="row mb-5">
         <div class="col-md">
           <div class="card text-center text-white border-0 mb-3 mb-md-0">
-            <img class="card-img-top rounded-top" src="./img/PackagePage/prewedding.jpg">
+            <img class="card-img-top rounded-top" src="./img/package/prewedding.webp">
             <div class="card-body bg-primary rounded-bottom py-5">
               <h5 class="fw-bold">Pre Wedding Shoot</h5>
               <div class="d-flex justify-content-center">
@@ -162,7 +162,7 @@
 
         <div class="col-md">
           <div class="card text-center text-white border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="./img/PackagePage/sport.jpg">
+            <img class="card-img-top" src="./img/package/sport.webp">
             <div class="card-body bg-primary rounded-bottom py-5">
               <h5 class="fw-bold">Sports Photo Shoot</h5>
               <div class="d-flex justify-content-center">
@@ -184,7 +184,7 @@
 
         <div class="col-md">
           <div class="card text-center text-white border-0 mb-3 mb-md-0">
-            <img class="card-img-top" src="./img/PackagePage/industrial.jpg">
+            <img class="card-img-top" src="./img/package/industrial.webp">
             <div class="card-body bg-primary rounded-bottom py-5">
               <h5 class="fw-bold">Industrial Photo Shoot</h5>
               <div class="d-flex justify-content-center">

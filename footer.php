@@ -108,10 +108,10 @@
 
         <!-- Copyright -->
         <div class="container">
-      <div class=" text-center px-4 py-2 bg-white text-primary fw-light">
-        © <?php echo date('Y'); ?> Alright Reserved Esai-Studio |  
-        <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Developed by Cense7.com</a>
-      </div>
+            <div class=" text-center px-4 py-2 bg-white text-primary fw-light">
+                © <?php echo date('Y'); ?> Alright Reserved Esai Studio. Design & Development by
+                <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Cense7 Business Partner</a>
+            </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
