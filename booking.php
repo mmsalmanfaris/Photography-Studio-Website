@@ -1,5 +1,6 @@
-<?php 
-  require_once"header.php";
+<?php
+require_once "header.php";
+require_once "includes/booking.inc.php";
 ?>
 
 
@@ -12,7 +13,7 @@
         <p class="lead">Our team will contact you throught phone call within an hour.</p>
       </div>
       <div class="p-xl-5 p-4 rounded-4 w-100 shadow-sm border">
-        <form action="index.php" method="POST">
+        <form action="./includes/booking.inc.php" method="POST">
           <div class="row">
             <div class="col-xxl-4 col-12 mb-3">
               <label for="" class="form-label">Full Name</label>
@@ -51,14 +52,18 @@
           </div>
 
           <div class="row">
-            
+
           </div>
           <input type="submit" value="Book Now!" class="btn btn-primary btn-lg w-100 mt-4">
         </form>
+
       </div>
     </div>
   </div>
 </div>
 
 
-<?php require_once"footer.php"?>
+<?php
+require_once "footer.php";
+submit_message();
+?>

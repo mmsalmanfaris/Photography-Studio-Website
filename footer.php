@@ -40,7 +40,7 @@
 
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-                            <img src="./img/Logo/Esai Studio logo White.png" alt="" style="height: 60px;">
+                            <img src="./img/Logo/Esai Studio logo White.png" alt="Esai Studio Logo" style="height: 60px;" loading="lazy">
                             <p class="mt-2">
                                 We guarantee to capture your special moments exactly the way you envision. Check out our gallery section to see some of our previous work.
                             </p>
@@ -75,16 +75,16 @@
                                 Pages
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Pricing</a>
+                                <a href="./packages.php" class="text-reset">Packages</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Gallery</a>
+                                <a href="./gallery.php" class="text-reset">Gallery</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Booking</a>
+                                <a href="./booking.php" class="text-reset">Booking</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Completed Projects</a>
+                                <a href="" class="text-reset">comming soon..</a>
                             </p>
                         </div>
 
@@ -94,7 +94,7 @@
                             <p><i class="fas fa-home me-3"></i> Kalladi, Batticaloa</p>
                             <p>
                                 <i class="fas fa-envelope me-3"></i>
-                                info@esai-studio.com
+                                chat@esaistudio.com
                             </p>
                             <p><i class="fas fa-phone me-3"></i> +94 76 175 4242</p>
                             <p><i class="fas fa-phone me-3"></i> +94 76 175 4242</p>
@@ -109,7 +109,7 @@
         <!-- Copyright -->
         <div class="container">
             <div class=" text-center px-4 py-2 bg-white text-primary fw-light">
-                © <?php echo date('Y'); ?> Alright Reserved Esai Studio. Design & Development by
+                © <?php echo date('Y'); ?> Alright Reserved Esai Studio. Developed by
                 <a class="text-reset fw-normal" href="https://www.cense7.com" target="_blank">Cense7 Business Partner</a>
             </div>
     </footer>
@@ -117,7 +117,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     </body>
 
