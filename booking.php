@@ -24,15 +24,20 @@ require_once "includes/booking.inc.php";
               <input type="text" class="form-control  form-control-lg" placeholder="" name="pnumber" required>
             </div>
             <div class="col-xxl-4 col-12 mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+              <input type="email" class="form-control form-control-lg" name="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xxl-4 col-12 mb-3">
               <label for="" class="form-label">Category</label>
               <select class="form-select form-select-lg" aria-label="Default select example" name="category">
                 <option value="wedding" name="wedding">Wedding</option>
                 <option value="event" name="event">Event</option>
+                <option value="event" name="event">Birth Day</option>
                 <option value="other" name="other">Other</option>
               </select>
             </div>
-          </div>
-          <div class="row">
             <div class="col-xxl-4 col-12 mb-3">
               <label for="" class="form-label">Package</label>
               <select class="form-select form-select-lg" aria-label="Default select example" name="package" value="package">
@@ -43,11 +48,7 @@ require_once "includes/booking.inc.php";
             </div>
             <div class="col-xxl-4 col-sm-12 mb-3">
               <label for="exampleFormControlInput1" class="form-label">Select Date</label>
-              <input type="date" class="form-control form-control-lg" name="date">
-            </div>
-            <div class="col-xxl-4 col-12 mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Starting Time</label>
-              <input type="time" class="form-control form-control-lg" name="time">
+              <input type="datetime-local" class="form-control form-control-lg" name="date">
             </div>
           </div>
 
