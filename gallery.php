@@ -1,90 +1,111 @@
 <!-- Header section -->
 <?php
-require_once './header.php';
+require_once 'headLinks.php';
 ?>
+<title>Gallery Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
+
+<meta charset="UTF-8">
+<meta name="description"
+    content="Explore the unique moments we've captured for our clients at Esai Studio. Preserve your memories with our professional photography services.">
+
+<meta name="keywords"
+    content="photography packages, birthday photography Parice, modelling price, baby photography price, photogrpahy packages Sri Lanka">
+<meta name="author" content="Digital Partner">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+
+</head>
+
+<body>
+
+    <?php
+    require_once 'header.php';
+    ?>
 
 
-<section>
-    <!-- Wedding section -->
-    <div class="container">
-        <div class="mt-5">
-            <div class="py-5"></div>
-            <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
-                <span class="text-muted">From Gallery</span>
-                <h2 class="display-5 fw-bold text-primary">Wedding Photoshoot</h2>
-                <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse natural
-                    wildlife, and captivating coastal birds.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="./img/gallery/wedding/4.webp" class="figure-img img-fluid rounded"
-                        alt="Boat on Calm Water" />
-
-                    <img src="./img/gallery/wedding/1.webp" class="figure-img img-fluid rounded"
-                        alt="Wintry Mountain Landscape" />
+    <section>
+        <!-- Wedding section -->
+        <div class="container">
+            <div class="mt-5">
+                <div class="py-5"></div>
+                <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+                    <span class="text-muted">From Gallery</span>
+                    <h2 class="display-5 fw-bold text-primary">Wedding Photoshoot</h2>
+                    <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse
+                        natural
+                        wildlife, and captivating coastal birds.</p>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="./img/gallery/wedding/4.webp" class="figure-img img-fluid rounded"
+                            alt="Boat on Calm Water" />
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="./img/gallery/wedding/2.webp" class="figure-img img-fluid rounded"
-                        alt="Mountains in the Clouds" />
+                        <img src="./img/gallery/wedding/1.webp" class="figure-img img-fluid rounded"
+                            alt="Wintry Mountain Landscape" />
+                    </div>
 
-                    <img src="./img/gallery/wedding/5.webp" class="figure-img img-fluid rounded"
-                        alt="Boat on Calm Water" />
-                </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="./img/gallery/wedding/2.webp" class="figure-img img-fluid rounded"
+                            alt="Mountains in the Clouds" />
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="./img/gallery/wedding/6.webp" class="figure-img img-fluid rounded"
-                        alt="Waves at Sea" />
+                        <img src="./img/gallery/wedding/5.webp" class="figure-img img-fluid rounded"
+                            alt="Boat on Calm Water" />
+                    </div>
 
-                    <img src="./img/gallery/wedding/3.webp" class="figure-img img-fluid rounded"
-                        alt="Yosemite National Park" />
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="./img/gallery/wedding/6.webp" class="figure-img img-fluid rounded"
+                            alt="Waves at Sea" />
 
-
-    <div class="container">
-        <div class="mt-5">
-            <div class="py-5"></div>
-            <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
-                <span class="text-muted">From Gallery</span>
-                <h2 class="display-5 fw-bold text-primary">Event Photoshoot</h2>
-                <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse natural
-                    wildlife, and captivating coastal birds.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="./img/Gallery/event/1.webp" class="w-100 shadow-1-strong rounded mb-4"
-                        alt="Boat on Calm Water" />
-
-                    <img src="./img/Gallery/event/4.webp" class="w-100 shadow-1-strong rounded mb-4"
-                        alt="Wintry Mountain Landscape" />
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="./img/Gallery/event/5.webp" class="w-100 shadow-1-strong rounded mb-4"
-                        alt="Mountains in the Clouds" />
-
-                    <img src="./img/Gallery/event/2.webp" class="w-100 shadow-1-strong rounded mb-4"
-                        alt="Boat on Calm Water" />
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="./img/Gallery/event/3.webp" class="w-100 shadow-1-strong rounded mb-4"
-                        alt="Waves at Sea" />
-
-                    <img src="./img/Gallery/event/6.webp" class="w-100 shadow-1-strong rounded mb-4"
-                        alt="Yosemite National Park" />
+                        <img src="./img/gallery/wedding/3.webp" class="figure-img img-fluid rounded"
+                            alt="Yosemite National Park" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+
+
+        <div class="container">
+            <div class="mt-5">
+                <div class="py-5"></div>
+                <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+                    <span class="text-muted">From Gallery</span>
+                    <h2 class="display-5 fw-bold text-primary">Event Photoshoot</h2>
+                    <p class="lead">Here are my latest captured memories featuring breathtaking landscapes, diverse
+                        natural
+                        wildlife, and captivating coastal birds.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="./img/Gallery/event/1.webp" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Boat on Calm Water" />
+
+                        <img src="./img/Gallery/event/4.webp" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Wintry Mountain Landscape" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="./img/Gallery/event/5.webp" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Mountains in the Clouds" />
+
+                        <img src="./img/Gallery/event/2.webp" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Boat on Calm Water" />
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="./img/Gallery/event/3.webp" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Waves at Sea" />
+
+                        <img src="./img/Gallery/event/6.webp" class="w-100 shadow-1-strong rounded mb-4"
+                            alt="Yosemite National Park" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-    <!-- <div class="container">
+        <!-- <div class="container">
         <div class="mt-5">
             <div class="py-5"></div>
             <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
@@ -120,9 +141,9 @@ require_once './header.php';
             </div>
         </div>
     </div> -->
-</section>
+    </section>
 
 
-<?php
-require_once 'footer.php';
-?>
+    <?php
+    require_once 'footer.php';
+    ?>

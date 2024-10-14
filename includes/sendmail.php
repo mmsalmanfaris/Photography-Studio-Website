@@ -18,14 +18,14 @@ function sendmail($name, $pnumber, $email, $category, $package, $date)
         //Server settings
         // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        $mail->SMTPAuth = true;                                   //Enable SMTP authentication
 
-        $mail->Host       = 'mail.esaistudio.com';                     //Set the SMTP server to send through
-        $mail->Username   = 'chat@esaistudio.com';                     //SMTP username
-        $mail->Password   = '.$T$8gKvA}txasw3r';                               //SMTP password
+        $mail->Host = 'mail.esaistudio.com';                     //Set the SMTP server to send through
+        $mail->Username = 'chat@esaistudio.com';                     //SMTP username
+        $mail->Password = '.$T$8gKvA}txasw3r';                               //SMTP password
 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //ENCRYPTION_STARTTLS 465   Enable implicit TLS encryption
-        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients 
         $mail->setFrom('chat@esaistudio.com', 'Esai Studio Website');
@@ -43,7 +43,7 @@ function sendmail($name, $pnumber, $email, $category, $package, $date)
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Photoshoot Booking Alert!';
-        $mail->Body    = '
+        $mail->Body = '
             <!DOCTYPE html>
                 <html lang="en">
 
@@ -239,7 +239,7 @@ function sendmail($name, $pnumber, $email, $category, $package, $date)
                             <td>
                                 <div class="footer">
                                     <p>chat@esaistudio.com | 075 511 5475</p>
-                                    <p class="footer-update"> Developed by <a href="https://www.cense7.com/">Cense7 Business Partner</a>
+                                    <p class="footer-update"> Developed by <a href="https://www.digitalpartner.com/">Digital Partner</a>
                                     </p>
                                 </div>
                             </td>

@@ -1,118 +1,136 @@
 <!-- Header section -->
 <?php
-require_once 'header.php';
+require_once 'headLinks.php';
 ?>
+<title>Packages Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
 
-<section class="py-5 ">
-  <div class="container">
-    <div class="row justify-content-center  mb-2 mb-lg-4 mt-5">
-      <div class="col-12 col-lg-8 col-xxl-7 text-center mt-5">
-        <span class="text-muted "> Our Pricing</span>
-        <h2 class="display-5 fw-bold">Wedding Photo Shoot</h2>
-        <p class="lead">Discover our updated pakage list for your event.</p>
+<meta charset="UTF-8">
+<meta name="description"
+  content="Are you Looking for affortable packages with premium photography services for weddings, birthdays, modeling, and baby photography in Sri Lanka.">
+<meta name="keywords"
+  content="photography packages, birthday photography Price, modelling price, baby photography price, photogrpahy packages Sri Lanka">
+<meta name="author" content="Digital Partner">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+
+</head>
+
+<body>
+
+  <?php
+  require_once 'header.php';
+  ?>
+
+  <section class="py-5 ">
+    <div class="container">
+      <div class="row justify-content-center  mb-2 mb-lg-4 mt-5">
+        <div class="col-12 col-lg-8 col-xxl-7 text-center mt-5">
+          <span class="text-muted "> Our Pricing</span>
+          <h2 class="display-5 fw-bold">Wedding Photo Shoot</h2>
+          <p class="lead">Discover our updated pakage list for your event.</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Reteriving Data from database -->
-    <?php
-    $qry = "SELECT * FROM tbl_package WHERE category = 'wedding'";
-
-    $res = $conn->query($qry);
-
-    ?>
-    <div class="row">
+      <!-- Reteriving Data from database -->
       <?php
-      if (!$res) {
-        die("Package Data not Found!");
-      } else {
-        for ($i = 0; $i < 3; $i++) {
-          $row = $res->fetch_assoc()
-            ?>
-          <div class="col-md">
+      $qry = "SELECT * FROM tbl_package WHERE category = 'wedding'";
 
-            <div class="card text-center border-0 mb-3 mb-md-0">
-              <img class="card-img-top rounded-top" src="./assets/img/PackagePage/<?php echo $row['image'] ?>">
-              <div class="card-body bg-danger rounded-bottom py-5">
-                <h5 class="fw-bold"><?php echo $row['name'] ?></h5>
-                <div class="d-flex justify-content-center">
-                  <div class="display-3 fw-bold text-primary mt-2">
-                    $<?php echo $row['price'] ?>
+      $res = $conn->query($qry);
+
+      ?>
+      <div class="row">
+        <?php
+        if (!$res) {
+          die("Package Data not Found!");
+        } else {
+          for ($i = 0; $i < 3; $i++) {
+            $row = $res->fetch_assoc()
+              ?>
+            <div class="col-md">
+
+              <div class="card text-center border-0 mb-3 mb-md-0">
+                <img class="card-img-top rounded-top" src="./assets/img/PackagePage/<?php echo $row['image'] ?>">
+                <div class="card-body bg-danger rounded-bottom py-5">
+                  <h5 class="fw-bold"><?php echo $row['name'] ?></h5>
+                  <div class="d-flex justify-content-center">
+                    <div class="display-3 fw-bold text-primary mt-2">
+                      $<?php echo $row['price'] ?>
+                    </div>
+                    <div class=" mt-5">
+                      /0<?php echo $row['duration'] ?> Hours
+                    </div>
                   </div>
-                  <div class=" mt-5">
-                    /0<?php echo $row['duration'] ?> Hours
-                  </div>
+                  <ul class="list-unstyled mt-4">
+                    <li class="mb-3">Up to <?php echo $row['photo_count'] ?> photos</li>
+                    <li class="mb-3"><?php echo $row['editing'] ?></li>
+                    <li class="mb-3"><?php echo $row['assistant'] ?></li>
+                  </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
                 </div>
-                <ul class="list-unstyled mt-4">
-                  <li class="mb-3">Up to <?php echo $row['photo_count'] ?> photos</li>
-                  <li class="mb-3"><?php echo $row['editing'] ?></li>
-                  <li class="mb-3"><?php echo $row['assistant'] ?></li>
-                </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
               </div>
+            </div>
+            <?php
+          }
+        }
+        ?>
+
+      </div>
+
+
+      <section class="py-5 ">
+        <div class="container">
+          <div class="row justify-content-center  mb-2 mb-lg-4">
+            <div class="col-12 col-lg-8 col-xxl-7 text-center mt-4">
+              <span class="text-muted "> Our Pricing</span>
+              <h2 class="display-5 fw-bold">Event Photo Shoot</h2>
+              <p class="lead">Discover our pakage list for your event.</p>
             </div>
           </div>
           <?php
-        }
-      }
-      ?>
+          $qry = "SELECT * FROM tbl_package WHERE category = 'event'";
 
-    </div>
+          $res = $conn->query($qry);
 
+          ?>
+          <div class="row">
+            <?php
+            if (!$res) {
+              die("Package Data not Found!");
+            } else {
+              for ($i = 0; $i < 3; $i++) {
+                $row = $res->fetch_assoc()
+                  ?>
+                <div class="col-md">
 
-    <section class="py-5 ">
-      <div class="container">
-        <div class="row justify-content-center  mb-2 mb-lg-4">
-          <div class="col-12 col-lg-8 col-xxl-7 text-center mt-4">
-            <span class="text-muted "> Our Pricing</span>
-            <h2 class="display-5 fw-bold">Event Photo Shoot</h2>
-            <p class="lead">Discover our pakage list for your event.</p>
-          </div>
-        </div>
-        <?php
-        $qry = "SELECT * FROM tbl_package WHERE category = 'event'";
-
-        $res = $conn->query($qry);
-
-        ?>
-        <div class="row">
-          <?php
-          if (!$res) {
-            die("Package Data not Found!");
-          } else {
-            for ($i = 0; $i < 3; $i++) {
-              $row = $res->fetch_assoc()
-                ?>
-              <div class="col-md">
-
-                <div class="card text-center border-0 mb-3 mb-md-0">
-                  <img class="card-img-top rounded-top" src="./assets/img/PackagePage/<?php echo $row['image'] ?>">
-                  <div class="card-body bg-danger rounded-bottom py-5">
-                    <h5 class="fw-bold"><?php echo $row['name'] ?></h5>
-                    <div class="d-flex justify-content-center">
-                      <div class="display-3 fw-bold text-primary mt-2">
-                        $<?php echo $row['price'] ?>
+                  <div class="card text-center border-0 mb-3 mb-md-0">
+                    <img class="card-img-top rounded-top" src="./assets/img/PackagePage/<?php echo $row['image'] ?>">
+                    <div class="card-body bg-danger rounded-bottom py-5">
+                      <h5 class="fw-bold"><?php echo $row['name'] ?></h5>
+                      <div class="d-flex justify-content-center">
+                        <div class="display-3 fw-bold text-primary mt-2">
+                          $<?php echo $row['price'] ?>
+                        </div>
+                        <div class=" mt-5">
+                          /0<?php echo $row['duration'] ?> Hours
+                        </div>
                       </div>
-                      <div class=" mt-5">
-                        /0<?php echo $row['duration'] ?> Hours
-                      </div>
+                      <ul class="list-unstyled mt-4">
+                        <li class="mb-3">Up to <?php echo $row['photo_count'] ?> photos</li>
+                        <li class="mb-3"><?php echo $row['editing'] ?></li>
+                        <li class="mb-3"><?php echo $row['assistant'] ?></li>
+                      </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
                     </div>
-                    <ul class="list-unstyled mt-4">
-                      <li class="mb-3">Up to <?php echo $row['photo_count'] ?> photos</li>
-                      <li class="mb-3"><?php echo $row['editing'] ?></li>
-                      <li class="mb-3"><?php echo $row['assistant'] ?></li>
-                    </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
                   </div>
                 </div>
-              </div>
-              <?php
+                <?php
+              }
             }
-          }
-          ?>
+            ?>
 
+          </div>
         </div>
-      </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<?php
-require_once 'footer.php';
-?>
+  <?php
+  require_once 'footer.php';
+  ?>
