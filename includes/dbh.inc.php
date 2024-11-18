@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'malcolmlismore_db';
+$dbname = 'esai_studio';
 $dbusername = 'root';
 $dbpassword = '';
 

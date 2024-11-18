@@ -1,16 +1,21 @@
 <?php
 require_once 'headLinks.php';
 ?>
+
 <title>Booking Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
 
 <meta charset="UTF-8">
 <meta name="description"
   content="Are you Looking for premium photography services for weddings, birthdays, modeling, and baby photography in Sri Lanka. Book your shoot via esai studio website.">
-<meta name="keywords"
+  <meta name="keywords"
   content="booking photography, birthday photography booking, modelling, baby photography, online photogrpahy booking Sri Lanka">
-<meta name="author" content="Digital Partner">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index, follow">
+  <meta name="author" content="Digital Partner">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  
+  <!-- cloudflare captcha -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" ></script>
+
 
 </head>
 
@@ -22,14 +27,14 @@ require_once 'headLinks.php';
   ?>
 
   <!--Book your shooting-->
-  <div class="container">
+  <div class="container ">
     <div class="row area-booking">
-      <div class="col-12 d-flex flex-column">
+      <div class="col-12 ">
         <div class="col-12 text-center">
           <h2 class="display-5 fw-bold text-primary">Book Your Photoshoot</h2>
           <p class="lead">Our team will contact you throught phone call within an hour.</p>
         </div>
-        <div class="p-xl-5 p-4 rounded-4 w-100 shadow-sm border">
+        <div class="booking-section p-xl-5 p-4 rounded-4 w-100 shadow-sm border">
           <form action="./includes/booking.inc.php" method="POST">
             <div class="row">
               <div class="col-xxl-4 col-12 mb-3">
@@ -70,13 +75,17 @@ require_once 'headLinks.php';
               </div>
             </div>
 
-            <div class="row">
-
-            </div>
             <input type="submit" value="Book Now!" class="btn btn-primary btn-lg w-100 mt-4">
-          </form>
 
+          </form>
+          
         </div>
+        <div class="cf-turnstile text-center mt-5" data-sitekey="0x4AAAAAAA0RjmJcphJ27X-L"></div>
+        <script src="./js/app.js"></script>
+        <script>
+            window.onloadTurnstileCallback();
+        </script>
+
       </div>
     </div>
   </div>
@@ -85,4 +94,5 @@ require_once 'headLinks.php';
   <?php
   require_once "footer.php";
   submit_message();
-  ?>
+
+

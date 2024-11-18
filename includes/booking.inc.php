@@ -48,6 +48,9 @@ function submit_message()
                 showConfirmButton: false,
                 timer: 2000
                 });
+
+                // Clear the URL after the success message
+                window.history.replaceState(null, null, window.location.pathname);
             </script>
               ";
     } else if ($status === 'failed') {
@@ -59,6 +62,9 @@ function submit_message()
                 title: 'Booking Failed. Try again!',
                 showConfirmButton: false,
                 timer: 2000
+
+                // Clear the URL after the success message
+                window.history.replaceState(null, null, window.location.pathname);
                 });
             </script>
       ";
