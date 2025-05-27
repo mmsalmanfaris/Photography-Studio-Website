@@ -1,6 +1,6 @@
 <!-- Header section -->
 <?php
-require_once 'headLinks.php';
+require_once '../headLinks.php';
 ?>
 <title>Packages Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
 
@@ -18,7 +18,7 @@ require_once 'headLinks.php';
 <body>
 
   <?php
-  require_once 'header.php';
+  require_once '../header.php';
   ?>
 
   <section class="py-5 ">
@@ -35,7 +35,7 @@ require_once 'headLinks.php';
       <?php
       $qry = "SELECT * FROM tbl_package WHERE category = 'wedding'";
 
-      $res = $conn->query($qry);
+      $res = $pdo->query($qry);
 
       ?>
       <div class="row">
@@ -44,7 +44,7 @@ require_once 'headLinks.php';
           die("Package Data not Found!");
         } else {
           for ($i = 0; $i < 3; $i++) {
-            $row = $res->fetch_assoc()
+            $row = $res->fetch(PDO::FETCH_ASSOC)
               ?>
             <div class="col-md">
 
@@ -88,7 +88,7 @@ require_once 'headLinks.php';
           <?php
           $qry = "SELECT * FROM tbl_package WHERE category = 'event'";
 
-          $res = $conn->query($qry);
+          $res = $pdo->query($qry);
 
           ?>
           <div class="row">
@@ -97,30 +97,39 @@ require_once 'headLinks.php';
               die("Package Data not Found!");
             } else {
               for ($i = 0; $i < 3; $i++) {
-                $row = $res->fetch_assoc()
+                $row = $res->fetch(PDO::FETCH_ASSOC)
                   ?>
-                <div class="col-md">
-
-                  <div class="card text-center border-0 mb-3 mb-md-0">
-                    <img class="card-img-top rounded-top" src="./assets/img/PackagePage/<?php echo $row['image'] ?>">
-                    <div class="card-body bg-danger rounded-bottom py-5">
-                      <h5 class="fw-bold"><?php echo $row['name'] ?></h5>
-                      <div class="d-flex justify-content-center">
-                        <div class="display-3 fw-bold text-primary mt-2">
-                          $<?php echo $row['price'] ?>
+                    <div class="col-md">
+                      <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
+                        <!-- Image Section -->
+                        <div class="position-relative">
+                          <img class="card-img-top rounded-top-4 img-fluid" src="./img/package/<?php echo $row['image'] ?>" alt="" loading="lazy" style="height: 200px; object-fit: cover;">
                         </div>
-                        <div class=" mt-5">
-                          /0<?php echo $row['duration'] ?> Hours
+
+                        <!-- Content Section -->
+                        <div class="card-body bg-primary text-white p-4 d-flex flex-column">
+                          <h4 class="fw-bold mb-3"><?php echo $row['name'] ?></h4>
+
+                          <!-- Pricing -->
+                          <div class="d-flex align-items-end mb-4">
+                            <span class="display-6 fw-bold me-2">₹<?php echo $row['price'] ?></span>
+                            <p class="text-white-50">/ <?php echo $row['duration'] ?> Hour</p>
+                          </div>
+
+                          <!-- Features -->
+                          <ul class="list-unstyled mb-4 small">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Up to <?php echo $row['photo_count'] ?> edited photos</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i><?php echo $row['editing'] ?></li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i><?php echo $row['assistant'] ?></li>
+                          </ul>
+
+                          <!-- CTA Button -->
+                          <a href="./booking.php" class="btn btn-light mt-auto rounded-pill py-2 fw-semibold">
+                            Book Appointment <i class="bi bi-arrow-right ms-2"></i>
+                          </a>
                         </div>
                       </div>
-                      <ul class="list-unstyled mt-4">
-                        <li class="mb-3">Up to <?php echo $row['photo_count'] ?> photos</li>
-                        <li class="mb-3"><?php echo $row['editing'] ?></li>
-                        <li class="mb-3"><?php echo $row['assistant'] ?></li>
-                      </ul><a class="btn btn-outline-primary rounded-pill py-3 px-5 mt-3" href="">Book Appointment</a>
                     </div>
-                  </div>
-                </div>
                 <?php
               }
             }
@@ -132,5 +141,5 @@ require_once 'headLinks.php';
   </section>
 
   <?php
-  require_once 'footer.php';
+  require_once '../footer.php';
   ?>

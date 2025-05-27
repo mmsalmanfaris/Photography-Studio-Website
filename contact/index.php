@@ -1,7 +1,7 @@
 <!-- header section of the contact page -->
 
 <?php
-require_once 'headLinks.php';
+require_once '../headLinks.php';
 ?>
 <title>Contact Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
 
@@ -19,7 +19,7 @@ require_once 'headLinks.php';
 <body>
 
   <?php
-  require_once 'header.php';
+  require_once '../header.php';
   // Inquiry form and contact information section of the contact page
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $fname = filter_input(INPUT_POST, 'fname', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -48,36 +48,35 @@ require_once 'headLinks.php';
       <div class="row justify-content-around">
         <div class="card text-white text-center bg-primary me-md-3 mb-3 " style="max-width: 18rem;">
           <div class="card-body">
-            <img class="mt-2" src="./icon/phonecall.png" alt="">
-            <h5 class="card-title mt-4">+94 76 175 4242</h5>
+            <img class="mt-2" src="../icon/phonecall.png" alt="">
+            <h5 class="card-title mt-4">+94 75 428 1838</h5>
           </div>
         </div>
         <div class="card text-white text-center bg-primary mx-md-3 mb-3" style="max-width: 18rem;">
           <div class="card-body">
-            <img class="mt-2" src="./icon/email.png" alt="">
-            <h5 class="card-title mt-4"> <a href="mainto:info@esaistudio.com">info@esaistudio.com</a></h5>
+            <img class="mt-2" src="../icon/email.png" alt="">
+            <h5 class="card-title mt-4"> <a href="mainto:info@esaistudio.com">chat@esaistudio.com</a></h5>
           </div>
         </div>
         <div class="card text-white text-center bg-primary mx-md-3 mb-3" style="max-width: 18rem;">
           <div class="card-body">
-            <img class="mt-2" src="./icon/location.png" alt="">
+            <img class="mt-2" src="../icon/location.png" alt="">
             <h5 class="card-title mt-4">Batticaloa, Sri Lanka</h5>
           </div>
         </div>
         <div class="card text-white text-center bg-primary ms-md-3 mb-3" style="max-width: 18rem;">
           <div class="card-body">
-            <img class="mt-2" src="./icon/facebook.png" alt="">
+            <img class="mt-2" src="../icon/facebook.png" alt="">
             <h5 class="card-title mt-4"><a href="www.facebook.com/****">Facebook Page</a></h5>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
   <div class="container">
     <div class="figure my-5 py-5 d-none d-sm-block ">
-      <img src="./img/contact/contact.webp" alt="" class="figure-img img-fluid rounded-5"
+      <img src="../img/contact/contact.webp" alt="" class="figure-img img-fluid rounded-5"
         style="height: 400px; width: 1500px; object-fit:cover;">
     </div>
   </div>
@@ -87,7 +86,7 @@ require_once 'headLinks.php';
       <div class="row">
         <!-- Contact Form Block -->
         <h2 class="pb-4 text-center text-md-start mt-5">Leave a message</h2>
-        <div class="col-md-6 col-11 p-xl-5 m-md-0 m-3 p-4 rounded-4 shadow-sm border">
+        <div class="col-md-6 col-11 p-xl-5 m-md-0 m-3 p-4 rounded-4 border">
           <form action="" method="POST">
             <div class="row g-4">
               <div class="col-md-6 col-12 mb-md-3">
@@ -110,18 +109,11 @@ require_once 'headLinks.php';
                 name="pnumber">
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Province</label>
+              <label for="exampleFormControlInput1" class="form-label">District</label>
               <select class="form-select" aria-label="Default select example" name="province" value="province">
-                <option value="Central">Central</option>
-                <option value="Eastern">Eastern</option>
-                <option value="North Central">North Central</option>
-                <option value="Souther USA">Souther USA</option>
-                <option value="Nothern">Nothern</option>
-                <option value="North Western">North Western</option>
-                <option value="Sabragamuwa">Sabragamuwa</option>
-                <option value="Southern">Southern</option>
-                <option value="Uva">Uva</option>
-                <option value="Wester">Wester</option>
+                <option value="Batticaloa">Batticaloa</option>
+                <option value="Ampara">Ampara</option>
+                <option value="Trincomale">Trincomale</option>
               </select>
             </div>
             <div class="mb-3">
@@ -155,5 +147,5 @@ require_once 'headLinks.php';
 
 
   <?php
-  include './footer.php';
+  include '../footer.php';
   ?>

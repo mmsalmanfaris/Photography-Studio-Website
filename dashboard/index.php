@@ -14,7 +14,7 @@ if(isset($_SESSION["user_id"])){
 
           <?php
           // $qry = "SELECT count(*) AS unread FROM tbl_booking WHERE status = 'Unread'";
-          // $res = $conn->query($qry);
+          // $res = $pdo->query($qry);
 
           // if ($res) {
           //   if ($res->num_rows > 0) {
@@ -24,7 +24,7 @@ if(isset($_SESSION["user_id"])){
           //     echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
           //   }
           // } else {
-          //   echo "Query failed: " . $conn->error;
+          //   echo "Query failed: " . $pdo->error;
           // }
           ?>
         </div>
@@ -34,7 +34,7 @@ if(isset($_SESSION["user_id"])){
           <h4 class="badge-black align-content-center pe-4">Ongoing Shoot</h4>
           <?php
           // $qry = "SELECT count(*) AS processing FROM tbl_booking WHERE status = 'Processing'";
-          // $res = $conn->query($qry);
+          // $res = $pdo->query($qry);
 
           // if ($res) {
           //   if ($res->num_rows > 0) {
@@ -44,7 +44,7 @@ if(isset($_SESSION["user_id"])){
           //     echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
           //   }
           // } else {
-          //   echo "Query failed: " . $conn->error;
+          //   echo "Query failed: " . $pdo->error;
           // }
           ?>
         </div>
@@ -54,7 +54,7 @@ if(isset($_SESSION["user_id"])){
           <h4 class="badge-black align-content-center pe-4">Completed</h4>
           <?php
           // $qry = "SELECT count(*) AS completed FROM tbl_booking WHERE status = 'Completed'";
-          // $res = $conn->query($qry);
+          // $res = $pdo->query($qry);
 
           // if ($res) {
           //   if ($res->num_rows > 0) {
@@ -64,7 +64,7 @@ if(isset($_SESSION["user_id"])){
           //     echo "<h3 class='bg-black text-white p-3 rounded-3'>0</h3>";
           //   }
           // } else {
-          //   echo "Query failed: " . $conn->error;
+          //   echo "Query failed: " . $pdo->error;
           // }
           ?>
         </div>

@@ -1,49 +1,49 @@
 <?php
 
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    //Create an instance; passing `true` enables exceptions
+//Create an instance; passing `true` enables exceptions
 
-    function sendmail($name, $pnumber, $email, $category, $package, $date)
-    {
-        require '../PHPMailer/src/Exception.php';
-        require '../PHPMailer/src/PHPMailer.php';
-        require '../PHPMailer/src/SMTP.php';
+function sendmail($name, $pnumber, $email, $category, $package, $date)
+{
+    require '../PHPMailer/src/Exception.php';
+    require '../PHPMailer/src/PHPMailer.php';
+    require '../PHPMailer/src/SMTP.php';
 
-            // Instantiate PHPMailer
-            $mail = new PHPMailer(true);
+    // Instantiate PHPMailer
+    $mail = new PHPMailer(true);
 
-            try {
-                //Server settings
-                // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-                $mail->isSMTP();                                            //Send using SMTP
-                $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+    try {
+        //Server settings
+        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->SMTPAuth = true;                                   //Enable SMTP authentication
 
-                $mail->Host = 'mail.esaistudio.com';                     //Set the SMTP server to send through
-                $mail->Username = 'chat@esaistudio.com';                     //SMTP username
-                $mail->Password = '.$T$8gKvA}txasw3r';                               //SMTP password
+        $mail->Host = 'mail.esaistudio.com';                     //Set the SMTP server to send through
+        $mail->Username = 'chat@esaistudio.com';                     //SMTP username
+        $mail->Password = '.$T$8gKvA}txasw3r';                               //SMTP password
 
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //ENCRYPTION_STARTTLS 465   Enable implicit TLS encryption
-                $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //ENCRYPTION_STARTTLS 465   Enable implicit TLS encryption
+        $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-                //Recipients 
-                $mail->setFrom('chat@esaistudio.com', 'Esai Studio Website');
-                $mail->addAddress($email, $name);               //Name is optional
-                $mail->addAddress('chat@esaistudio.com', 'Esai Studio');     //Add a recipient
+        //Recipients 
+        $mail->setFrom('chat@esaistudio.com', 'Esai Studio Website');
+        $mail->addAddress($email, $name);               //Name is optional
+        $mail->addAddress('chat@esaistudio.com', 'Esai Studio');     //Add a recipient
 
-                // $mail->addReplyTo('info@example.com', 'Information');
-                // $mail->addCC('cc@example.com');
-                // $mail->addBCC('bcc@example.com');
+        // $mail->addReplyTo('info@example.com', 'Information');
+        // $mail->addCC('cc@example.com');
+        // $mail->addBCC('bcc@example.com');
 
-                //Attachments
-                // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-                // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+        //Attachments
+        // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
-                //Content
-                $mail->isHTML(true);                                  //Set email format to HTML
-                $mail->Subject = 'Photoshoot Booking Alert!';
-                $mail->Body = '
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'Photoshoot Booking Alert!';
+        $mail->Body = '
                     <!DOCTYPE html>
                         <html lang="en">
 
@@ -249,15 +249,15 @@
 
                         </html>
                             ';
-                // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-                $mail->send();
-                // echo 'Message has been sent';
-                exit(0);
-            } catch (Exception $e) {
-                header("Location: ../booking.php?booking=failed");
-                exit(0);
-            }
+        $mail->send();
+        // echo 'Message has been sent';
+        exit(0);
+    } catch (Exception $e) {
+        header("Location: ../booking.php?booking=failed");
+        exit(0);
     }
+}
 
 ?>

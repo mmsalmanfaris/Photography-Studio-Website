@@ -27,7 +27,7 @@ if(isset($_SESSION["user_id"])){
                 <tbody>
                     <?php
                     $qry = "SELECT * FROM tbl_inquiry";
-                    $res = $conn->query($qry);
+                    $res = $pdo->query($qry);
 
                     if (!$res) {
                         die("Data not Found!");

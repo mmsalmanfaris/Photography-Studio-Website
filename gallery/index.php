@@ -1,6 +1,6 @@
 <!-- Header section -->
 <?php
-require_once 'headLinks.php';
+require_once '../headLinks.php';
 ?>
 <title>Gallery Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
 
@@ -19,7 +19,7 @@ require_once 'headLinks.php';
 <body>
 
     <?php
-    require_once 'header.php';
+    require_once '../header.php';
     ?>
 
 
@@ -37,26 +37,26 @@ require_once 'headLinks.php';
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <img src="./img/gallery/wedding/4.webp" class="figure-img img-fluid rounded"
+                        <img src="../img/gallery/wedding/4.webp" class="figure-img img-fluid rounded"
                             alt="Boat on Calm Water" />
 
-                        <img src="./img/gallery/wedding/1.webp" class="figure-img img-fluid rounded"
+                        <img src="../img/gallery/wedding/1.webp" class="figure-img img-fluid rounded"
                             alt="Wintry Mountain Landscape" />
                     </div>
 
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="./img/gallery/wedding/2.webp" class="figure-img img-fluid rounded"
+                        <img src="../img/gallery/wedding/2.webp" class="figure-img img-fluid rounded"
                             alt="Mountains in the Clouds" />
 
-                        <img src="./img/gallery/wedding/5.webp" class="figure-img img-fluid rounded"
+                        <img src="../img/gallery/wedding/5.webp" class="figure-img img-fluid rounded"
                             alt="Boat on Calm Water" />
                     </div>
 
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <img src="./img/gallery/wedding/6.webp" class="figure-img img-fluid rounded"
+                        <img src="../img/gallery/wedding/6.webp" class="figure-img img-fluid rounded"
                             alt="Waves at Sea" />
 
-                        <img src="./img/gallery/wedding/3.webp" class="figure-img img-fluid rounded"
+                        <img src="../img/gallery/wedding/3.webp" class="figure-img img-fluid rounded"
                             alt="Yosemite National Park" />
                     </div>
                 </div>
@@ -145,5 +145,5 @@ require_once 'headLinks.php';
 
 
     <?php
-    require_once 'footer.php';
+    require_once '../footer.php';
     ?>

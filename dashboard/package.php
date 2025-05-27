@@ -26,7 +26,7 @@ if(isset($_SESSION["user_id"])){
                 <tbody>
                     <?php
                     $qry = "SELECT * FROM tbl_package";
-                    $res = $conn->query($qry);
+                    $res = $pdo->query($qry);
                     if (!$res) {
                         die("Package Data not Found!");
                     } else {
@@ -61,7 +61,7 @@ if(isset($_SESSION["user_id"])){
 
                     $qry = "DELETE FROM tbl_package WHERE package_id =".$id;
 
-                    $res = $conn -> query($qry);
+                    $res = $pdo -> query($qry);
 
                     if (!$res){
                         die("Not Deleted");

@@ -1,5 +1,5 @@
 <?php
-require_once 'headLinks.php';
+require_once '../headLinks.php';
 ?>
 
 <title>Booking Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
@@ -22,8 +22,8 @@ require_once 'headLinks.php';
 <body>
 
   <?php
-  require_once 'header.php';
-  require_once './includes/booking.inc.php';
+  require_once '../header.php';
+  require_once '../includes/booking.inc.php';
   ?>
 
   <!--Book your shooting-->
@@ -81,7 +81,7 @@ require_once 'headLinks.php';
           
         </div>
         <div class="cf-turnstile text-center mt-5" data-sitekey="0x4AAAAAAA0RjmJcphJ27X-L"></div>
-        <script src="./js/app.js"></script>
+        <script src="../js/app.js"></script>
         <script>
             window.onloadTurnstileCallback();
         </script>
@@ -92,7 +92,7 @@ require_once 'headLinks.php';
 
 
   <?php
-  require_once "footer.php";
+  require_once "../footer.php";
   submit_message();
 
 

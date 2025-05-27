@@ -1,25 +1,57 @@
-<!-- Booking code -->
-<?php
-require_once 'headLinks.php';
-?>
-<title>Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
+<!doctype html>
+<html lang="en">
 
-<meta charset="UTF-8">
-<meta name="description"
-  content="Are you Looking for premium photography services for weddings, birthdays, modeling, and baby photography in Sri Lanka. Capture life's special moments with us!">
-<meta name="keywords" content="wedding photography, birthday photography, modelling, baby photography, Sri Lanka">
-<meta name="author" content="Digital Partner">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index, follow">
+<head>
+  <title>Esai Studio - Premium Photography: Wedding, Birthday, Modelling, Baby in Sri Lanka</title>
+
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Are you Looking for premium photography services for weddings, birthdays, modeling, and baby photography in Sri Lanka. Capture life's special moments with us!">
+  <meta name="keywords" content="wedding photography, birthday photography, modelling, baby photography, Sri Lanka">
+  <meta name="author" content="Digital Partner">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+
+  <!-- Bootstrap ICON -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
 
-  <?php
-  require_once 'header.php';
-  ?>
-  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a href="../" class="navbar-brand">
+                <img src="./img/Logo/Esai Studio logo White.png" height="40" alt="Esai-Studio">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="./" class="nav-item nav-link active me-4">Home</a>
+                    <a href="./packages" class="nav-item nav-link me-4">Packages</a>
+                    <a href="./booking" class="nav-item nav-link me-4">Booking</a>
+                    <a href="./gallery" class="nav-item nav-link me-4">Gallery</a>
+                    <a href="./about" class="nav-item nav-link me-4">About</a>
+                    <a href="./contact" class="btn btn-outline-light px-4 py-2 rounded-pill">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header> 
 
   <body>
 
@@ -139,34 +171,57 @@ require_once 'headLinks.php';
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
             <img src="./img/landing/2.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water"
-              loading="lazy" />
+              loading="lazy" data-aos="fade-up" data-aos-duration="500"/>
 
             <img src="./img/landing/5.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Wintry Mountain Landscape"
-              loading="lazy" />
+              loading="lazy" data-aos="fade-up" data-aos-duration="750"/>
           </div>
 
           <div class="col-lg-4 mb-4 mb-lg-0">
             <img src="./img/landing/11.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Mountains in the Clouds"
-              loading="lazy" />
+              loading="lazy" data-aos="fade-up" data-aos-duration="750"/>
 
             <img src="./img/landing/9.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Boat on Calm Water"
-              loading="lazy" />
+              loading="lazy" data-aos="fade-up" data-aos-duration="750"/>
           </div>
 
           <div class="col-lg-4 mb-4 mb-lg-0">
             <img src="./img/landing/8.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Waves at Sea"
-              loading="lazy" />
+              loading="lazy" data-aos="fade-up" data-aos-duration="1000"/>
 
             <img src="./img/landing/12.webp" class="w-100 shadow-1-strong rounded-4 mb-4" alt="Yosemite National Park"
-              loading="lazy" />
+              loading="lazy" data-aos="fade-up" data-aos-duration="750"/>
           </div>
         </div>
-        <div class="d-flex justify-content-end">
-          <a href="./gallery.php" class="btn btn-outline-secondary rounded-pill py-3 px-4 mt-3">View Gallery<i
-              class="bi bi-arrow-right-circle ms-2"></i></a>
-        </div>
       </div>
       </div>
+    </section>
+
+    <section class="py-5">
+          <div class="container bg-primary rounded-5 my-5">
+            <div class="p-2 p-md-5">
+              <!-- row -->
+              <div class="row align-items-center g-0">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                  <!-- heading -->
+                  <div>
+                    <h1 class="text-white display-5 fw-bold pe-lg-8">Book Our Team &amp; Capture Unforgettable Moments
+                    </h1>
+                    <!-- text -->
+                    <p class="text-white-50 mb-4 lead">
+                      Explore our photography packages and choose the one that best fits your event. Customize it to match your vision and make your memories truly special.
+                    </p>
+                    <!-- btn -->
+                    <a href="./packages/" class="btn btn-dark">View Packages</a>
+                  </div>
+                </div>
+                <!-- img -->
+                <div class=" col-xl-6 col-lg-6 col-md-12 text-lg-end text-center pt-6">
+                  <img src="./img/about/photographer.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <section class="py-5 my5">
@@ -178,73 +233,101 @@ require_once 'headLinks.php';
             wildlife, and captivating coastal birds.</p>
         </div>
 
+        
+
         <div class="row mb-5">
-          <div class="col-md">
-            <div class="card text-center text-white border-0 mb-3 mb-md-0">
-              <img class="card-img-top rounded-top" src="./img/package/prewedding.webp" loading="lazy">
-              <div class="card-body bg-primary rounded-bottom py-5">
-                <h5 class="fw-bold">Pre Wedding Shoot</h5>
-                <div class="d-flex justify-content-center">
-                  <div class="display-3 fw-bold mt-2">
-                    10000
-                  </div>
-                  <div class=" mt-5">
-                    / 01 Hour
-                  </div>
-                </div>
-                <ul class="list-unstyled mt-4">
-                  <li class="mb-3">Up to 40 photos</li>
-                  <li class="mb-3">Editing & Color Grading</li>
-                  <li class="mb-3">Stylist Assistance</li>
-                </ul><a class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3" href="./booking.php">Book
-                  Appointment</a>
+          <div class="col-md" data-aos="fade-up" data-aos-duration="500">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
+              <!-- Image Section -->
+              <div class="position-relative">
+                <img class="card-img-top rounded-top-4 img-fluid" src="./img/package/prewedding.jpg" alt="Pre Wedding Shoot" loading="lazy" style="height: 200px; object-fit: cover;">
               </div>
-            </div>
-          </div>
 
-          <div class="col-md">
-            <div class="card text-center text-white border-0 mb-3 mb-md-0">
-              <img class="card-img-top" src="./img/package/sport.webp" loading="lazy">
-              <div class="card-body bg-primary rounded-bottom py-5">
-                <h5 class="fw-bold">Sports Photo Shoot</h5>
-                <div class="d-flex justify-content-center">
-                  <div class="display-3 fw-bold mt-2">
-                    15000
-                  </div>
-                  <div class=" mt-5">
-                    / Full Time
-                  </div>
-                </div>
-                <ul class="list-unstyled mt-4">
-                  <li class="mb-3">Up to 150 photos</li>
-                  <li class="mb-3">Editing & Color Grading</li>
-                  <li class="mb-3">Stylist Assistance</li>
-                </ul><a class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3" href="./booking.php">Book
-                  Appointment</a>
-              </div>
-            </div>
-          </div>
+              <!-- Content Section -->
+              <div class="card-body bg-primary text-white p-4 d-flex flex-column">
+                <h4 class="fw-bold mb-3">Pre Wedding Shoot</h4>
 
-          <div class="col-md">
-            <div class="card text-center text-white border-0 mb-3 mb-md-0">
-              <img class="card-img-top" src="./img/package/industrial.webp" loading="lazy">
-              <div class="card-body bg-primary rounded-bottom py-5">
-                <h5 class="fw-bold">Industrial Photo Shoot</h5>
-                <div class="d-flex justify-content-center">
-                  <div class="display-3 fw-bold mt-2">
-                    20000
-                  </div>
-                  <div class=" mt-5">
-                    / 01 Hour
-                  </div>
+                <!-- Pricing -->
+                <div class="d-flex align-items-end mb-4">
+                  <span class="display-6 fw-bold me-2">₹10,000</span>
+                  <p class="text-white-50">/ 1 Hour</p>
                 </div>
-                <ul class="list-unstyled mt-4">
-                  <li class="mb-3">Up to 30 photos</li>
-                  <li class="mb-3">Editing & Color Grading</li>
-                  <li class="mb-3">Stylist Assistance</li>
+
+                <!-- Features -->
+                <ul class="list-unstyled mb-4 small">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Up to 40 edited photos</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Professional editing & color grading</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Stylist assistance</li>
                 </ul>
-                <a class="btn btn-outline-secondary rounded-pill py-3 px-5 mt-3" href="./booking.php">Book
-                  Appointment</a>
+
+                <!-- CTA Button -->
+                <a href="./booking/" class="btn btn-light mt-auto rounded-pill py-2 fw-semibold">
+                  Book Appointment <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md" data-aos="fade-up" data-aos-duration="750">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
+              <!-- Image Section -->
+              <div class="position-relative">
+                <img class="card-img-top rounded-top-4 img-fluid" src="./img/package/prewedding.jpg" alt="Pre Wedding Shoot" loading="lazy" style="height: 200px; object-fit: cover;">
+              </div>
+
+              <!-- Content Section -->
+              <div class="card-body bg-primary text-white p-4 d-flex flex-column">
+                <h4 class="fw-bold mb-3">Pre Wedding Shoot</h4>
+
+                <!-- Pricing -->
+                <div class="d-flex align-items-end mb-4">
+                  <span class="display-6 fw-bold me-2">₹10,000</span>
+                  <p class="text-white-50">/ 1 Hour</p>
+                </div>
+
+                <!-- Features -->
+                <ul class="list-unstyled mb-4 small">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Up to 40 edited photos</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Professional editing & color grading</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Stylist assistance</li>
+                </ul>
+
+                <!-- CTA Button -->
+                <a href="./booking/" class="btn btn-light mt-auto rounded-pill py-2 fw-semibold">
+                  Book Appointment <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card border-0 shadow-sm overflow-hidden h-100 rounded-4">
+              <!-- Image Section -->
+              <div class="position-relative">
+                <img class="card-img-top rounded-top-4 img-fluid" src="./img/package/prewedding.jpg" alt="Pre Wedding Shoot" loading="lazy" style="height: 200px; object-fit: cover;">
+              </div>
+
+              <!-- Content Section -->
+              <div class="card-body bg-primary text-white p-4 d-flex flex-column">
+                <h4 class="fw-bold mb-3">Pre Wedding Shoot</h4>
+
+                <!-- Pricing -->
+                <div class="d-flex align-items-end mb-4">
+                  <span class="display-6 fw-bold me-2">₹10,000</span>
+                  <p class="text-white-50">/ 1 Hour</p>
+                </div>
+
+                <!-- Features -->
+                <ul class="list-unstyled mb-4 small">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Up to 40 edited photos</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Professional editing & color grading</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Stylist assistance</li>
+                </ul>
+
+                <!-- CTA Button -->
+                <a href="./booking/" class="btn btn-light mt-auto rounded-pill py-2 fw-semibold">
+                  Book Appointment <i class="bi bi-arrow-right ms-2"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -289,11 +372,122 @@ require_once 'headLinks.php';
     </section>
 
 
-    <!--Footer-->
-    <?php
-    require_once 'footer.php';
-    ?>
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
 
-  </body>
+    <!-- Section: Social media -->
+    <div class="bg-primary text-white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container ">
 
-  </html>
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <img src="./img/Logo/Esai Studio logo White.png" alt="Esai Studio Logo" style="height: 140px;"
+                            loading="lazy">
+                    </div>
+
+
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Studio Packages
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Wedding shoot</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Portraits shoot</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Event Shoot</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Album Design</a>
+                        </p>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Web Pages
+                        </h6>
+                        <p>
+                            <a href="./packages" class="text-reset">Packages</a>
+                        </p>
+                        <p>
+                            <a href="./booking" class="text-reset">Booking</a>
+                        </p>
+                        <p>
+                            <a href="./gallery" class="text-reset">Gallery</a>
+                        </p>
+                        <p>
+                            <a href="./about" class="text-reset">About</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">About Studio</h6>
+                        <p><i class="fas fa-home me-3"></i> Kalladi, Batticaloa</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            chat@esaistudio.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +94 75 428 1838</p>
+                        <p><i class="fas fa-phone me-3"></i> +94 75 428 1838</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="container">
+        <div class=" text-center px-4 py-2 bg-white text-primary fw-light">
+            © <?php echo date('Y'); ?> Alright Reserved Esai Studio. Developed by
+            <a class="text-reset" href="https://www.digitalpartner.lk" target="_blank">Digital Partner</a>
+        </div>
+</footer>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>
