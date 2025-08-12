@@ -920,7 +920,7 @@
         // act as a setter if svg is given
         if (svg && this instanceof SVG.Parent) {
         // dump raw svg
-          well.innerHTML = '<svg>' + svg.replace(/\n/, '').replace(/<([\w:-]+)([^<]+?)\/>/g, '<$1$2></$1>') + '</svg>'
+          well.innerHTML = '<svg>' + svg.replace(/\n/g, '').replace(/<([\w:-]+)([^<]+?)\/>/g, '<$1$2></$1>') + '</svg>'
 
           // transplant nodes
           for (var i = 0, il = well.firstChild.childNodes.length; i < il; i++) { this.node.appendChild(well.firstChild.firstChild) }
